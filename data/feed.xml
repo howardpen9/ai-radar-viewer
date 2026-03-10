@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>ai-ecosystem-radar AI 生态日报</title>
+  <subtitle>每日 AI 编码工具、MCP 生态、开源趋势追踪</subtitle>
+  <link href="https://howardpen9.github.io/ai-ecosystem-radar/" rel="alternate"/>
+  <link href="https://howardpen9.github.io/ai-ecosystem-radar/feed.xml" rel="self"/>
+  <id>https://howardpen9.github.io/ai-ecosystem-radar/</id>
+  <updated>2026-03-10T00:00:00.000Z</updated>
+  <generator>ai-ecosystem-radar</generator>
+  <entry>
+    <title>[2026-03-10] 热门 MCP Servers日报</title>
+    <link href="https://github.com/howardpen9/ai-ecosystem-radar/issues/1"/>
+    <id>https://github.com/howardpen9/ai-ecosystem-radar/issues/1</id>
+    <updated>2026-03-10T00:00:00.000Z</updated>
+    <summary type="text">⚡ 热门 MCP Servers 日报 — 2026-03-10 横向对比 热门 MCP Servers 横向对比分析 | 2026-03-10 --- 1. 生态全景 今日 MCP Server 生态呈现&quot;基础设施夯实期&quot;特征：上游协议层（Supabase、GitHub）聚焦 LLM 工具描述的语义精确性，中游执行层（Browser Use）攻坚依赖治理与跨平台兼容性，下游服务层（Context7）则面临企业级文档消费的规模化扩容压力。整体从&quot;功能可用&quot;向&quot;生产就绪&quot;过渡，社区贡献者深度参与成为显著标志。 --- 2. 活跃度对比 | 排名 | 项目 | 活跃度特征 | 关键信号 | |:---|:---|:---|:---| | 🥇 | Context7 | 17 个活跃事件（PR 合并 + 大库刷新 + 新库申请） | Azure 2500 万 token 刷新创纪录，12 个新库待验证 | | 🥈 | Browser Use | 8 个事件（Issue + PR 密集） | 依赖冲突成痛点，开源模型文档 PR 撞车 | | 🥉 | GitHub MCP | 6 个事件（I</summary>
+    <category term="ai-mcp-servers"/>
+  </entry>
+  <entry>
+    <title>[2026-03-10] AI 编码工具日报</title>
+    <link href="https://github.com/howardpen9/ai-ecosystem-radar/issues/2"/>
+    <id>https://github.com/howardpen9/ai-ecosystem-radar/issues/2</id>
+    <updated>2026-03-10T00:00:00.000Z</updated>
+    <summary type="text">🛠️ AI 编码工具 日报 — 2026-03-10 横向对比 AI 编码工具横向对比分析 | 2026-03-10 1. 生态全景 今日 AI 编码工具领域呈现&quot;稳定性危机与架构升级并行&quot;的复杂图景。三大头部项目（Claude Code、Gemini CLI、OpenAI Codex）均密集发布版本更新，但社区火力却集中在计费系统故障、内存泄漏、平台兼容性等基础可靠性问题上。与此同时，插件/MCP 生态扩张、子代理架构、动态权限模型等前沿方向加速落地，显示行业正从&quot;功能竞赛&quot;转向&quot;生产就绪&quot;的深水区。OpenCode 作为挑战者，在 Copilot 集成与多 Provider 适配中遭遇协议层摩擦，TUI 架构债务集中暴露。 --- 2. 活跃度对比 | 项目 | 活跃度评级 | 核心特征 | |:---|:---|:---| | Claude Code | 🔥🔥🔥🔥🔥 | 社区火山级活跃。Issue #16157 创纪录 1228 条评论，计费危机引发付费用户集体声讨；插件 PR 占比超 60%，cc-taskrunner 标志生态从&quot;增强工具&quot;向&quot;自主代理&quot;跃迁 | </summary>
+    <category term="ai-coding"/>
+  </entry>
+  <entry>
+    <title>[2026-03-10] MCP 生态系统日报</title>
+    <link href="https://github.com/howardpen9/ai-ecosystem-radar/issues/3"/>
+    <id>https://github.com/howardpen9/ai-ecosystem-radar/issues/3</id>
+    <updated>2026-03-10T00:00:00.000Z</updated>
+    <summary type="text">🔌 MCP 生态系统 日报 — 2026-03-10 横向对比 MCP 生态系统横向分析 | 2026-03-10 --- 一、生态全景 今日 MCP 生态呈现&quot;规范引领、SDK 攻坚、生态分层&quot;的总体态势：核心规范层完成年度治理架构转型并推进传输层创新；Python/TypeScript 双 SDK 同步聚焦生产级稳定性（HTTP 优雅关闭、OAuth 合规、错误脱敏）；Registry 与 Servers 则显现生态治理从&quot;快速扩张&quot;向&quot;质量把控&quot;的关键转折，企业级安全、私有化部署与商业化准入成为隐性博弈焦点。整体技术演进呈现从&quot;协议可用&quot;到&quot;生产就绪&quot;再到&quot;商业合规&quot;的三级跳特征。 --- 二、活跃度对比 | 项目 | 活跃度评级 | 核心特征 | |:---|:---|:---| | MCP Python SDK | 🔥🔥🔥🔥🔥 | 当日最活跃：14 PRs / 8 Issues，StreamableHTTP 稳定性形成4 PR 协同攻坚态势，OAuth 公共客户端修复直接影响 Claude/Cursor 等主流工具 | | MCP TypeScript SDK |</summary>
+    <category term="ai-mcp"/>
+  </entry>
+  <entry>
+    <title>[2026-03-10] AI 官网动态</title>
+    <link href="https://github.com/howardpen9/ai-ecosystem-radar/issues/4"/>
+    <id>https://github.com/howardpen9/ai-ecosystem-radar/issues/4</id>
+    <updated>2026-03-10T00:00:00.000Z</updated>
+    <summary type="text">🌐 AI 官网动态 — 2026-03-10 AI 官方网站内容追踪报告 日期: 2026-03-10   来源: Anthropic 工程博客、OpenAI 研究博客、Anthropic Academy --- 一、文章精炼摘要 Anthropic 工程博客 | | 标题 | 摘要 | |---|------|------| | 1 | 三个近期问题的复盘 | Anthropic 公开复盘了 2025 年 8-9 月期间三个基础设施 Bug 导致 Claude 响应质量间歇性下降的事件，详细解释了检测延迟原因及后续改进措施，强调&quot;从不因需求、时段或负载降低模型质量&quot;的原则。 | | 2 | Claude 开发者平台的高级工具使用 | 推出三项 Beta 功能支持动态工具发现、学习与执行，解决传统方式下工具定义占用过多上下文的问题，使 Agent 能够按需加载工具并通过代码调用实现更高效的编排逻辑。 | | 3 | 设计抗 AI 的技术评估 | 性能工程团队分享了三轮迭代设计&quot;抗 AI&quot;技术评估的经验，Claude Opus 4.5 已在限时条件下匹配顶尖人类候选人，迫使团队重新思考</summary>
+    <category term="ai-web"/>
+  </entry>
+  <entry>
+    <title>[2026-03-10] GitHub AI 趋势</title>
+    <link href="https://github.com/howardpen9/ai-ecosystem-radar/issues/5"/>
+    <id>https://github.com/howardpen9/ai-ecosystem-radar/issues/5</id>
+    <updated>2026-03-10T00:00:00.000Z</updated>
+    <summary type="text">📈 GitHub AI 趋势 — 2026-03-10 AI 开源趋势日报 | 2026-03-10 📊 今日概览 本日 GitHub AI 趋势呈现&quot;智能体基础设施爆发&quot;与&quot;MCP 生态标准化&quot;两大核心特征。Sponsors 领域出现多个高增速项目，反映开发者对 AI 服务订阅模式的接受度提升；同时 MCP（Model Context Protocol）相关项目密集上榜，标志着 AI 工具链互操作性进入新阶段。 --- 一、领域分类与趋势分析 🔧 基础工具层（LLM Infrastructure） | 项目 | 语言 | Star | 核心定位 | |:---|:---|:---|:---| | ollama/ollama | Go | 164.7k | 本地大模型运行引擎 | | huggingface/transformers | Python | 157.7k | 模型定义与训练框架 | | vllm-project/vllm | Python | 72.7k | 高吞吐推理引擎 | | open-webui/open-webui | Python | 126.5k | </summary>
+    <category term="ai-trending"/>
+  </entry>
+</feed>
