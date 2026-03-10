@@ -116,7 +116,7 @@ body {
 #cwrap::-webkit-scrollbar { width: 5px; }
 #cwrap::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 3px; }
 
-#main { max-width: 820px; margin: 0 auto; padding: 24px 48px 72px; }
+#main { max-width: 1060px; margin: 0 auto; padding: 24px 48px 72px; }
 
 /* ── Date Header ── */
 .date-header { padding: 12px 0 4px; }
