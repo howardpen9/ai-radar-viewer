@@ -75,8 +75,14 @@ function renderMd(md: string): string {
   const html = marked.parse(md) as string;
   return DOMPurify.sanitize(html, {
     ADD_TAGS: ["details", "summary"],
-    ADD_ATTR: ["open"],
+    ADD_ATTR: ["open", "href", "target"],
   });
+}
+
+/** Manifest stores file without .md — ensure we fetch with extension */
+function reportUrl(date: string, file: string): string {
+  const f = file.endsWith(".md") ? file : `${file}.md`;
+  return `/digests/${date}/${f}`;
 }
 
 // ── Search ──
@@ -89,7 +95,7 @@ async function buildSearchIndex(dates: ManifestDate[]): Promise<Map<string, stri
     dates.map(async ({ date, reports }) => {
       const chunks = await Promise.all(
         reports.map(async (r) => {
-          const text = await fetchText(`/digests/${date}/${r.file}`);
+          const text = await fetchText(reportUrl(date, r.file));
           return text || "";
         })
       );
@@ -160,7 +166,7 @@ function renderHighlights(text: string): void {
 async function renderAllReports(date: string, reports: ManifestReport[]): Promise<void> {
   reportsEl.innerHTML = reports
     .map((r) => `
-      <section class="report-section fade" id="section-${r.file.replace(".md", "")}">
+      <section class="report-section fade" id="section-${r.file.replace(/\.md$/, "")}">
         <div class="report-section-header" data-file="${r.file}">
           <span class="report-section-emoji">${r.emoji}</span>
           <h2 class="report-section-title">${r.label}</h2>
@@ -174,7 +180,7 @@ async function renderAllReports(date: string, reports: ManifestReport[]): Promis
 
   // Fetch all in parallel
   const results = await Promise.all(
-    reports.map(async (r) => ({ file: r.file, md: await fetchText(`/digests/${date}/${r.file}`) }))
+    reports.map(async (r) => ({ file: r.file, md: await fetchText(reportUrl(date, r.file)) }))
   );
 
   for (const { file, md } of results) {
@@ -210,7 +216,7 @@ function updateQuickNav(reports: ManifestReport[]): void {
   nav.className = "quick-nav";
   nav.innerHTML = reports
     .map((r) =>
-      `<a href="#section-${r.file.replace(".md", "")}" class="quick-nav-item" title="${r.label}">${r.emoji}</a>`)
+      `<a href="#section-${r.file.replace(/\.md$/, "")}" class="quick-nav-item" title="${r.label}">${r.emoji}</a>`)
     .join("");
   document.body.appendChild(nav);
 }
