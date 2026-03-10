@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve dist -s -l tcp://0.0.0.0:${PORT:-3000}",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
   },
   "dependencies": {
     "dompurify": "^3.3.2",
-    "marked": "^17.0.4"
+    "marked": "^17.0.4",
+    "serve": "^14.2.6"
   }
 }
