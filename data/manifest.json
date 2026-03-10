@@ -1,4 +1,13 @@
 {
-  "generated": "2026-03-10T00:00:00Z",
-  "dates": []
+  "generated": "2026-03-10T00:01:00Z",
+  "dates": [
+    {
+      "date": "2026-03-10",
+      "reports": [
+        { "file": "ai-coding.md", "label": "AI 編碼工具", "emoji": "🛠️" },
+        { "file": "ai-mcp.md", "label": "MCP 生態系統", "emoji": "🔌" },
+        { "file": "ai-trending.md", "label": "GitHub 趨勢", "emoji": "📈" }
+      ]
+    }
+  ]
 }

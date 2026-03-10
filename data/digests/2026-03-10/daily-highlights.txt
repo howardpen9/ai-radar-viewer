@@ -1,0 +1,15 @@
+MCP 正在吃掉 AI 工具鏈，今天三個信號同時浮現 🧵
+
+
+
+🔌 MCP 規格發布 Streamable HTTP，正式告別 SSE。這意味著所有 MCP server 部署會變簡單，我手邊的 side project 終於不用為 transport 頭痛了。
+
+🤖 Gemini CLI 合併 MCP 整合 PR，Google 正式入局。加上 Claude Code 的 hooks 系統，MCP 從「酷東西」變成 CLI 標配，生態進入實用階段。
+
+🧠 mem0 和 browser-use 同時衝上 trending，agent 的「記憶」和「工具使用」成為顯學。我在想的問題是：當每個 agent 都有長期記憶，使用者隱私邊界要畫在哪？
+
+
+
+我這週在評估要不要把 side project 從 function calling 遷移到 MCP，但 200+ servers 的品質參差不齊，你們實際用過哪些穩定的 MCP server？還是都自己寫？
+
+#MCP #AIAgents #BuildInPublic
