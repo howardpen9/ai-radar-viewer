@@ -34,6 +34,31 @@ const sidebar = document.getElementById("sidebar")!;
 const searchInput = document.getElementById("search-input") as HTMLInputElement;
 const searchStatus = document.getElementById("search-status")!;
 const cwrap = document.getElementById("cwrap")!;
+const fontDown = document.getElementById("font-down")!;
+const fontUp = document.getElementById("font-up")!;
+const fontSizeLabel = document.getElementById("font-size-label")!;
+
+// ── Font Size ──
+
+const FONT_STEPS = [
+  { scale: 0.8, label: "XS" },
+  { scale: 0.9, label: "S" },
+  { scale: 1.0, label: "M" },
+  { scale: 1.1, label: "L" },
+  { scale: 1.25, label: "XL" },
+];
+let fontStep = Number(localStorage.getItem("ar-font-step") ?? 2);
+
+function applyFontSize(step: number): void {
+  fontStep = Math.max(0, Math.min(FONT_STEPS.length - 1, step));
+  const { scale, label } = FONT_STEPS[fontStep]!;
+  document.documentElement.style.setProperty("--font-scale", String(scale));
+  fontSizeLabel.textContent = label;
+  localStorage.setItem("ar-font-step", String(fontStep));
+}
+
+fontDown.addEventListener("click", () => applyFontSize(fontStep - 1));
+fontUp.addEventListener("click", () => applyFontSize(fontStep + 1));
 
 // ── Theme ──
 
@@ -275,6 +300,7 @@ async function navigateTo(date: string): Promise<void> {
 
 async function init(): Promise<void> {
   applyTheme(theme);
+  applyFontSize(fontStep);
 
   reportsEl.innerHTML = `<div class="loading"><div class="loading-icon">📡</div><div>正在加載…</div></div>`;
   manifest = await fetchJson<Manifest>("/manifest.json");
