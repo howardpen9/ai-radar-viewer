@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-10T13:35:13.438Z",
+  "generated": "2026-03-10T14:43:48.259Z",
   "dates": [
     {
       "date": "2026-03-10",
@@ -10,14 +10,24 @@
           "emoji": "🛠️"
         },
         {
+          "file": "ai-hn",
+          "label": "ai-hn",
+          "emoji": "📄"
+        },
+        {
           "file": "ai-mcp-servers",
-          "label": "热门 MCP Servers",
-          "emoji": "⚡"
+          "label": "ai-mcp-servers",
+          "emoji": "📄"
         },
         {
           "file": "ai-mcp",
           "label": "MCP 生态系统",
           "emoji": "🔌"
+        },
+        {
+          "file": "ai-openclaw",
+          "label": "OpenClaw 生态系统",
+          "emoji": "🦞"
         },
         {
           "file": "ai-trending",
