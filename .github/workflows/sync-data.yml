@@ -1,0 +1,48 @@
+name: Sync Digest Data
+
+on:
+  repository_dispatch:
+    types: [digest-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout viewer
+        uses: actions/checkout@v4
+
+      - name: Checkout data from ai-ecosystem-radar
+        uses: actions/checkout@v4
+        with:
+          repository: howardpen9/ai-ecosystem-radar
+          token: ${{ secrets.DATA_REPO_TOKEN }}
+          path: source
+          sparse-checkout: |
+            digests
+            manifest.json
+            feed.xml
+
+      - name: Sync data
+        run: |
+          rm -rf data/digests
+          cp -r source/digests data/digests
+          cp source/manifest.json data/manifest.json 2>/dev/null || true
+          cp source/feed.xml data/feed.xml 2>/dev/null || true
+          rm -rf source
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+          else
+            DATE=$(date -u +%Y-%m-%d)
+            git commit -m "data: sync digests ${DATE}"
+            git push
+          fi
