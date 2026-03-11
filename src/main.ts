@@ -90,9 +90,13 @@ async function fetchJson<T>(url: string): Promise<T | null> {
   } catch { return null; }
 }
 
-function escapeHtml(text: string): string {
+function textToHtml(text: string): string {
+  // Decode any HTML entities from LLM output (e.g. &#x20;), then escape for safe rendering
+  const ta = document.createElement("textarea");
+  ta.innerHTML = text;
+  const decoded = ta.value;
   const div = document.createElement("div");
-  div.textContent = text;
+  div.textContent = decoded;
   return div.innerHTML.replace(/\n/g, "<br>");
 }
 
@@ -134,15 +138,16 @@ function applySearch(query: string): void {
   const needle = query.trim().toLowerCase();
   let hits = 0;
 
-  dateNavEl.querySelectorAll(".date-hdr").forEach((hdr) => {
-    const date = (hdr as HTMLElement).dataset.date || "";
+  dateNavEl.querySelectorAll(".date-group").forEach((group) => {
+    const hdr = group.querySelector(".date-hdr") as HTMLElement;
+    const date = hdr.dataset.date || "";
     if (!needle || !searchIndex) {
-      hdr.classList.remove("search-hit");
+      group.classList.remove("search-hit");
       return;
     }
     const text = searchIndex.get(date) || "";
     const matched = text.includes(needle);
-    hdr.classList.toggle("search-hit", matched);
+    group.classList.toggle("search-hit", matched);
     if (matched) hits++;
   });
 
@@ -176,7 +181,7 @@ function renderHighlights(text: string): void {
     .map((tweet, i) =>
       `<div class="highlight-card">
         <span class="tweet-index">${i + 1}/${tweets.length}</span>
-        ${escapeHtml(tweet)}
+        ${textToHtml(tweet)}
       </div>`)
     .join("");
 
@@ -252,17 +257,62 @@ function buildNav(): void {
   if (!manifest) return;
 
   dateNavEl.innerHTML = manifest.dates
-    .map((d) =>
-      `<div class="date-hdr ${d.date === currentDate ? "active" : ""}" data-date="${d.date}">
-        ${d.date}
-        <span class="report-count">${d.reports.length} reports</span>
-      </div>`)
+    .map((d) => {
+      const isActive = d.date === currentDate;
+      const reportItems = d.reports
+        .map((r) =>
+          `<a class="nav-report" data-date="${d.date}" data-file="${r.file}">
+            <span class="nav-report-emoji">${r.emoji}</span>
+            <span class="nav-report-label">${r.label}</span>
+          </a>`)
+        .join("");
+      return `<div class="date-group ${isActive ? "expanded" : ""}">
+        <div class="date-hdr ${isActive ? "active" : ""}" data-date="${d.date}">
+          <span class="date-hdr-arrow">${isActive ? "▼" : "▶"}</span>
+          <span class="date-hdr-text">${d.date}</span>
+          <span class="report-count">${d.reports.length}</span>
+        </div>
+        <div class="nav-reports">${reportItems}</div>
+      </div>`;
+    })
     .join("");
 
+  // Date header click: navigate + expand
   dateNavEl.querySelectorAll(".date-hdr").forEach((hdr) => {
     hdr.addEventListener("click", () => {
-      navigateTo((hdr as HTMLElement).dataset.date!);
+      const date = (hdr as HTMLElement).dataset.date!;
+      navigateTo(date);
     });
+  });
+
+  // Report item click: navigate + scroll to section
+  dateNavEl.querySelectorAll(".nav-report").forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const el = item as HTMLElement;
+      const date = el.dataset.date!;
+      const file = el.dataset.file!;
+      const slug = file.replace(/\.md$/, "");
+      if (date !== currentDate) {
+        navigateTo(date).then(() => {
+          document.getElementById(`section-${slug}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      } else {
+        document.getElementById(`section-${slug}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      sidebar.classList.remove("open");
+    });
+  });
+}
+
+function updateNavActive(date: string): void {
+  dateNavEl.querySelectorAll(".date-group").forEach((group) => {
+    const hdr = group.querySelector(".date-hdr") as HTMLElement;
+    const isActive = hdr.dataset.date === date;
+    hdr.classList.toggle("active", isActive);
+    group.classList.toggle("expanded", isActive);
+    const arrow = hdr.querySelector(".date-hdr-arrow");
+    if (arrow) arrow.textContent = isActive ? "▼" : "▶";
   });
 }
 
@@ -273,15 +323,13 @@ async function navigateTo(date: string): Promise<void> {
   history.pushState(null, "", `#${date}`);
 
   // Update sidebar active
-  dateNavEl.querySelectorAll(".date-hdr").forEach((hdr) => {
-    hdr.classList.toggle("active", (hdr as HTMLElement).dataset.date === date);
-  });
+  updateNavActive(date);
 
   renderDateHeader(date);
 
-  // Highlights
+  // Highlights — guard against SPA fallback returning HTML
   const highlights = await fetchText(`/digests/${date}/daily-highlights.txt`);
-  if (highlights) renderHighlights(highlights);
+  if (highlights && !highlights.trimStart().startsWith("<!")) renderHighlights(highlights);
   else heroEl.innerHTML = "";
 
   // All reports
@@ -320,14 +368,15 @@ async function init(): Promise<void> {
   // Build search index in background
   buildSearchIndex(manifest.dates).then((idx) => { searchIndex = idx; });
 
-  // Navigate to hash or latest
-  const hashDate = location.hash.slice(1);
+  // Navigate to hash or latest (support #date and #date/report formats)
+  const hashRaw = location.hash.slice(1);
+  const hashDate = hashRaw.split("/")[0];
   const targetDate = manifest.dates.find((d) => d.date === hashDate)?.date ?? manifest.dates[0]!.date;
   await navigateTo(targetDate);
 }
 
 window.addEventListener("popstate", () => {
-  const date = location.hash.slice(1);
+  const date = location.hash.slice(1).split("/")[0];
   if (date && date !== currentDate) navigateTo(date);
 });
 

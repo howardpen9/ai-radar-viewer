@@ -107,16 +107,36 @@ body {
 
 .date-group {}
 .date-hdr {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 5px 14px; cursor: pointer;
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 14px; cursor: pointer;
   font-size: 11px; font-weight: 700; color: var(--muted);
   letter-spacing: 0.04em; transition: color 0.15s; user-select: none;
 }
 .date-hdr:hover { color: var(--text); }
 .date-hdr.active { color: var(--accent); }
+.date-hdr-arrow { font-size: 8px; width: 10px; flex-shrink: 0; }
+.date-hdr-text { flex: 1; }
 .date-hdr .report-count {
   font-size: 9px; color: var(--dim); font-weight: 400;
+  background: var(--bg-hover); border-radius: 8px; padding: 1px 6px;
 }
+
+/* Report items under date */
+.nav-reports {
+  display: none; padding: 0 0 4px 0;
+}
+.date-group.expanded .nav-reports { display: block; }
+.nav-report {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 14px 4px 30px; cursor: pointer;
+  font-size: 11px; color: var(--muted);
+  transition: color 0.12s, background 0.12s;
+  text-decoration: none;
+}
+.nav-report:hover { color: var(--text); background: var(--bg-hover); }
+.nav-report-emoji { font-size: 13px; flex-shrink: 0; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
+.nav-report-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.date-group.search-hit .date-hdr { color: var(--accent); }
 
 #mob-toggle { display: none; }
 
@@ -188,7 +208,7 @@ body {
 }
 .report-section-header:hover { color: var(--accent); }
 
-.report-section-emoji { font-size: 16px; }
+.report-section-emoji { font-size: 16px; font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; }
 .report-section-title {
   flex: 1; font-size: 12px; font-weight: 700;
   letter-spacing: 0.03em;
@@ -258,7 +278,9 @@ body {
   width: 32px; height: 32px;
   background: var(--bg-side); border: 1px solid var(--border);
   border-radius: 50%; text-decoration: none; font-size: 14px;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   transition: all 0.15s;
+  line-height: 1;
 }
 .quick-nav-item:hover { border-color: var(--accent); transform: scale(1.15); }
 
