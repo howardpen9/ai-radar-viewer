@@ -70,7 +70,6 @@ The `.github/workflows/sync-data.yml` workflow:
 ## Related
 
 - [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) — Data source (daily digest pipeline)
-- [duanyytop/agents-radar](https://github.com/duanyytop/agents-radar) — Upstream inspiration
 
 ## License
 
