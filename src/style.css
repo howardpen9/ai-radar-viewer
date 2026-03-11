@@ -65,14 +65,14 @@ body {
   animation: blink 2s ease-in-out infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
-#theme-toggle, #rss-link, #font-down, #font-up {
+#theme-toggle, #rss-link, #font-down, #font-up, #width-toggle {
   background: none; border: 1px solid var(--border); color: var(--muted);
   padding: 4px 12px; border-radius: 4px; cursor: pointer;
   font-family: inherit; font-size: 10px; letter-spacing: 0.06em;
   text-decoration: none; display: inline-block;
   transition: border-color 0.15s, color 0.15s;
 }
-#theme-toggle:hover, #rss-link:hover, #font-down:hover, #font-up:hover { border-color: var(--accent); color: var(--accent); }
+#theme-toggle:hover, #rss-link:hover, #font-down:hover, #font-up:hover, #width-toggle:hover { border-color: var(--accent); color: var(--accent); }
 .font-size-ctrl {
   display: flex; align-items: center; gap: 4px;
 }
@@ -145,7 +145,8 @@ body {
 #cwrap::-webkit-scrollbar { width: 5px; }
 #cwrap::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 3px; }
 
-#main { max-width: 1060px; margin: 0 auto; padding: 24px 48px 72px; }
+#main { max-width: 1060px; margin: 0 auto; padding: 24px 48px 72px; transition: max-width 0.25s ease; }
+#main.wide { max-width: 100%; padding-left: 60px; padding-right: 60px; }
 
 /* ── Date Header ── */
 .date-header { padding: 12px 0 4px; }
@@ -247,7 +248,7 @@ body {
 }
 .md pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; overflow-x: auto; margin: 14px 0; }
 .md pre code { background: none; border: none; padding: 0; font-size: 12px; }
-.md table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; font-family: var(--font-ui); }
+.md table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 13px; font-family: var(--font-ui); table-layout: auto; }
 .md th { background: var(--code-bg); border: 1px solid var(--border); padding: 7px 12px; font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .md td { border: 1px solid var(--border); padding: 7px 12px; vertical-align: top; }
 .md tr:nth-child(even) td { background: var(--bg-hover); }

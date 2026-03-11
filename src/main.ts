@@ -37,6 +37,7 @@ const cwrap = document.getElementById("cwrap")!;
 const fontDown = document.getElementById("font-down")!;
 const fontUp = document.getElementById("font-up")!;
 const fontSizeLabel = document.getElementById("font-size-label")!;
+const widthToggle = document.getElementById("width-toggle")!;
 
 // ── Font Size ──
 
@@ -59,6 +60,20 @@ function applyFontSize(step: number): void {
 
 fontDown.addEventListener("click", () => applyFontSize(fontStep - 1));
 fontUp.addEventListener("click", () => applyFontSize(fontStep + 1));
+
+// ── Width Toggle ──
+
+let wideMode = localStorage.getItem("ar-wide") === "1";
+
+function applyWidth(wide: boolean): void {
+  wideMode = wide;
+  document.getElementById("main")!.classList.toggle("wide", wide);
+  widthToggle.textContent = wide ? "⇤" : "⇔";
+  widthToggle.title = wide ? "標準寬度" : "加寬顯示";
+  localStorage.setItem("ar-wide", wide ? "1" : "0");
+}
+
+widthToggle.addEventListener("click", () => applyWidth(!wideMode));
 
 // ── Theme ──
 
@@ -363,6 +378,7 @@ async function navigateTo(date: string): Promise<void> {
 async function init(): Promise<void> {
   applyTheme(theme);
   applyFontSize(fontStep);
+  applyWidth(wideMode);
 
   reportsEl.innerHTML = `<div class="loading"><div class="loading-icon">📡</div><div>正在加載…</div></div>`;
   manifest = await fetchJson<Manifest>("/manifest.json");
