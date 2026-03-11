@@ -245,9 +245,20 @@ function updateQuickNav(reports: ManifestReport[]): void {
   nav.id = "quick-nav";
   nav.className = "quick-nav";
   nav.innerHTML = reports
-    .map((r) =>
-      `<a href="#section-${r.file.replace(/\.md$/, "")}" class="quick-nav-item" title="${r.label}">${r.emoji}</a>`)
+    .map((r) => {
+      const slug = r.file.replace(/\.md$/, "");
+      return `<button class="quick-nav-item" data-section="${slug}" title="${r.label}">${r.emoji}</button>`;
+    })
     .join("");
+
+  // Use scrollIntoView instead of anchor links (avoids hash change → popstate)
+  nav.querySelectorAll(".quick-nav-item").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const slug = (btn as HTMLElement).dataset.section!;
+      document.getElementById(`section-${slug}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
   document.body.appendChild(nav);
 }
 
@@ -377,7 +388,8 @@ async function init(): Promise<void> {
 
 window.addEventListener("popstate", () => {
   const date = location.hash.slice(1).split("/")[0];
-  if (date && date !== currentDate) navigateTo(date);
+  // Only navigate if it looks like a valid date (YYYY-MM-DD)
+  if (date && /^\d{4}-\d{2}-\d{2}$/.test(date) && date !== currentDate) navigateTo(date);
 });
 
 // Keyboard: [ = older, ] = newer

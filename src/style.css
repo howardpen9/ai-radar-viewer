@@ -275,12 +275,13 @@ body {
 }
 .quick-nav-item {
   display: flex; align-items: center; justify-content: center;
-  width: 32px; height: 32px;
+  width: 36px; height: 36px;
   background: var(--bg-side); border: 1px solid var(--border);
-  border-radius: 50%; text-decoration: none; font-size: 14px;
+  border-radius: 50%; text-decoration: none; font-size: 16px;
   font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   transition: all 0.15s;
   line-height: 1;
+  cursor: pointer; color: inherit; padding: 0;
 }
 .quick-nav-item:hover { border-color: var(--accent); transform: scale(1.15); }
 
