@@ -72,7 +72,12 @@ body {
   text-decoration: none; display: inline-block;
   transition: border-color 0.15s, color 0.15s;
 }
-#theme-toggle:hover, #rss-link:hover, #font-down:hover, #font-up:hover, #width-toggle:hover { border-color: var(--accent); color: var(--accent); }
+#gh-link {
+  display: flex; align-items: center; justify-content: center;
+  width: 30px; height: 26px; padding: 0;
+}
+#gh-link svg { display: block; }
+#theme-toggle:hover, #rss-link:hover, #font-down:hover, #font-up:hover, #width-toggle:hover, #gh-link:hover { border-color: var(--accent); color: var(--accent); }
 .font-size-ctrl {
   display: flex; align-items: center; gap: 4px;
 }

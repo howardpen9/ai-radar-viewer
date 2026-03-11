@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-11T05:00:07.826Z",
+  "generated": "2026-03-11T05:19:52.184Z",
   "dates": [
     {
       "date": "2026-03-11",
@@ -8,16 +8,6 @@
           "file": "ai-coding",
           "label": "AI 编码工具",
           "emoji": "🛠️"
-        },
-        {
-          "file": "ai-hn",
-          "label": "Hacker News AI",
-          "emoji": "📰"
-        },
-        {
-          "file": "ai-mcp",
-          "label": "MCP 生态系统",
-          "emoji": "🔌"
         },
         {
           "file": "ai-openclaw",
@@ -30,9 +20,19 @@
           "emoji": "📈"
         },
         {
+          "file": "ai-hn",
+          "label": "Hacker News AI",
+          "emoji": "📰"
+        },
+        {
           "file": "ai-web",
           "label": "官网动态",
           "emoji": "🌐"
+        },
+        {
+          "file": "ai-mcp",
+          "label": "MCP 生态系统",
+          "emoji": "🔌"
         }
       ]
     },
@@ -45,21 +45,6 @@
           "emoji": "🛠️"
         },
         {
-          "file": "ai-hn",
-          "label": "Hacker News AI",
-          "emoji": "📰"
-        },
-        {
-          "file": "ai-mcp-servers",
-          "label": "ai-mcp-servers",
-          "emoji": "📄"
-        },
-        {
-          "file": "ai-mcp",
-          "label": "MCP 生态系统",
-          "emoji": "🔌"
-        },
-        {
           "file": "ai-openclaw",
           "label": "OpenClaw 生态系统",
           "emoji": "🦞"
@@ -70,9 +55,24 @@
           "emoji": "📈"
         },
         {
+          "file": "ai-hn",
+          "label": "Hacker News AI",
+          "emoji": "📰"
+        },
+        {
           "file": "ai-web",
           "label": "官网动态",
           "emoji": "🌐"
+        },
+        {
+          "file": "ai-mcp-servers",
+          "label": "ai-mcp-servers",
+          "emoji": "📄"
+        },
+        {
+          "file": "ai-mcp",
+          "label": "MCP 生态系统",
+          "emoji": "🔌"
         }
       ]
     }
