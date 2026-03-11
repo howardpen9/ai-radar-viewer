@@ -2,40 +2,36 @@
 
 ## 横向对比
 
-# MCP 生态系统 横向对比分析
+# MCP 生态系统 横向对比分析日报
 
 **日期**: 2026-03-11
 
----
-
 ## 1. 生态全景
 
-今日 MCP 生态系统呈现出蓬勃发展的景象，各个子项目均在积极推进各自的开发进程。从核心协议的规范完善，到 SDK 的健壮性提升，再到服务器集成的持续扩张，以及 Inspector 和 Registry 的应用场景拓展，整个生态系统在安全性、扩展性、开发者体验和社区贡献方面均有显著进展。尤其值得注意的是，对 Agentic 工作流的安全治理、跨平台兼容性、以及 SDK 的稳定性和易用性成为了多个项目共同关注的焦点，预示着 MCP 生态正朝着更成熟、更普惠的方向发展。
-
----
+今日 MCP 生态系统展示了多方面的活跃动态。从核心规范的治理层探索，到 SDK 的 Bug 修复与功能增强，再到 Inspector 的 V2 版本规划与 Proxy 稳定性提升，以及 Servers 项目对新服务集成和文件系统跨平台兼容性的关注，整个生态系统正朝着更健壮、更安全、功能更丰富的方向稳步发展。开发体验的优化、安全性的增强以及新功能（如策略执行代理、实用工具 API）的引入是本日生态系统的共同主题。
 
 ## 2. 活跃度对比
 
-今日，**MCP Official Servers** 项目在 **PR 数量**上表现最为活跃，展现了社区通过集成大量第三方服务来快速扩展 MCP 能力的强大驱动力。**MCP Python SDK** 和 **MCP Inspector** 在 **Issue 和 PR 的活跃度**以及**技术深度**上也表现突出，前者聚焦于解决 CI 测试稳定性等核心开发工具链问题，后者则在 UI 组件化和代理稳定性方面进行了深入的探索和优化。**MCP 规范 (modelcontextprotocol/modelcontextprotocol)** 虽 PR 数量不多，但其提出的 Agentic 授权治理和信任注解等 Issue，对整个生态的技术方向具有重要的引领作用。**MCP TypeScript SDK** 和 **MCP Registry** 的活动则主要体现在关键 Bug 修复和依赖更新上，是保证项目稳定运行的重要支撑。
-
----
+| 项目名称                                        | 今日活动 (Issues/PRs) | 核心关注点                                                                       |
+| :---------------------------------------------- | :-------------------- | :------------------------------------------------------------------------------- |
+| [MCP 规范](https://github.com/modelcontextprotocol/modelcontextprotocol) | New Issue, Updated PRs | Agentic 授权治理层探索，CI/CD 流程优化，多语言教程更新，核心协议（任务跳转、安全注解、SSH 传输）迭代 |
+| [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) | New PRs, Updated Issues | 修复 RequestInfo 缺失 URL，优化 OAuth scope 累积，保持自定义 Accept Header，Schema 处理健壮性 |
+| [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) | New PRs, Updated PRs | 解决 Stdio Client 关机竞争条件，重写子进程/WebSocket 测试以提高确定性，优化流资源清理，HTTP Method Not Allowed 响应 |
+| [MCP Inspector](https://github.com/modelcontextprotocol/inspector) | New Issue, Updated PRs | V2 版本 UI 组件规范，V2 技术栈架构细化，UI 响应性和代理稳定性提升，客户端目录结构优化，Context Path 连接问题 |
+| [MCP Registry](https://github.com/modelcontextprotocol/registry)   | New Issue, Updated PRs | 移除旧的 server 注册项，自动化依赖项更新，支持自定义 MCP Registry URL，注册表维护与清理 |
+| [MCP 官方 Servers](https://github.com/modelcontextprotocol/servers) | New Issues, New/Updated PRs | 集成 Intercept（策略执行代理），引入 Enrichr（实用工具 API），文件系统服务器跨平台兼容性 Bug，路径验证问题，目录验证错误信息增强 |
 
 ## 3. 共同趋势
 
-多个项目今天的动态反映出以下几个核心的共同趋势：
-
-*   **安全性与信任模型深化**: 无论是 MCP 规范中对 Agentic 授权治理的讨论，还是 TypeScript SDK 中对 OAuth 作用域的优化，亦或是 Inspector 中对代理稳定性的提升，都指向了对数据安全、认证授权和系统健壮性的高度重视。
-*   **开发者体验与易用性提升**: Python SDK 通过解决 CI 测试稳定性问题，TypeScript SDK 聚焦 RequestInfo 接口的完善，Inspector 在 UI 组件规范化和项目结构优化，以及 Registry 支持自定义 URL，都体现了将重心放在降低开发者门槛、提升开发效率和增强用户部署灵活性的方向。
-*   **生态扩展与集成**: MCP Official Servers 项目大量集成新服务的 PR，以及 MCP Registry 中对旧服务入口的清理，共同表明了 MCP 生态正在通过持续的集成和优化，不断丰富其工具库和应用场景。
-*   **协议标准化与规范化**: MCP 规范中的 SEPs 提案，TypeScript SDK 中与规范同步的类型更新，以及 Inspector 的 V2 UI 组件规范，都体现了通过标准化和规范化来驱动项目演进的策略。
-
----
+*   **安全性与可控性增强**: 多个项目都反映出对安全性和可控性的高度关注。MCP 规范中对 Agentic 授权治理层的探索、Python SDK 中关于 HTTP 方法的合规性以及 Servers 项目集成 Intercept 策略执行代理，都指向了构建更安全、可审计的 AI 交互。
+*   **开发者体验与生态拓展**: SDK 的 Bug 修复和教程更新（如 TypeScript SDK 的 URL 修复，Python SDK 的测试优化，MCP 规范添加 Go 教程）显示出对开发者上手门槛和使用体验的持续优化。Servers 项目积极集成第三方工具（如 Enrichr）和社区服务，也在不断拓宽生态的应用边界。
+*   **稳定性和健壮性**: 诸如 Python SDK 的竞争条件修复，TypeScript SDK 的 header 兼容性，Inspector 的代理稳定性以及 Servers 项目的文件系统兼容性问题，都表明了社区对提升项目整体稳定性和健壮性的不懈追求。
 
 ## 4. 值得关注的信号
 
-1.  **Agentic 授权治理与信任注解的探索 (modelcontextprotocol/modelcontextprotocol):** MCP 核心规范中关于 **Issue `#2377` "Governance layer above MCP: a pre-execution semantic object for agentic authorization"** 和 **Pull Request `#1913` "SEP-1913: Trust and Sensitivity Annotations"** 的讨论，标志着 MCP 生态在应对复杂 AI Agent 工作流中的安全和信任挑战上，正进入一个更深层次的思考和设计阶段。这预示着未来 MCP 在多 Agent 协同和联邦式 AI 系统中的关键作用。
-2.  **MC Official Servers 的激进扩展与 Filesystem 服务器的平台兼容性挑战:** Servers 项目的 **多个 PR (如 `#3506`, `#3518`, `#3516`)** 展示了 MCP 生态通过快速集成第三方服务实现能力几何级增长的策略。但与此同时，**Issue `#3517` 和 `#3508`** 暴露出的 `Filesystem` 服务器在跨平台（尤其是 Windows）兼容性上的问题，也提醒我们在追求功能丰富度的同时，不应忽视基础工具的稳健性和跨平台适用性，这可能成为部分开发者迁移的首要考量。
-3.  **Python SDK 在 CI 稳定性上的重大突破:** **MCP Python SDK** 的 **PR `#2265` "Rewrite TestChildProcessCleanup with socket-based deterministic liveness probe"** 和 **PR `#2263` "fix: eliminate test port allocation race by running uvicorn in-thread"** 解决了困扰许多大型项目的 CI 并发测试时序竞争问题。这些 PR 不仅显著提升了 Python SDK 的测试可靠性，也为其他项目提供了解决类似挑战的宝贵经验和解决方案，是提升整个生态开发效率和质量的关键支撑。
+1.  **Agentic 授权治理层的初步探索 ([MCP 规范, #2377](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/2377))**: 这一动态标志着 MCP 生态系统正朝着更高级别的安全和信任机制迈进，是未来 Agent 交互安全的关键方向。
+2.  **Intercept 策略执行代理的集成 ([MCP 官方 Servers, #3516](https://github.com/modelcontextprotocol/servers/pull/3516))**: 这项集成预示着 MCP 生态系统在实现对 AI Agent 工具调用的精细化策略控制方面取得了实质性进展，为企业级应用提供了重要支撑。
+3.  **Enrichr 实用工具 API 的引入 ([MCP 官方 Servers, #3518](https://github.com/modelcontextprotocol/servers/pull/3518))**: 这一举措极大地丰富了 AI Agent 可用的工具集，有望显著提升 Agent 的能力和多样性，促使其在更多场景下发挥作用。
 
 ## 各工具详细报告
 
@@ -46,56 +42,42 @@
 
 **日期**: 2026-03-11
 **分组**: MCP 生态系统
-**GitHub 地址**: https://github.com/modelcontextprotocol/modelcontextprotocol
+
+## 核心动态
+
+-   **治理层探索**: 新建 Issue [#2377](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/2377) 提出在 MCP 之上构建一个治理层，用于 Agentic 授权的前置语义对象。这表明社区正积极考虑如何增强 MCP 在 Agent 交互中的安全和控制能力。
+-   **技术栈和文档更新**:
+    -   PR [#2378](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2378) 优化了 CI 流程，迁移到共享的 Cloudflare Pages 预览 Action，提升了开发效率和标准化。
+    -   PR [#2375](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2375) 为“构建服务器”教程新增了 Go 语言支持，进一步完善了多语言开发文档，降低了 Go 开发者学习和使用 MCP 的门槛。
+-   **长期提案持续推进**: 多个旧有 PR 在今日获得了更新，表明社区对核心规范的持续关注和迭代：
+    -   SEP-2229 [#2229](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2229)（Task Jumpscares）在 29 天前建立后，今日更新，显示该关于任务处理机制的提案仍在讨论中。
+    -   SEP-1913 [#1913](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1913)（Trust and Sensitivity Annotations）是关于信任及敏感度注解的提案，已建立 103 天，今日更新，反映了对 MCP 安全性的长期投入。
+    -   PR [#2325](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2325)（SEP-2325: SSH Custom Transport）是关于新增 SSH 自定义传输协议的提案，建立 9 天，今日更新，显示其正在积极推进中。
+
+## 社区焦点分析
+
+本日数据反映出社区主要关注以下几个方面：
+
+1.  **Agentic 授权与安全**: 新建 Issue [#2377](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/2377) 提出的治理层概念，直接指向了 Agent 在执行操作前的安全性校验和授权，显示了对 Agent 能力使用进行更精细化控制的需求。
+2.  **开发体验与生态完善**: PR [#2375](https://github.com/modelcontextprotocol/modelcloudprotocol/pull/2375) 的 Go 语言教程更新，以及 PR [#2378](https://github.com/modelcontextprotocol/modelcloudprotocol/pull/2378) 对 CI/CD 的优化，都表明了社区致力于提升开发者的上手体验和项目自身的工程化能力。
+3.  **核心协议的迭代与演进**: 多个 SEP（Standardization Enhancement Proposal）相关的 PR，如 [#2229](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2229)、[#1913](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1913)、[#2325](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2325) 等，虽然建立时间不一，但均在近期有更新，表明了围绕 MCP 核心功能（如任务处理、安全注解、传输协议）的细致讨论和规范完善仍在持续进行。
+
+## 最值得关注动态 (Top 3)
+
+1.  **新建 Issue [#2377](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/2377)**: 社区开始探索在 MCP 之上构建 Agentic 授权的治理层，是未来安全和可信 AI 交互的重要方向。
+2.  **PR [#2375](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2375)**: 为“构建服务器”教程添加 Go 语言支持，进一步扩大了 MCP 的开发者生态，降低了 Go 开发者集成门槛。
+3.  **PR [#2325](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2325)**: 关于 SEP-2325: SSH Custom Transport 的 PR 在今日获得更新，这是一个重要的网络传输协议扩展提案，将为 MCP 提供更灵活和安全的连接方式。
 
 ---
 
-## 核心动态概览
+## 参考链接
 
-本日，MCP 规范项目在治理、安全性、扩展性和功能性方面均有新的进展和讨论。值得关注的是，对代理授权的治理层讨论 (`#2377`) 显现出项目在安全性和Agentic能力上的深度思考。PRs 方面，关于信任和敏感度注解 (`#1913`)、SSH 自定义传输 (`#2325`) 和多轮SSE (`#1858`) 的提案，均指向了 MCP 在复杂应用场景下的安全性和灵活性扩展。
-
----
-
-## 今日焦点
-
-### 1. **治理与 Agentic 授权的新探索**
-
-*   **Issue `#2377`**: "Governance layer above MCP: a pre-execution semantic object for agentic authorization" by @RudsonCarvalho (已关闭)
-    该 Issue 提出在 MCP 之上构建一个治理层，并通过预执行的语义对象来实现 Agentic 授权。这表明社区正在深入思考 MCP 在复杂 Agentic 工作流中的安全应用，以及如何在一个更宏观的层面来管理和规范 Agent 的行为。虽然此 Issue 已关闭，但这代表了未来 MCP 生态在安全性与自主性平衡上的重要探索方向。
-
-### 2. **功能性扩展与安全性加固并行**
-
-*   **Pull Request `#1913`**: "SEP-1913: Trust and Sensitivity Annotations" by @SamMorrowDrums (开放)
-    此 PR 提出了 SEP-1913，即信任与敏感度注解，旨在为 MCP 请求和响应添加注解。这使得客户端和服务器能够追踪、传播和强制执行数据在工具调用过程中的信任边界。这一提议对 MCP 的安全模型是重要的增强，特别是当数据需要在不同 Agent 和工具之间传递时，能够提供更精细化的安全控制。
-*   **Pull Request `#2325`**: "SEP-2325: SSH Custom Transport" by @tobert (开放)
-    该 PR 提案将 SSH 作为 MCP 的自定义传输协议，旨在连接 stdio 与基于 HTTP 的流式传输，并支持 OAuth。它提出了两种部署模型（`sshd subsystem` 和 `embedded SSH server`），并且任何现有的 stdio MCP 服务器都无需修改即可直接使用。这为 MCP 的部署和网络连接提供了新的、更灵活的选择，尤其是在需要安全远程访问的场景下。
-
-### 3. **技术文档与实践分享**
-
-*   **Pull Request `#2230`**: "Add blog post for Tool Annotations" by @olaservo (开放)
-    该 PR 准备发布一篇博客，进一步阐述工具注解（Tool Annotations）的背景、解决的问题以及未来发展。这表明项目正在积极地通过内容输出，向开发者社区普及 MCP 的核心概念和使用方式，尤其是关于工具注解这样能够提升工具集成和调用的关键方面。
-
----
-
-## 社区关注点分析
-
-本次日报数据集中，社区的关注点主要体现在以下几个方面：
-
-*   **安全性与信任模型**: Issue `#2377` 和 Pull Request `#1913` 都围绕着 MCP 的安全性和信任建立展开。这显示出随着 MCP 应用的扩展，开发者越来越关注数据流动的安全性和可信度，尤其是在 Agentic 工作流中。
-*   **协议扩展性与灵活性**: Pull Request `#2325` 提出了 SSH 自定义传输，而 Pull Request `#1858` 提出的多轮 SSE，都旨在扩展 MCP 的应用场景和支持更复杂的交互模式。这反映了社区希望 MCP 能够适应更多样化的网络环境和通信需求。
-*   **标准化提案 (SEPs)**: 多个 SEPs（如 `#1913`, `#2325`, `#1905`, `#1904`, `#1858`, `#1822`, `#1455`, `#837`）的讨论和开发，表明社区正积极通过标准化的方式来推动 MCP 的功能演进和协议完善。SEPs 是 MCP 生态的核心驱动力。
-*   **开发者体验与文档**: Pull Request `#2230` 强调了通过博客等方式提升开发者对 MCP 功能的理解，Pull Request `#1515` 则关注了文档的清晰度和信息量。良好的文档和易于理解的内容对项目的推广至关重要。
-
----
-
-## 其他值得关注的动态
-
-*   **Task Result Streaming**: Pull Request `#1905` (SEP-1905: Task Result Streaming and Immediate Result Acceptance) 提案了一套任务结果流式传输和即时结果接收的机制，这对于需要处理大量或实时数据的任务场景非常有价值。
-*   **Tool Annotations 博客**: Pull Request `#2230` 预告的博客文章，将有助于更深入地理解工具注解的价值和用法。
-
----
-
-**总结**: MCP 规范项目在安全性、协议扩展性以及开发者社区的互动方面持续发力。今天的焦点围绕着 Agentic 授权的治理层思考、数据信任注解的安全性增强，以及 SSH 自定义传输协议的引入，这些都预示着 MCP 在迎接更复杂的 AI 应用场景时，正不断夯实其技术基础和生态支持。
+*   [#2377](https://github.com/modelcontextprotocol/modelcontextprotocol/issues/2377)
+*   [#2378](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2378)
+*   [#2375](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2375)
+*   [#2229](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2229)
+*   [#1913](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/1913)
+*   [#2325](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2325)
 
 </details>
 
@@ -104,158 +86,138 @@
 
 # MCP TypeScript SDK 技术日报
 
-**日期:** 2026-03-11
-**分组:** MCP 生态系统
-**GitHub 地址:** [https://github.com/modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)
+**日期:** 2026-03-11 | **分组:** MCP 生态系统
 
-## 摘要
+## 今日亮点
 
-今日 MCP TypeScript SDK 主要围绕 **解决 RequestInfo 接口缺失 `url` 属性的问题** 以及 **完善 `server.tool()` 函数对 Schema 的处理** 展开。社区在 Pull Request 层面积极贡献，**修复了 OAuth 作用域处理、RequestInfo 增强、Accept 头部保留等关键问题**。
+今天，MCP TypeScript SDK 在开发者社区中展现出活跃的贡献和讨论。多个新提交的 Pull Request 集中在修复关键的 Bug 和提升 SDK 功能，预示着 SDK 正朝着更稳定、更全面的方向发展。
 
-## 今日重点动态
+### 🚀 新提交的 Pull Requests (今日新增)
 
-1.  **核心问题修复 #1530 推动 PR#1656 落地：** 社区开发者 @theamodhshetty 通过 PR [#1656](https://github.com/modelcontextprotocol/typescript-sdk/pull/1656) 解决了 Issue [#1530](https://github.com/modelcontextprotocol/typescript-sdk/issues/1530) 中提出的 “Missing url property to RequestInfo interface” 问题。此 PR 增加了 `RequestInfo` 接口对请求 `url` 的支持，并确保其在服务器处理时被正确填充，同时也覆盖了查询参数的保留，增加了相关回归测试。这对于确保请求上下文信息的完整性和准确性至关重要。
+*   **#1656 "fix(server): include request URL in RequestInfo"** by @theamodhshetty - 这个 PR 针对 [#1530] 中提出的问题，将完整的请求 URL 添加到 `RequestInfo` 中，确保服务器处理请求时能够获取到必要的 URL 信息。这是一个重要的修复，将提升服务器端处理的多样性。
+*   **#1657 "fix: accumulate OAuth scopes on 401/403 instead of overwriting"** by @rechedev9 - 此 PR 旨在优化 OAuth 认证流程，通过 `mergeScopes()` 工具代替直接覆盖，来累积 OAuth scope，避免在 401/403 错误时丢失已有的 scope。
+*   **#1655 "fix(client): preserve custom Accept headers in StreamableHTTPClientTransport"** by @nielskaspers - 该 PR 修复了 `StreamableHTTPClientTransport` 在处理自定义 `Accept` header 时的 bug，确保用户提供的 `Accept` header 不会被 SDK 默认值覆盖，提升了客户端传输的灵活性。
 
-2.  **OAuth 作用域管理优化 PR#1657：** PR [#1657](https://github.com/modelcontextprotocol/typescript-sdk/pull/1657) 由 @rechedev9 提交，旨在 **修复 OAuth 作用域在 401/403 错误时被覆盖的问题**。该 PR 引入了 `mergeScopes()` 工具，能够联合合并现有的和传入的作用域，而非简单覆盖。这对于需要处理复杂 OAuth 流程的应用来说，显著提升了 SDK 的健壮性和正确性。
+### 💬 持续关注的 Issues (近期更新)
 
-3.  **`server.tool()`  schema 处理问题关注：** Issue [#1585](https://github.com/modelcontextprotocol/typescript-sdk/issues/1585) 反映了 `server.tool()` 函数在接收纯 JSON Schema 对象时会 **静默丢弃 `inputSchema`** 的问题。这表明社区在利用 SDK 构建工具时，对 schema 处理的灵活性和健壮性有较高要求，希望 SDK 能够更恰当地处理不同格式的 schema 输入。
+*   **#1530 "Missing url property to RequestInfo interface"** (已建立 26 天) - 该 Issue 引起了开发者的持续关注，并与 PR [#1656] 直接相关。社区成员强调了在处理多 endpoint 的 MCP 服务器时，需要 `RequestInfo` 接口包含 URL 信息，以便正确计算 `_meta.domain`。
+*   **#1585 "server.tool() silently drops inputSchema when passed plain JSON Schema objects instead of Zod schemas"** (已建立 13 天) - 这个 bug 报告指出 `server.tool()` 在接收原始 JSON Schema 对象时，会静默丢弃 `inputSchema`，而非 Zod schema。这表明社区在使用 SDK 的工具定义功能时，对 schema 处理的健壮性有较高的期望。
 
-## 活跃 Issues
+### 📦 社区贡献更新
 
-*   **[#1530](https://github.com/modelcontextprotocol/typescript-sdk/issues/1530) "Missing url property to RequestInfo interface"** (open, 3 comments): 此 Issue 揭示了 `RequestInfo` 接口在处理多端点 MCP 服务时，无法准确识别请求 URL 的问题，`@theamodhshetty` 的 PR [#1656](https://github.com/modelcontextprotocol/typescript-sdk/pull/1656) 正在解决此问题。
-*   **[#1585](https://github.com/modelcontextprotocol/typescript-sdk/issues/1585) "server.tool() silently drops inputSchema when passed plain JSON Schema objects instead of Zod schemas"** (open, 4 comments): 此 Issue 反映了 `server.tool()` 在处理非 Zod 格式的 `inputSchema` 时存在 bug，社区关注点在于 SDK 对于不同 schema 格式的书写支持。
+*   **#1152 "chore: update spec.types.ts from upstream"** by @pcarleton - 这是一个自动化的chore PR，用于从上游 Model Context Protocol 规范更新 `spec.types.ts` 文件。虽然已关闭，但展示了 SDK 与主协议规范保持同步的自动化流程。
 
-## 活跃 Pull Requests
+## 本日最值得关注的动态
 
-*   **[#1657](https://github.com/modelcontextprotocol/typescript-sdk/pull/1657) "fix: accumulate OAuth scopes on 401/403 instead of overwriting"** (open): 关键的 OAuth 作用域管理 bug 修复，提升了 SDK 在认证流程中的稳定性。
-*   **[#1656](https://github.com/modelcontextprotocol/typescript-sdk/pull/1656) "fix(server): include request URL in RequestInfo"** (open): 解决了 Issue [#1530](https://github.com/modelcontextprotocol/typescript-sdk/issues/1530)，增强了服务器端请求信息处理能力。
-*   **[#1655](https://github.com/modelcontextprotocol/typescript-sdk/pull/1655) "fix(client): preserve custom Accept headers in StreamableHTTPClientTransport"** (open): 解决了 Issue [#1646](https://github.com/modelcontextprotocol/typescript-sdk/issues/1646)，修复了客户端 `StreamableHTTPClientTransport` 在发送请求时会覆盖用户自定义 `Accept` 头部的问题，用户可以更灵活地控制请求头。
-*   **[#1152](https://github.com/modelcontextprotocol/typescript-sdk/pull/1152) "chore: update spec.types.ts from upstream"** (closed): 自动化更新，确保 SDK 中的类型定义与 Model Context Protocol 规范保持同步。
+1.  **URL 处理的修复与完善 (PR #1656 关联 Issue #1530)**：社区对 `RequestInfo` 接口中 URL 属性的缺失表示关切，并由 PR [#1656] 提供了针对性的解决方案。这对于支持更复杂的服务器部署场景至关重要。
+2.  **OAuth Scope 管理的优化 (PR #1657)**：针对认证过程中的细节问题，PR [#1657] 引入了 scope accumulative 机制，提高了 OAuth 流程的可靠性。
+3.  **客户端 Header 的兼容性提升 (PR #1655)**：PR [#1655] 解决了客户端传输中自定义 `Accept` header 被覆盖的问题，增强了 SDK 的可配置性和灵活性。
 
-**总结:** 今日 MCP TypeScript SDK 的开发重点在于提升核心功能的健壮性和问题修复，包括服务器端请求信息的完整性、OAuth 认证流程以及客户端请求的灵活性。社区的积极贡献（如 PR [#1656](https://github.com/modelcontextprotocol/typescript-sdk/pull/1656) 和 [#1657](https://github.com/modelcontextprotocol/typescript-sdk/pull/1657)）正在快速推进 SDK 的完善。
+## 参考链接
 
-</details>
-
-<details>
-<summary>MCP 官方 Servers — <a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a></summary>
-
-# MCP Official Servers (modelcontextprotocol/servers) 技术日报
-
-**日期**: 2026-03-11 | **分组**: MCP 生态系统
-
-## 概览
-
-今日 MCP Official Servers (modelcontextprotocol/servers) 项目在 GitHub 上活跃度较高，主要体现在多个新服务器的集成和现有服务器功能的增强。社区的关注点集中在跨平台兼容性、错误处理的健壮性以及新服务生态的拓展。
-
-## 版本发布动态
-
-今日无新版本发布。
-
-## 社区关注点分析
-
-**1. 跨平台兼容性和健壮性是重点：**
-Issue [#3517](https://github.com/modelcontextprotocol/servers/issues/3517) 指出了 `Filesystem` 服务器在不同操作系统（Windows, macOS, Linux）之间 `glob` 模式匹配不一致的问题，这直接影响了开发者在多环境下的工作效率。同时，Issue [#3508](https://github.com/modelcontextprotocol/servers/issues/3508) 也提到了 `Filesystem` 扩展在 Windows 上处理带有空格和特殊字符（如德语变音符号）的路径时出现验证失败。这些问题共同表明，提升 `Filesystem` 服务器的跨平台稳定性和兼容性是当前社区的一项重要诉求。
-
-**2. 提升错误处理和可读性：**
-Issues [#3512](https://github.com/modelcontextprotocol/servers/issues/3512) 和 [#3513](https://github.com/modelcontextprotocol/servers/issues/3513) 都围绕着 `Filesystem` 服务器的启动错误处理展开。当前错误信息仅为人类可读（human-readable），这使得客户端难以进行机器端的解析和自动化故障排查。社区正在推动将启动错误转化为机器可读的格式，并引入结构化的错误代码，以提高系统的可维护性和自动化能力。
-
-**3. 生态拓展与新服务集成活跃：**
-今日有多个 Pull Request（PR）旨在将新的第三方服务或社区项目集成到 MCP 生态中。这包括：
-*   **BoJ Server** ([#3506](https://github.com/modelcontextprotocol/servers/pull/3506))，一个提供 18 种能力域的统一 MCP 服务器。
-*   **Enrichr** ([#3518](https://github.com/modelcontextprotocol/servers/pull/3518))，一个提供 43 个实用端点的 API，服务于 AI 代理。
-*   **Intercept** ([#3516](https://github.com/modelcontextprotocol/servers/pull/3516) 和 [#3514](https://github.com/modelcontextprotocol/servers/pull/3514))，一个开源的 MCP 策略执行代理，用于保护上游服务器。
-*   **Intercerpt** ([#3516](https://github.com/modelcontextprotocol/servers/pull/3516))，一个开源的 MCP 策略执行代理，用于保护上游服务器。
-*   **Lead411 MCP connector** ([#3479](https://github.com/modelcontextprotocol/servers/pull/3479))，将 Lead411 的功能通过 MCP 提供。
-*   **freshstate** ([#3507](https://github.com/modelcontextprotocol/servers/pull/3507))，一个帮助团队维护文档新鲜度和跨文件一致性的 MCP 服务器。
-
-这些 PRs 的合并将极大地丰富 MCP 的功能集合，为 AI 代理提供更多工具和能力。
-
-## 本日最值得关注的 1-3 个动态
-
-1.  **Filesystem 服务器的跨平台兼容性问题成焦点：** Issue [#3517](https://github.com/modelcontextprotocol/servers/issues/3517) 和 [#3508](https://github.com/modelcontextprotocol/servers/issues/3508) 集中反映了 `Filesystem` 服务器在不同平台上的路径处理和匹配问题，直接影响核心功能的使用。
-2.  **MCP 生态持续扩张，新服务集成速度快：** PRs [#3506](https://github.com/modelcontextprotocol/servers/pull/3506), [#3518](https://github.com/modelcontextprotocol/servers/pull/3518), [#3516](https://github.com/modelcontextprotocol/servers/pull/3516), [#3479](https://github.com/modelcontextprotocol/servers/pull/3479), [#3507](https://github.com/modelcontextprotocol/servers/pull/3507) 等展示了社区正在积极贡献各类服务，极大地扩展了 MCP 的能力边界。
-3.  **错误处理机制的改进：** Issues [#3512](https://github.com/modelcontextprotocol/servers/issues/3512) 和 [#3513](https://github.com/modelcontextprotocol/servers/issues/3513) 提出的机器可读错误信息和结构化错误代码，是提升 MCP 服务器健壮性和可维护性的重要一步。
-
----
-**GitHub 地址**: [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)
+*   [#1530 "Missing url property to RequestInfo interface"](https://github.com/modelcontextprotocol/typescript-sdk/issues/1530)
+*   [#1585 "server.tool() silently drops inputSchema when passed plain JSON Schema objects instead of Zod schemas"](https://github.com/modelcontextprotocol/typescript-sdk/issues/1585)
+*   [#1657 "fix: accumulate OAuth scopes on 401/403 instead of overwriting"](https://github.com/modelcontextprotocol/typescript-sdk/pull/1657)
+*   [#1656 "fix(server): include request URL in RequestInfo"](https://github.com/modelcontextprotocol/typescript-sdk/pull/1656)
+*   [#1655 "fix(client): preserve custom Accept headers in StreamableHTTPClientTransport"](https://github.com/modelcontextprotocol/typescript-sdk/pull/1655)
+*   [#1152 "chore: update spec.types.ts from upstream"](https://github.com/modelcontextprotocol/typescript-sdk/pull/1152)
 
 </details>
 
 <details>
 <summary>MCP Python SDK — <a href="https://github.com/modelcontextprotocol/python-sdk">modelcontextprotocol/python-sdk</a></summary>
 
-# MCP Python SDK (modelcontextprotocol/python-sdk) 技术日报
+# MCP Python SDK 技术日报
 
-**日期：** 2026-03-11
-**分组：** MCP 生态系统
-**GitHub 地址：** [https://github.com/modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
+**日期:** 2026-03-11 | **分组:** MCP 生态系统
 
-## 报告摘要
+## 今日焦点
 
-今日 MCP Python SDK 项目在 GitHub 上有 **8 个 Pull Requests** 被提交或更新，主要集中在测试稳定性、资源清理和特定功能修复方面。值得关注的是，多项 PR 致力于解决 CI（持续集成）环境中因并发测试导致的不稳定问题，通过优化测试逻辑和资源管理来提升测试的可靠性。
+今日，MCP Python SDK 在稳定性和测试方面展现了活跃的开发态势。多个 Pull Request 专注于修复潜在的竞争条件（race condition）问题，提升客户端的健壮性，尤其是在处理进程间的通信和资源清理时。
 
-## 版本动态
+### **关键动态 (2026-03-11)**
 
-今日无新版本发布。
+*   **修复 stdio_client 关机时的竞争条件:** PR [#2268](https://github.com/modelcontextprotocol/python-sdk/pull/2268) 旨在解决 `stdio_client` 在关机过程中可能出现的 `BrokenResourceError`。该 PR 修复了一个在关闭读流时，写操作可能仍然阻塞的问题，这对于确保通信通道的平滑关闭至关重要。
+*   **重写测试以提高确定性:** PR [#2265](https://github.com/modelcontextprotocol/python-sdk/pull/2265) 和 PR [#2267](https://github.com/modelcontextprotocol/python-sdk/pull/2267) 均通过采用基于 Socket 的可靠探测机制来重写了子进程清理和 WebSocket 的测试。这解决了在 Windows/macOS CI 环境中周期性出现的测试失败问题，提升了测试的稳定性和跨平台兼容性。
+*   **资源清理优化:** PR [#2266](https://github.com/modelcontextprotocol/python-sdk/pull/2266) 提出关闭所有内存流的读取端，以避免因未关闭的流端导致资源泄露。同时，PR [#2253](https://github.com/modelcontextprotocol/python-sdk/pull/2253) 修复了 `StreamableHTTP` 会话在关机时未能正确终止的问题，提高了资源管理的效率和安全性。
 
-## 社区关注点分析
+### **社区关注点分析**
 
-今日的 Pull Requests 主要反映了社区对以下几个方面的关注：
+本日报涵盖的 Pull Request 主要集中在以下几个方面，反映了社区对 SDK 稳定性和开发者体验的重视：
 
-1.  **测试稳定性与可靠性**：**@maxisbey** 贡献了多项 PR（如 [#2265](https://github.com/modelcontextprotocol/python-sdk/pull/2265), [#2266](https://github.com/modelcontextprotocol/python-sdk/pull/2266), [#2267](https://github.com/modelcontextprotocol/python-sdk/pull/2267), [#2264](https://github.com/modelcontextprotocol/python-sdk/pull/2264), [#2263](https://github.com/modelcontextprotocol/python-sdk/pull/2263)），这些 PR 旨在解决在 CI 环境中（尤其是在 `pytest-xdist` 并发运行时）出现的间歇性失败问题。核心问题在于测试设计中的时序竞争（race conditions），例如端口分配冲突和进程生命周期探测的不确定性。通过采用更健壮的测试方法（如基于 socket 的探测、内存内传输、in-thread uvicorn 运行），极大地提升了测试套件的稳定性和可靠性。
-2.  **资源管理与清理**：PR [#2266](https://github.com/modelcontextprotocol/python-sdk/pull/2266) 和 [#2253](https://github.com/modelcontextprotocol/python-sdk/pull/2253) 聚焦于确保在程序关闭或进行清理操作时，所有资源（如通信流、HTTP Session）都能被正确释放，防止内存泄漏和其他潜在问题。这体现了项目对构建稳定、高效服务的承诺。
-3.  **特定功能修复与增强**：PR [#2262](https://github.com/modelcontextprotocol/python-sdk/pull/2262) 修复了 `StreamableHTTP` 在 `stateless=True` 模式下的行为，确保不被支持的 HTTP 方法（如 GET/DELETE）能返回正确的 405 错误码。PR [#1721](https://github.com/modelcontextprotocol/python-sdk/pull/1721) 则在进行一项重要的企业级 OAuth 集成工作，为后续的认证功能奠定基础。
+1.  **进程间通信 (IPC) 稳定性和资源管理:** 多个 PR（如 [#2268](https://github.com/modelcontextprotocol/python-sdk/pull/2268), [#2266](https://github.com/modelcontextprotocol/python-sdk/pull/2266), [#2253](https://github.com/modelcontextprotocol/python-sdk/pull/2253)）都触及了客户端在不同场景下的资源清理和异常处理，特别是与标准输入/输出通信以及 HTTP Session 相关的部分，目标是减少内存泄露和避免因意外关闭导致的错误。
+2.  **测试的可靠性和效率:** PR [#2265](https://github.com/modelcontextprotocol/python-sdk/pull/2265), [#2267](https://github.com/modelcontextprotocol/python-sdk/pull/2267), [#2264](https://github.com/modelcontextprotocol/python-sdk/pull/2264), [#2263](https://github.com/modelcontextprotocol/python-sdk/pull/2263) 共同指向了测试套件中存在的竞争条件问题，这些问题通常在并行执行（如 `pytest-xdist`）或特定操作系统环境下才会暴露。通过更健壮的测试设计，可以显著提高 CI 的通过率和开发者的信心。
+3.  **HTTP 协议的合规性:** PR [#2262](https://github.com/modelcontextprotocol/python-sdk/pull/2262) 关注在无状态模式下，对于不支持的方法（如 GET/DELETE）返回正确的 HTTP 状态码（405 Method Not Allowed），这是遵循 HTTP 标准的重要体现。
 
-## 最值得关注的动态 (Top 3)
+### **其他值得关注的动态**
 
-1.  **[#2265](https://github.com/modelcontextprotocol/python-sdk/pull/2265) "Rewrite TestChildProcessCleanup with socket-based deterministic liveness probe" by @maxisbey**
-    *   **亮点：** 针对 CI 环境中经常出现的子进程清理测试间歇性失败问题，本次 PR 提出了一个更可靠的解决方案。通过引入基于 socket 的确定性存活探测机制，绕过了之前依赖文件增长的不可靠方法。这对于确保 SDK 在各种环境下都能稳定运行至关重要。
-2.  **[#2263](https://github.com/modelcontextprotocol/python-sdk/pull/2263) "fix: eliminate test port allocation race by running uvicorn in-thread" by @maxisbey**
-    *   **亮点：** 该 PR 解决了在并发测试（`pytest-xdist`）中最棘手的端口分配时序竞争问题。通过将 `uvicorn` 的运行方式从子进程改为线程内执行，并利用 `port=0` 动态分配端口，有效避免了并发测试中不同 worker 之间端口冲突的 TOCTOU（Time-of-check to time-of-use）漏洞。这是提升测试套件稳定性的重大进展。
-3.  **[#2253](https://github.com/modelcontextprotocol/python-sdk/pull/2253) "fix: terminate active StreamableHTTP sessions during shutdown" by @weiguangli-io**
-    *   **亮点：** 此 PR 解决了 `StreamableHTTP` 在程序关闭时未能正确终止活动会话的问题（与 [#2150](https://github.com/modelcontextprotocol/python-sdk/issues/2150) 相关）。通过完善关闭流程，确保所有活动 HTTP 会话被妥善处理，这对于避免资源泄漏、保证服务的平滑下线具有重要意义。
+*   **长期待办的 OAuth 集成有新进展:** PR [#1721](https://github.com/modelcontextprotocol/python-sdk/pull/1721) "Implement SEP-990 Enterprise Managed OAuth" 虽已建立较长时间（96天前），但最近（2026-03-10）有更新，表明该复杂功能（企业托管 OAuth）的客户端实现仍在积极推进中，且被标记为 `needs more work` 和 `enhancement`，预示着未来将为企业级集成带来重要支持。
 
 ---
+
+## 参考链接
+
+*   [#2268](https://github.com/modelcontextprotocol/python-sdk/pull/2268)
+*   [#2265](https://github.com/modelcontextprotocol/python-sdk/pull/2265)
+*   [#2266](https://github.com/modelcontextprotocol/python-sdk/pull/2266)
+*   [#2267](https://github.com/modelcontextprotocol/python-sdk/pull/2267)
+*   [#2264](https://github.com/modelcontextprotocol/python-sdk/pull/2264)
+*   [#2263](https://github.com/modelcontextprotocol/python-sdk/pull/2263)
+*   [#2253](https://github.com/modelcontextprotocol/python-sdk/pull/2253)
+*   [#2262](https://github.com/modelcontextprotocol/python-sdk/pull/2262)
+*   [#1721](https://github.com/modelcontextprotocol/python-sdk/pull/1721)
 
 </details>
 
 <details>
 <summary>MCP Inspector — <a href="https://github.com/modelcontextprotocol/inspector">modelcontextprotocol/inspector</a></summary>
 
-# MCP Inspector (modelcontextprotocol/inspector) 技术日报
+# MCP Inspector 技术日报
 
 **日期:** 2026-03-11 | **分组:** MCP 生态系统
 
-## 摘要
+## 今日概览
 
-今日 MCP Inspector 的开发聚焦于 **UI 组件规范化** 和 **客户端/代理稳定性** 的提升。社区开发者 @cliffhall 提出了关于利用 Storybook 来独立开发和测试 V2 UI 组件的方案，以及一系列关于 V2 组件规范的文档更新，显示出对提升 UI 开发效率和一致性的重视。同时，@ronny-rentner 的 PR 旨在增强 UI 响应性和代理的稳定性，特别处理了浏览器断开连接导致崩溃的问题，这表明社区正积极解决实际使用中遇到的痛点。@BobDickinson 的 PR 则在目录结构、文档和启动器方面进行了优化，提升了项目的整体组织性和易用性。
+今日 MCP Inspector 项目在 Issues 和 Pull Requests 方面均有新动态。重点关注了 V2 版本相关的 UI 组件开发规范和技术架构的细化，同时也有关于客户端连接稳定性和目录结构调整的 PR 得到更新，显示出社区在推动项目迭代和完善方面的持续努力。
+
+## 最新动态
+
+### ✍️ 新建 Issue
+
+*   **[#1140](https://github.com/modelcontextprotocol/inspector/issues/1140) "Inspector V2 UI Components Spec"**: @cliffhall 提交了关于 Inspector V2 UI 组件开发规范的新 Issue。提议使用 Storybook 等工具进行 UI 组件的独立开发和测试，以简化开发流程，这对于未来 V2 版本的 UI 构建至关重要。
+
+### 🚀 近期更新的 Pull Requests
+
+*   **[#1141](https://github.com/modelcontextprotocol/inspector/pull/1141) "Adding Components spec"**: @cliffhall 贡献了一个 PR，对 Spec 页面进行了重构，将 V2 技术栈文档细化为 Web 客户端、服务器和存储三个部分，并添加了 V2 组件规范，引入了“presentational components pattern”。这标志着 V2 版本在技术架构和组件设计上的深入推进。
+*   **[#1050](https://github.com/modelcontextprotocol/inspector/pull/1050) "feat: enhance UI responsiveness and proxy stability"**: @ronny-rentner 提交的 PR 重点在于提升 UI 响应性和代理稳定性。已添加代理传输发送的错误处理，以防止浏览器断开连接时导致崩溃，并统一了面板的缩放逻辑。
+*   **[#1139](https://github.com/modelcontextprotocol/inspector/pull/1139) "Clients directory, docs update, launcher rework"**: @BobDickinson 提交的 PR 对项目结构进行了调整，将客户端移动到 `/clients` 目录下，更新了 README 文档，并重构了启动器，使其能更简单地确定并启动相应的客户端。
+
+### 🔍 持续讨论的 Issues
+
+*   **[#1068](https://github.com/modelcontextprotocol/inspector/issues/1068) "client's subsequent connection not with context path after transport"**: 该 Issue 报告了一个在使用 Spring AI 搭建 MCP 服务器时遇到的问题，当服务器配置了 context path 后，Inspector 在首个成功连接后，后续消息发送会因 404 错误而失败。该问题在 33 天前创建，近期（2026-03-10）有更新，表明社区仍在关注和解决此连接稳定性问题。
+
+## 社区关注点分析
+
+*   **V2 版本规划**: 通过 Issues [#1140](https://github.com/modelcontextprotocol/inspector/issues/1140) 和 PR [#1141](https://github.com/modelcontextprotocol/inspector/pull/1141) 可以看出，社区正积极投入到 Inspector V2 版本的规划和开发中，尤其是在 UI 组件规范化和技术架构细化方面。
+*   **稳定性和用户体验**: PR [#1050](https://github.com/modelcontextprotocol/inspector/pull/1050) 和 Issue [#1068](https://github.com/modelcontextprotocol/inspector/issues/1068) 反映了社区对提升代理稳定性和解决实际连接问题的重视，这直接关系到用户的使用体验。
+*   **项目结构与易用性**: PR [#1139](https://github.com/modelcontextprotocol/inspector/pull/1139) 中对客户端目录、文档和启动器的重构，显示了项目在提升可维护性和用户上手友好度方面的努力。
+
+## 本日最值得关注
+
+1.  **[#1140](https://github.com/modelcontextprotocol/inspector/issues/1140) "Inspector V2 UI Components Spec"**: 新建的 V2 UI 组件规范 Issue，预示着项目在 UI 层面将迎来重要更新和标准化。
+2.  **[#1141](https://github.com/modelcontextprotocol/inspector/pull/1141) "Adding Components spec"**: V2 技术栈细化和组件规范落地，标志着 V2 版本开发进入实质性阶段。
+3.  **[#1050](https://github.com/modelcontextprotocol/inspector/pull/1050) "feat: enhance UI responsiveness and proxy stability"**: 涉及用户体验和核心稳定性的 PR，近期更新表明该问题得到了持续关注和改进。
 
 ---
 
-## 社区关注焦点
+## 参考链接
 
-1.  **UI 组件化与规范化 (V2):**
-    *   **#1140 "Inspector V2 UI Components Spec"**: 提案使用 Storybook 独立开发和测试 UI 组件，为 V2 版本设定了更现代化的 UI 开发流程。
-    *   **#1141 "Adding Components spec"**: 进一步细化了 V2 组件规范，包括重构规格页面菜单、拆分技术栈文档以及引入“presentational components pattern”的讨论。这表明社区正在为 Inspector 未来版本的 UI 架构打下坚实基础，并追求更高的组件复用性和可维护性。
-
-2.  **代理连接稳定性与 UI 体验:**
-    *   **#1050 "feat: enhance UI responsiveness and proxy stability"**: 该 PR 重点在于提高代理的稳定性，特别是增加了对浏览器断开连接时的错误处理，以防止应用程序崩溃。同时，它还统一了面板的缩放逻辑，优化了 UI 布局，直接解决了用户在使用过程中可能遇到的卡顿和崩溃问题。
-    *   **#1068 "client's subsequent connection not with context path after transport"**: 这是一个关于代理连接问题的 Bug，报告者在使用 Spring AI 构建 MCP 服务器时，发现 Inspector 在 SSE 连接后会丢失 Context Path，导致后续消息 404。这指出在特定的服务器配置下，代理的连接处理仍需优化。
-
-3.  **项目结构与文档优化:**
-    *   **#1139 "Clients directory, docs update, launcher rework"**: 该 PR 通过将客户端移入 `/clients` 目录、重构 README 文档以及优化启动器，显著提升了项目的组织清晰度和易用性。这对于新加入的开发者 or 用户理解和使用 Inspector 提供了便利。
-
----
-
-## 本日最值得关注的动态 (Top 3)
-
-1.  **V2 UI 组件规范的深入探讨 (#1140, #1141):** @cliffhall 的提案和 PR 预示着 Inspector 在 UI 层面将迎来显著的重构和标准化，引入 Storybook 等工具将极大地提升开发效率和组件质量，是迈向 V2 版本的重要一步。
-2.  **代理稳定性的关键修复 (#1050):** @ronny-rentner 提出的 PR 解决了一个潜在的崩溃问题，并优化了 UI 布局，这对提升用户体验和产品的健壮性至关重要。
-3.  **项目结构与文档的优化 (#1139):** @BobDickinson 的 PR 虽然看似基础，但对于项目的长期健康发展和社区贡献者吸引力来说，清晰的目录结构和完善的文档是不可或缺的基石。
-
----
-
-**GitHub 地址:** [https://github.com/modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector)
+*   [modelcontextprotocol/inspector GitHub 仓库](https://github.com/modelcontextprotocol/inspector)
+*   [Issue #1140](https://github.com/modelcontextprotocol/inspector/issues/1140)
+*   [Issue #1068](https://github.com/modelcontextprotocol/inspector/issues/1068)
+*   [Pull Request #1141](https://github.com/modelcontextprotocol/inspector/pull/1141)
+*   [Pull Request #1050](https://github.com/modelcontextprotocol/inspector/pull/1050)
+*   [Pull Request #1139](https://github.com/modelcontextprotocol/inspector/pull/1139)
 
 </details>
 
@@ -264,43 +226,125 @@ Issues [#3512](https://github.com/modelcontextprotocol/servers/issues/3512) 和 
 
 # MCP Registry (modelcontextprotocol/registry) 技术日报
 
-**日期:** 2026-03-11
+**日期：** 2026-03-11 | **分组：** MCP 生态系统
 
-**摘要:** 今日 MCP Registry 的 GitHub 动态主要围绕社区贡献和依赖更新，其中，社区成员提出的自定义注册表 URL 支持 PR 展现了对增强系统灵活性的需求，而自动化依赖更新则确保了项目的安全性和稳定性。
+## 核心动态摘要
+
+今日 MCP Registry 仓库主要关注了对旧有注册项的移除请求以及依赖项的更新。值得注意的是，一个关于支持自定义 MCP Registry URL 的 Pull Request 得到了持续的反馈和更新，显示出社区对灵活配置的强烈需求。
 
 ---
 
-## 重点动态
+## 今日重点关注
 
-### 1. ✨ **社区贡献：支持自定义 MCP Registry URL**
+1.  **【Issue 新建】移除旧的 server 注册项：** 用户 `@danioni` 在 [#1050](https://github.com/modelcontextprotocol/registry/issues/1050) 中提交了 Issues，申请移除旧的 `io.github.danioni/servicialo` 注册条目，并指出已迁移至新的、经过验证的域名 `com.servicialo/mcp-server`。这表明社区正在积极维护和清理注册表，确保信息准确性。
 
-*   **PR:** [#949](https://github.com/modelcontextprotocol/registry/pull/949) "Support for Custom MCP Registry URL via Environment Variable" by @karthicksndr
-*   **分析:** 该 PR 提议引入 `MCP_REGISTRY_CUSTOM_MCP_REGISTRY_URL` 环境变量，允许用户自定义 MCP Registry UI 的加载源，而非依赖硬编码的默认地址。这反映了社区对注册表系统灵活性和可部署性的强烈需求，用户可能希望在私有环境或使用自定义基础设施部署注册表。这是一个重要的功能增强，能显著提升 MCP Registry 的实用性和易用性。
+2.  **【Pull Request 近期更新】依赖项自动化更新：** Dependabot 机器人通过 [#1049](https://github.com/modelcontextprotocol/registry/pull/1049) 提交了依赖项更新 PR，将 `sigstore/cosign-installer` 和 `anchore/sbom-action` 相关的 GitHub Actions 组进行了升级。这类自动化更新对于维护项目的安全性和稳定性至关重要。
 
-### 2. 🧹 **清理与维护：移除过时服务入口**
-
-*   **Issue:** [#1050](https://github.com/modelcontextprotocol/registry/issues/1050) "Remove io.github.danioni/servicialo — migrated to com.servicialo/mcp-server" by @danioni
-*   **分析:** 社区成员 @danioni 提交 Issue 请求移除一个过时的服务入口。该服务已迁移至新的、经过验证的命名空间 `com.servicialo/mcp-server`。这表明 MCP Registry 正在积极维护其注册表，移除无效或重复条目，确保信息的准确性和时效性，是项目健康运行的关键环节。
-
-### 3. 🤖 **依赖安全：自动化依赖更新**
-
-*   **PR:** [#1049](https://github.com/modelcontextprotocol/registry/pull/1049) "build(deps): bump the actions group with 2 updates" by @dependabot[bot]
-*   **分析:** Dependabot 自动发起了依赖更新 PR，将 `sigstore/cosign-installer` 和 `anchore/sbom-action` 这两个 GitHub Actions 依赖更新至最新版本。这类 PR 是项目安全和稳定性的重要保障，通过及时更新依赖，可以修复已知的安全漏洞，并引入最新的功能和性能优化。
+3.  **【Pull Request 近期更新】支持自定义 Registry URL：** Pull Request [#949](https://github.com/modelcontextprotocol/registry/pull/949) 引入了通过环境变量 `MCP_REGISTRY_CUSTOM_MCP_REGISTRY_URL` 自定义 MCP Registry UI 加载源的功能。该 PR 虽然建立时间较早，但近期 ([2026-03-10](https://github.com/modelcontextprotocol/registry/pull/949)) 再次被更新，显示出社区对该功能的高度关注和对更灵活部署选项的期待。
 
 ---
 
 ## 其他动态
 
-*   **Issues 动态:**
-    *   [#1050](https://github.com/modelcontextprotocol/registry/issues/1050) 状态为 `open`，表明此清理请求正在等待处理。
+*   **Issues:**
+    *   今天新建了 Issue [#1050](https://github.com/modelcontextprotocol/registry/issues/1050)，详情请见核心动态摘要。
 
-*   **Pull Requests 动态:**
-    *   [#1049](https://github.com/modelcontextprotocol/registry/pull/1049) (依赖更新) 状态为 `open`，正在等待审查和合并。
-    *   [#949](https://github.com/modelcontextprotocol/registry/pull/949) (自定义 URL) 状态为 `open`，是今日社区贡献的亮点。
+*   **Pull Requests:**
+    *   Pull Request [#1049](https://github.com/modelcontextprotocol/registry/pull/1049) （依赖项更新）已于今日 ([2026-03-10](https://github.com/modelcontextprotocol/registry/pull/1049)) 被更新，详情请见核心动态摘要。
+    *   Pull Request [#949](https://github.com/modelcontextprotocol/registry/pull/949) （支持自定义 MCP Registry URL）在近期 ([2026-03-10](https://github.com/modelcontextprotocol/registry/pull/949)) 得到更新，详情请见核心动态摘要。
 
 ---
 
-**总结:** 今日 MCP Registry 项目的活动集中在社区驱动的功能增强（自定义 URL 支持）和持续的项目维护（移除旧服务、更新依赖）。这些动态共同描绘了一个活跃且注重稳定性的开源生态。
+## 社区关注点分析
+
+从今日的动态来看，社区的主要关注点集中在：
+
+1.  **注册表维护与清理：** Issue [#1050](https://github.com/modelcontextprotocol/registry/issues/1050) 反映了用户对注册表中过时信息的清理需求，这对于保持 MCP 生态系统的健康发展至关重要。
+2.  **自动化与流程优化：** Dependabot 自动更新依赖是项目维护效率的体现，也是社区对新功能和安全补丁及时集成的期望。
+3.  **灵活性与可配置性：** Pull Request [#949](https://github.com/modelcontextprotocol/registry/pull/949) 的持续更新表明，用户希望 MCP Registry 能够提供更灵活的配置选项，以适应不同的部署场景和需求。
+
+---
+
+## 参考链接
+
+*   [#1050: Remove io.github.danioni/servicialo — migrated to com.servicialo/mcp-server](https://github.com/modelcontextprotocol/registry/issues/1050)
+*   [#1049: build(deps): bump the actions group with 2 updates](https://github.com/modelcontextprotocol/registry/pull/1049)
+*   [#949: Support for Custom MCP Registry URL via Environment Variable](https://github.com/modelcontextprotocol/registry/pull/949)
+
+</details>
+
+<details>
+<summary>MCP 官方 Servers — <a href="https://github.com/modelcontextprotocol/servers">modelcontextprotocol/servers</a></summary>
+
+# modelcontextprotocol/servers 技术日报
+
+**日期**: 2026-03-11 | **分组**: MCP 生态系统
+
+## 核心摘要
+
+今日，**modelcontextprotocol/servers** 项目在 **Issues** 和 **Pull Requests** 两个方面均有活跃表现。**Pull Requests** 方面，涌现了多个关于集成新服务的提案，尤其是 **Intercept**（一个开源的 MCP 策略执行代理）的两个 PR ([#3516](https://github.com/modelcontextprotocol/servers/pull/3516), [#3514](https://github.com/modelcontextprotocol/servers/pull/3514)) 以及 **Enrichr**（一个提供 43 个实用工具端点的 API）的 PR ([#3518](https://github.com/modelcontextprotocol/servers/pull/3518))，显示出社区积极扩展 MCP 生态系统的趋势。**Issues** 方面，关于文件系统服务器行为一致性的问题 ([#3517](https://github.com/modelcontextprotocol/servers/issues/3517), [#3508](https://github.com/modelcontextprotocol/servers/issues/3508)) 依然是社区关注的焦点，特别是跨平台兼容性和特定字符处理的 Bug。
+
+## 今日最值得关注的动态
+
+1.  **Intercept 策略执行代理的集成提案**：社区积极探索增强 MCP 服务安全性和可控性的方案。`@policylayer-dan` 和 `@s-a-m-a-i` 分别提交了关于集成 **Intercept** 的 Pull Request ([#3516](https://github.com/modelcontextprotocol/servers/pull/3516), [#3514](https://github.com/modelcontextprotocol/servers/pull/3514))，Intercept 作为一个开源的 MCP 策略执行代理，能够评估 `tools/call` 请求并根据 YAML 定义的策略进行转发。这表明社区对构建更安全、可审计的 AI Agent 工具调用框架有持续的兴趣。
+2.  **Enrichr 实用工具 API 的引入**：`@crisjonblvx` 提交了将 **Enrichr** 添加到第三方服务器列表的 PR ([#3518](https://github.com/modelcontextprotocol/servers/pull/3518))。Enrichr 提供 43 个实用的 AI Agent 工具端点，如验证、token 计算、QR 码生成等，这极大地丰富了 AI Agent 可用的工具集，有望提升 Agent 的能力和应用场景。
+3.  **文件系统服务器的跨平台兼容性挑战**：新创建的 Issue [#3517](https://github.com/modelcontextprotocol/servers/issues/3517) 指出了文件系统服务器在不同平台（Ubuntu, macOS, Windows）之间 glob 模式匹配结果不一致的问题。这与 Issue [#3508](https://github.com/modelcontextprotocol/servers/issues/3508) 中反应的 Windows 平台路径验证在包含空格或特殊字符时失败的问题一同，反映出文件系统服务器在跨平台兼容性和健壮性方面仍需进一步打磨。
+
+## Issues 分析
+
+今日共新创建 **3** 个 Issues：
+
+*   **[#3517](https://github.com/modelcontextprotocol/servers/issues/3517)** 报告了一个关键的跨平台 bug，文件系统服务器的 glob 模式匹配在不同操作系统上存在不一致性，这可能会影响需要精确文件匹配的 AI Agent 的行为。
+*   **[#3512](https://github.com/modelcontextprotocol/servers/issues/3512)** 提出为文件系统服务器的目录验证添加机器可读的启动错误信息。当前仅有人类可读的错误输出，不利于客户端分类和自动化故障排除。
+*   **[#3508](https://github.com/modelcontextprotocol/servers/issues/3508)** 报告了文件系统桌面扩展在 Windows 平台上，当子目录名包含空格或德语变音符号（ä, ö, ü, Ä, Ö, Ü）时，路径验证会失败。
+
+**近期更新/讨论**: Issue [#3508](https://github.com/modelcontextprotocol/servers/issues/3508) 的评论数已达到 1，表明该问题受到了初步的关注。
+
+## Pull Requests 分析
+
+今日共创建/更新 **10** 个 Pull Requests (含近期但今日更新的)：
+
+*   **新增集成与功能**:
+    *   `#3518` ([🆕 新建])：引入 **Enrichr**，一个提供 43 个实用工具端点的 API，增强 AI Agent 能力。
+    *   `#3516` ([🆕 新建])：集成 **Intercept**，一个开源的 MCP 策略执行代理，用于实现工具调用的安全策略。
+    *   `#3506` ([近3天])：将 **BoJ Server** 添加到社区服务器列表，该服务器提供 18 个能力域的统一 MCP 接口。
+    *   `#3507` ([🆕 新建])：将 **freshstate** 添加到社区服务器列表，该服务器用于跟踪文档新鲜度和维护跨文件一致性。
+    *   `#3479` ([本周])：添加 **Lead411 MCP connector**，允许用户通过 API Key 在 Claude 中访问 Lead411 功能。
+*   **Bug 修复与改进**:
+    *   `#3515` ([🆕 新建]) / `#3509` ([🆕 新建])：分别由 `@anshul-garg27` 和 `@echo-lumen` 提交，旨在解决 `mcp-server-fetch` 在解析 malformed JSON-RPC 输入时崩溃的问题（Fixes [#3359](https://github.com/modelcontextprotocol/servers/issues/3359)）。
+    *   `#3513` ([🆕 新建])：与 Issue [#3512](https://github.com/modelcontextprotocol/servers/issues/3512) 关联，为文件系统服务器的启动验证添加结构化错误信息。
+    *   `#3505` ([近3天])：对文件系统服务器进行加固，强制执行只读能力边界，禁用破坏性操作。
+*   **文档更新**:
+    *   `#3491` ([近3天])：改进 **git** 和 **memory** 服务器的工具描述，增加“何时使用”指导，以帮助 AI Agent 更好地选择工具。
+*   **README 更新**:
+    *   `#3511` ([🆕 新建]) / `#3510` ([🆕 新建])：`@ankurDelta4` 尝试更新 README 以添加 MCP360 平台，但 PR 指出目前不再接受直接修改 README 来添加服务器，推荐使用 [MCP Server Registry](https://github.com/modelcontextprotocol/registry)。
+
+**关闭 Pull Requests**:
+*   `#3514` ([🆕 新建])：关于 Intercept 的 PR，但状态为 `closed`。
+*   `#3509` ([🆕 新建])：关于 `mcp-server-fetch` 崩溃修复的 PR，状态为 `closed`。
+*   `#3510` ([🆕 新建])：关于 MCP360 平台 README 更新的 PR，状态为 `closed`。
+
+## 参考链接
+
+**Issues**:
+*   [#3517](https://github.com/modelcontextprotocol/servers/issues/3517)
+*   [#3512](https://github.com/modelcontextprotocol/servers/issues/3512)
+*   [#3508](https://github.com/modelcontextprotocol/servers/issues/3508)
+
+**Pull Requests**:
+*   [#3516](https://github.com/modelcontextprotocol/servers/pull/3516)
+*   [#3518](https://github.com/modelcontextprotocol/servers/pull/3518)
+*   [#3514](https://github.com/modelcontextprotocol/servers/pull/3514)
+*   [#3515](https://github.com/modelcontextprotocol/servers/pull/3515)
+*   [#3509](https://github.com/modelcontextprotocol/servers/pull/3509)
+*   [#3513](https://github.com/modelcontextprotocol/servers/pull/3513)
+*   [#3479](https://github.com/modelcontextprotocol/servers/pull/3479)
+*   [#3511](https://github.com/modelcontextprotocol/servers/pull/3511)
+*   [#3510](https://github.com/modelcontextprotocol/servers/pull/3510)
+*   [#3505](https://github.com/modelcontextprotocol/servers/pull/3505)
+*   [#3507](https://github.com/modelcontextprotocol/servers/pull/3507)
+*   [#3491](https://github.com/modelcontextprotocol/servers/pull/3491)
+*   [#3506](https://github.com/modelcontextprotocol/servers/pull/3506)
 
 </details>
 
@@ -308,4 +352,4 @@ Issues [#3512](https://github.com/modelcontextprotocol/servers/issues/3512) 和 
 ---
 
 > 本报告由 [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) 自动生成
-> 生成时间: 2026-03-11T02:34:42.001Z
+> 生成时间: 2026-03-11T04:05:50.094Z
