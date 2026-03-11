@@ -247,7 +247,10 @@ function updateQuickNav(reports: ManifestReport[]): void {
   nav.innerHTML = reports
     .map((r) => {
       const slug = r.file.replace(/\.md$/, "");
-      return `<button class="quick-nav-item" data-section="${slug}" title="${r.label}">${r.emoji}</button>`;
+      return `<button class="quick-nav-item" data-section="${slug}">
+        <span class="qn-emoji">${r.emoji}</span>
+        <span class="qn-label">${r.label}</span>
+      </button>`;
     })
     .join("");
 
