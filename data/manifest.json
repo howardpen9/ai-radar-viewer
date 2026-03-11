@@ -1,6 +1,41 @@
 {
-  "generated": "2026-03-10T14:43:48.259Z",
+  "generated": "2026-03-11T02:35:53.688Z",
   "dates": [
+    {
+      "date": "2026-03-11",
+      "reports": [
+        {
+          "file": "ai-coding",
+          "label": "AI 编码工具",
+          "emoji": "🛠️"
+        },
+        {
+          "file": "ai-hn",
+          "label": "Hacker News AI",
+          "emoji": "📰"
+        },
+        {
+          "file": "ai-mcp",
+          "label": "MCP 生态系统",
+          "emoji": "🔌"
+        },
+        {
+          "file": "ai-openclaw",
+          "label": "OpenClaw 生态系统",
+          "emoji": "🦞"
+        },
+        {
+          "file": "ai-trending",
+          "label": "GitHub 趋势",
+          "emoji": "📈"
+        },
+        {
+          "file": "ai-web",
+          "label": "官网动态",
+          "emoji": "🌐"
+        }
+      ]
+    },
     {
       "date": "2026-03-10",
       "reports": [
@@ -11,8 +46,8 @@
         },
         {
           "file": "ai-hn",
-          "label": "ai-hn",
-          "emoji": "📄"
+          "label": "Hacker News AI",
+          "emoji": "📰"
         },
         {
           "file": "ai-mcp-servers",
