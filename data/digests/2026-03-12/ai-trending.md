@@ -2,33 +2,33 @@
 
 # GitHub AI 趋势日报
 
-**日期:** 2026-03-12
+**日期**: 2026-03-12
 
-## 1. 项目多维分类
+## 1. AI 项目多维分类概览
 
 | 项目 | 主要分类 | 次要分类 |
 |---|---|---|
 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [666ghj/MiroFish](https://github.com/666ghj/MiroFish) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
+| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [obra/superpowers](https://github.com/obra/superpowers) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 📱 AI 应用 | 🔧 AI 基础工具 |
 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
 | [alibaba/page-agent](https://github.com/alibaba/page-agent) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [AstrBotDevs/AstrBot](https://github.com/AstrBotDevs/AstrBot) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
 | [ollama/ollama](https://github.com/ollama/ollama) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
 | [huggingface/transformers](https://github.com/huggingface/transformers) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| [f/prompts.chat](https://github.com/f/prompts.chat) | 📱 AI 应用 | 🤖 AI 智能体/工作流 |
+| [f/prompts.chat](https://github.com/f/prompts.chat) | 📱 AI 应用 | 🔍 RAG/知识库 |
 | [langgenius/dify](https://github.com/langgenius/dify) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [open-webui/open-webui](https://github.com/open-webui/open-webui) | 📱 AI 应用 | 🔧 AI 基础工具 |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 🔧 AI 基础工具 | 🔍 RAG/知识库 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
 | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [browser-use/browser-use](https://github.com/browser-use/browser-use) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
 | [vllm-project/vllm](https://github.com/vllm-project/vllm) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
+| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | 📱 AI 应用 | 🔧 AI 基础工具 |
@@ -36,8 +36,8 @@
 | [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
 | [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [googleworkspace/cli](https://github.com/googleworkspace/cli) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
+| [googleworkspace/cli](https://github.com/googleworkspace/cli) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
 | [trycua/cua](https://github.com/trycua/cua) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [e2b-dev/E2B](https://github.com/e2b-dev/E2B) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
@@ -49,33 +49,33 @@
 | [presenton/presenton](https://github.com/presenton/presenton) | 📱 AI 应用 | 🔧 AI 基础工具 |
 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
 | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [upstash/context7](https://github.com/upstash/context7) | 🔌 MCP/协议 | 🔧 AI 基础工具 |
+| [upstash/context7](https://github.com/upstash/context7) | 🔧 AI 基础工具 | 🔌 MCP/协议 |
 | [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
 | [D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling) | 🔧 AI 基础工具 | 🔌 MCP/协议 |
-| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 😇 MCP/协议 | 🔧 AI 基础工具 |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | 🔌 MCP/协议 | 🔧 AI 基础工具 |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
 | [oraios/serena](https://github.com/oraios/serena) | 🔧 AI 基础工具 | 🔌 MCP/协议 |
 | [ruvnet/ruflo](https://github.com/ruvnet/ruflo) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
-| [1Panel-dev/MaxKB](https://github.com/1Panel-dev/MaxKB) | 🤖 AI 智能体/工作流 | 🔍 RAG/知识库 |
+| [1Panel-dev/MaxKB](https://github.com/1Panel-dev/MaxKB) | 🔍 RAG/知识库 | 🔌 MCP/协议 |
 | [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | 🔌 MCP/协议 | 🔧 AI 基础工具 |
 | [czlonkowski/n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
-| [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [xpzouying/xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) | 🔌 MCP/协议 | 🤖 AI 智能体/工作流 |
-| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 📱 AI 应用 | 🔍 RAG/知识库 |
+| [triggerdotdev/trigger.dev](https://github.com/triggerdotdev/trigger.dev) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
+| [xpzouying/xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) | 🤖 AI 智能体/工作流 | 🔌 MCP/协议 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
 | [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
 | [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
 | [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | 🤖 AI 智能体/工作流 | 🔍 RAG/知识库 |
 | [mem0ai/mem0](https://github.com/mem0ai/mem0) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | 🤖 AI 智能体/工作流 | 📱 AI 应用 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
+| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | 🔍 RAG/知识库 | 📱 AI 应用 |
 | [milvus-io/milvus](https://github.com/milvus-io/milvus) | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
 | [mindsdb/mindsdb](https://github.com/mindsdb/mindsdb) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
-| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 🔍 RAG/知识库 | 🤖 AI 智能体/工作流 |
+| [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 🔍 RAG/知识库 | 🔧 AI 基础工具 |
 | [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| [mindfold-ai/Trellis](https://github.com/mindfold-ai/Trellis) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| [tw93/Kaku](https://github.com/tw93/Kaku) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
+| [zilliztech/claude-context](https://github.com/zilliztech/claude-context) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
+| [mindfold-ai/Trellis](https://github.com/mindfold-ai/Trellis) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
+| [tw93/Kaku](https://github.com/tw93/Kaku) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [chaitin/MonkeyCode](https://github.com/chaitin/MonkeyCode) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [maxritter/pilot-shell](https://github.com/maxritter/pilot-shell) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
@@ -84,22 +84,24 @@
 | [njbrake/agent-of-empires](https://github.com/njbrake/agent-of-empires) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [DeepMyst/Mysti](https://github.com/DeepMyst/Mysti) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
 | [study8677/antigravity-workspace-template](https://github.com/study8677/antigravity-workspace-template) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
-| [dyoshikawa/rulesync](https://github.com/dyoshikawa/rulesync) | 🔧 AI 基础工具 | 🤖 AI 智能体/工作流 |
-| [The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow) | 🧠 大模型/训练 | 🤖 AI 智能体/工作流 |
+| [dyoshikawa/rulesync](https://github.com/dyoshikawa/rulesync) | 🤖 AI 智能体/工作流 | 🔧 AI 基础工具 |
+| [The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
 | [open-compass/opencompass](https://github.com/open-compass/opencompass) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [0xPlaygrounds/rig](https://github.com/0xPlaygrounds/rig) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
 | [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [genieincodebottle/generative-ai](https://github.com/genieincodebottle/generative-ai) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| [Y-Research-SBU/PosterGen](https://github.com/Y-Research-SBU/PosterGen) | 🧠 大模型/训练 | 📱 AI 应用 |
+| [Y-Research-SBU/PosterGen](https://github.com/Y-Research-SBU/PosterGen) | 📱 AI 应用 | 🧠 大模型/训练 |
 | [testtimescaling/testtimescaling.github.io](https://github.com/testtimescaling/testtimescaling.github.io) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [multimindlab/multimind-sdk](https://github.com/multimindlab/multimind-sdk) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
-| [ngl567/KGR-Survey](https://github.com/ngl567/KGR-Survey) | 🧠 大模型/训练 | 🔍 RAG/知识库 |
+| [ngl567/KGR-Survey](https://github.com/ngl567/KGR-Survey) | 🧠 大模型/训练 | N/A |
 | [xuyang-liu16/VidCom2](https://github.com/xuyang-liu16/VidCom2) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
-| [HKBU-LAGAS/Awesome-Item-ID-Gen-RecSys](https://github.com/HKBU-LAGAS/Awesome-Item-ID-Gen-RecSys) | 🧠 大模型/训练 | 📱 AI 应用 |
-| [raw-labs/mxcp](https://github.com/raw-labs/mxcp) | 🔧 AI 基础工具 | 🔌 MCP/协议 |
+| [HKBU-LAGAS/Awesome-Item-ID-Gen-RecSys](https://github.com/HKBU-LAGAS/Awesome-Item-ID-Gen-RecSys) | 🧠 大模型/训练 | N/A |
+| [raw-labs/mxcp](https://github.com/raw-labs/mxcp) | 🔧 AI 基础工具 | 🧠 大模型/训练 |
 | [whitecircle-ai/circle-guard-bench](https://github.com/whitecircle-ai/circle-guard-bench) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [R-D-BioTech-Alaska/Qelm](https://github.com/R-D-BioTech-Alaska/Qelm) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
 | [Ask-Sage/AskSage-Open-Source-Community](https://github.com/Ask-Sage/AskSage-Open-Source-Community) | 🧠 大模型/训练 | 🔧 AI 基础工具 |
+
+---
 
 ## 2. 各维度热门项目
 
@@ -107,86 +109,110 @@
 
 | 项目 | Stars | 一句话说明 |
 |---|---|---|
-| [ollama/ollama](https://github.com/ollama/ollama) | ⭐164,877 (+164,877 today) | Get up and running with Kimi-K2.5, GLM-5, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. |
-| [huggingface/transformers](https://github.com/huggingface/transformers) | ⭐157,760 (+157,760 today) | 🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. |
-| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | ⭐91,422 (+91,422 today) | 🔥 The Web Data API for AI - Turn entire websites into LLM-ready markdown or structured data |
-| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ⭐72,864 (+72,864 today) | A high-throughput and memory-efficient inference and serving engine for LLMs |
-| [affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code) | ⭐72,045 (+72,045 today) | The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond. |
+| [ollama/ollama](https://github.com/ollama/ollama) | ⭐164,886 (+164,886) | 快速启动 Kimi-K2.5、GLM-5、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等模型。 |
+| [vllm-project/vllm](https://github.com/vllm-project/vllm) | ⭐72,877 (+72,877) | 高吞吐量、内存高效的 LLM 推理与服务引擎。 |
+| [firecrawl/firecrawl](https://github.com/firecrawl/firecrawl) | ⭐91,491 (+91,491) | 🔥 面向 AI 的 Web 数据 API - 将整个网站转换为 LLM 就绪的 Markdown 或结构化数据。 |
+| [open-webui/open-webui](https://github.com/open-webui/open-webui) | ⭐126,792 (+126,792) | 用户友好的 AI 界面（支持 Ollama, OpenAI API, ...）。 |
+| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | ⭐129,194 (+129,194) | Agent 工程平台。 |
+| [langgenius/dify](https://github.com/langgenius/dify) | ⭐132,397 (+132,397) | 生产级的 Agent 工作流开发平台。 |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | ⭐157,767 (+157,767) | 🤗 Transformers：用于文本、视觉、音频和多模态模型的 SOTA 机器学习模型定义框架，支持推理和训练。 |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | ⭐178,752 (+178,752) | 具有原生 AI 功能的 Fair-code 工作流自动化平台。 |
 
 ### 🤖 AI 智能体/工作流
 
 | 项目 | Stars | 一句话说明 |
 |---|---|---|
-| [langgenius/dify](https://github.com/langgenius/dify) | ⭐132,376 (+132,376 today) | Production-ready platform for agentic workflow development. |
-| [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | ⭐129,180 (+129,180 today) | The agent engineering platform |
-| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | ⭐42,135 (+42,135 today) | CowAgent是基于大模型的超级AI助理，能主动思考和任务规划、访问操作系统和外部资源、创造和执行Skills、拥有长期记忆并不断成长。同时支持飞书、钉钉、企业微信应用、微信公众号、网页等接入，可选择OpenAI/Claude/Gemini/DeepSeek/ Qwen/GLM/Kimi/LinkAI，能处理文本、语音、图片和文件，可快速搭建个人AI助手和企业数字员工。 |
-| [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) | ⭐41,262 (+41,262 today) | AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs |
-| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | ⭐29,291 (+29,291 today) | The Frontend for Agents & Generative UI. React + Angular |
-
-### 📱 AI 应用
-
-| 项目 | Stars | 一句话说明 |
-|---|---|---|
-| [f/prompts.chat](https://github.com/f/prompts.chat) | ⭐151,478 (+151,478 today) | f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy. |
-| [open-webui/open-webui](https://github.com/open-webui/open-webui) | ⭐126,776 (+126,776 today) | User-friendly AI Interface (Supports Ollama, OpenAI API, ...) |
-| [Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm) | ⭐56,076 (+56,076 today) | The all-in-one AI productivity accelerator. On device and privacy first with no annoying setup or configration. |
-| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | ⭐101,642 (+101,642 today) | Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models. |
-| [jeecgboot/JeecgBoot](https://github.com/jeecgboot/JeecgBoot) | ⭐45,380 (+45,380 today) | 【AI低代码平台】“低代码+零代码”双模驱动AI智能平台 AI low-code platform empowers enterprises to quickly develop low-code solutions and build AI applications. AI应用平台涵盖：AI应用、AI模型、AI聊天助手、知识库、AI流程编排、MCP和插件，聊天式业务操作等。 强大代码生成器：实现前后端一键生成，无需手写代码! 显著提升效率节省成本，又不失灵活~ |
+| [alibaba/page-agent](https://github.com/alibaba/page-agent) | ⭐0 (+1215) | JavaScript 页面内 GUI Agent。使用自然语言控制 Web 界面。 |
+| [obra/superpowers](https://github.com/obra/superpowers) | ⭐0 (+1483) | 有效的 Agent 技能框架和软件开发方法论。 |
+| [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) | ⭐0 (+6167) | 完整的 AI Agent 生态系统 - 从前端到社区管理，提供各种专业 Agent。 |
+| [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | ⭐0 (+1234) | 伴随你成长的 Agent。 |
+| [CopilotKit/CopilotKit](https://github.com/CopilotKit/CopilotKit) | ⭐29,294 (+29,294) | Agent 和 Generative UI 的前端。React + Angular。 |
+| [cherry-studio/cherry-studio](https://github.com/CherryHQ/cherry-studio) | ⭐41,275 (+41,275) | 具备智能聊天、自主 Agent 和 300+ 助手的 AI 生产力工作室。统一访问前沿 LLM。 |
+| [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat) | ⭐42,140 (+42,140) | CowAgent 是一个基于大模型的超级 AI 助理，能主动思考、任务规划、访问资源、执行 Skills、拥有长期记忆并不断成长。 |
+| [activepieces/activepieces](https://github.com/activepieces/activepieces) | ⭐21,179 (+21,179) | AI Agents & MCPs & AI Workflow Automation. |
+| [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | ⭐16,566 (+16,566) | Kilo 是全栈式 Agent 工程平台，是开源代码 Agent 中最受欢迎的。 |
+| [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | ⭐6,271 (+6,271) | CLI 代理，可将常见开发命令的 LLM token 消耗降低 60-90%。 |
 
 ### 🧠 大模型/训练
 
 | 项目 | Stars | 一句话说明 |
 |---|---|---|
-| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ⭐87,721 (+87,721 today) | Implement a ChatGPT-like LLM in PyTorch from scratch, step by step |
-| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | ⭐68,222 (+68,222 today) | Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024) |
-| [open-compass/opencompass](https://github.com/open-compass/opencompass) | ⭐6,745 (+6,745 today) | OpenCompass is an LLM evaluation platform, supporting a wide range of models (Llama3, Mistral, InternLM2,GPT-4,LLaMa2, Qwen,GLM, Claude, etc) over 100+ datasets. |
-| [The-Pocket/PocketFlow](https://github.com/The-Pocket/PocketFlow) | ⭐10,181 (+10,181 today) | Pocket Flow: 100-line LLM framework. Let Agents build Agents! |
-| [skyzh/tiny-llm](https://github.com/skyzh/tiny-llm) | ⭐3,924 (+3,924 today) | A course of learning LLM inference serving on Apple Silicon for systems engineers: build a tiny vLLM + Qwen. |
+| [open-compass/opencompass](https://github.com/open-compass/opencompass) | ⭐6,746 (+6,746) | LLM 评估平台，支持 Llama3, Mistral, InternLM2, GPT-4, LLaMa2, Qwen, GLM, Claude 等多种模型及 100+ 数据集。 |
+| [hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory) | ⭐68,231 (+68,231) | 统一高效的 100+ LLM & VLM 微调。 |
+| [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | ⭐87,741 (+87,741) | 从零开始，一步步用 PyTorch 实现类似 ChatGPT 的 LLM。 |
+| [huggingface/transformers](https://github.com/huggingface/transformers) | ⭐157,767 (+157,767) | 🤗 Transformers：为文本、视觉、音频和多模态模型设计的 SOTA 机器学习模型框架。 |
 
 ### 🔍 RAG/知识库
 
 | 项目 | Stars | 一句话说明 |
 |---|---|---|
-| [infiniflow/ragflow](https://github.com/infiniflow/ragflow) | ⭐74,786 (+74,786 today) | RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs |
-| [PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) | ⭐72,066 (+72,066 today) | Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit that bridges the gap between images/PDFs and LLMs. Supports 100+ languages. |
-| [dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | ⭐71,452 (+71,452 today) | 🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents. |
-| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | ⭐50,629 (+50,629 today) | Build AI Agents, Visually |
-| [mem0ai/mem0](https://github.com/mem0ai/mem0) | ⭐49,453 (+49,453 today) | Universal memory layer for AI Agents |
+| [mem0ai/mem0](https://github.com/mem0ai/mem0) | ⭐49,476 (+49,476) | AI Agent 的通用记忆层。 |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | ⭐47,602 (+47,602) | LlamaIndex 是领先的文档 Agent 和 OCR 平台。 |
+| [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) | ⭐50,635 (+50,635) | 可视化构建 AI Agent。 |
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | ⭐43,321 (+43,321) | 高性能、云原生向量数据库，专为可扩展向量 ANN 搜索而设计。 |
+| [Shubhamsaboo/awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | ⭐101,655 (+101,655) | 使用 OpenAI、Anthropic、Gemini 和开源模型的 LLM 应用集锦，包含 AI Agent 和 RAG。 |
 
 ### 🔌 MCP/协议
 
 | 项目 | Stars | 一句话说明 |
 |---|---|---|
-| [n8n-io/n8n](https://github.com/n8n-io/n8n) | ⭐178,735 (+178,735 today) | Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations. |
-| [upstash/context7](https://github.com/upstash/context7) | ⭐48,613 (+48,613 today) | Context7 Platform -- Up-to-date code documentation for LLMs and AI code editors |
-| [bytedance/UI-TARS-desktop](https://github.com/bytedance/UI-TARS-desktop) | ⭐28,752 (+28,752 today) | The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra |
-| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | ⭐28,521 (+28,521 today) | Chrome DevTools for coding agents |
-| [github/github-mcp-server](https://github.com/github/github-mcp-server) | ⭐27,784 (+27,784 today) | GitHub's official MCP Server |
+| [microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners) | ⭐15,327 (+15,327) | 针对开发者的开源课程，通过实际跨语言示例介绍 Model Context Protocol (MCP) 基础。 |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | ⭐27,792 (+27,792) | GitHub 官方的 MCP Server。 |
+| [ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | ⭐28,548 (+28,548) | 针对代码 Agent 的 Chrome DevTools。 |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | ⭐97,320 (+97,320) | 将 Gemini 能力直接引入终端的开源 AI Agent。 |
+| [n8n-io/n8n](https://github.com/n8n-io/n8n) | ⭐178,752 (+178,752) | 具有原生 AI 功能的 Fair-code 工作流自动化平台。 |
+
+---
 
 ## 3. 趋势分析
 
 ### 技术方向分析
-当前 AI 开源生态呈现出以下几个主要的技术发展方向：
 
-1.  **AI Agent 的普及与深化**: agent-agent 框架 ([msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents), [obra/superpowers](https://github.com/obra/superpowers), [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)) 以及其在各类应用场景中的落地 ([zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat), [CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)) 依然是焦点。尤其是一些能够控制浏览器 ([alibaba/page-agent](https://github.com/alibaba/page-agent))、桌面 ([trycua/cua](https://github.com/trycua/cua)) 或与操作系统交互的 Agent 框架，显示出 Agent 向更广阔的真实世界应用迈进的趋势。
-2.  **RAG 与知识库整合**: 检索增强生成 (RAG) 技术持续火热，[infiniflow/ragflow](https://github.com/infiniflow/ragflow) 和 [FlowiseAI/Flowise](https://github.com/FlowiseAI/Flowise) 等项目展示了将知识库与 LLM 集成的能力。向量数据库 ([milvus-io/milvus](https://github.com/milvus-io/milvus)) 作为 RAG 的核心组件，也保持着较高的活跃度。
-3.  **模型推理与优化**: LLM 推理引擎 ([vllm-project/vllm](https://github.com/vllm-project/vllm)) 以及模型的本地化运行 ([ollama/ollama](https://github.com/ollama/ollama)) 依然是开发者关注的热点，这表明了对模型效率和可访问性的追求。
-4.  **Prompt Engineering 与 Agent Tools**: Prompt Engineering 相关的指南 ([dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)) 持续受到关注，同时，能够测试和管理 Prompt 的工具 ([promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)) 也在兴起。
-5.  **MCP/协议的标准化探索**: Model Context Protocol (MCP) 相关的服务器 ([github/github-mcp-server](https://github.com/github/github-mcp-server)) 和工具 ([microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners)) 出现，显示出行业在 AI 组件互操作性方面的初步探索。
+本次 GitHub AI 趋势数据呈现出以下几个主要的技术方向：
+
+1.  **AI Agent 的蓬勃发展与生态构建**:
+    *   **Agent 框架与编排**: `langchain-ai/langchain`, `langgenius/dify`, `activepieces/activepieces`, `FlowiseAI/Flowise` 等项目持续火爆，表明社区对构建、管理和编排 AI Agent 的需求强劲。特别是 `dify` 和 `Flowise` 提供了相对较低门槛的 Agent 开发体验。
+    *   **Agent 工具与基础设施**: `ollama/ollama` 提供了一个便捷的本地 LLM 运行环境，极大地降低了 Agent 开发的门槛。`vllm-project/vllm` 则专注于高性能推理，为 Agent 的大规模部署提供了技术支撑。`alibaba/page-agent` 和 `obra/superpowers` 等项目展示了 Agent 在实际应用场景中的具体实现和方法论。
+    *   **Agent 的能力拓展**: `infiniflow/ragflow` 和 `mem0ai/mem0` 等项目强调了 RAG 和记忆能力对于 Agent 的重要性，预示着 Agent 将越来越具备更强的上下文理解和信息检索能力。
+
+2.  **LLM 应用与工具链的日趋成熟**:
+    *   **用户界面与交互**: `open-webui/open-webui` 提供了用户友好的 LLM 交互界面，便于普通用户和开发者体验 LLM。
+    *   **模型运行与管理**: `ollama/ollama` 成为本地运行各类开源 LLM 的首选工具，其易用性是关键。
+    *   **Prompt 工程与评估**: `promptfoo/promptfoo` 提供了对 Prompts 和 Agent 进行测试和评估的强大工具，这对于保证 LLM 应用的稳定性和效果至关重要。
+
+3.  **MCP（Model Context Protocol）的兴起**:
+    *   `github/github-mcp-server`, `ChromeDevTools/chrome-devtools-mcp`, `microsoft/mcp-for-beginners` 等项目表明，MCP 作为一种用于 AI Agent 之间或 Agent 与环境之间通信和上下文传递的协议，正在逐渐获得关注和落地。这有望为复杂的 AI 系统提供更标准化的互操作性。
+
+4.  **MLOps 与 模型训练/微调**:
+    *   `huggingface/transformers` 作为基础框架依然稳居前列。
+    *   `hiyouga/LlamaFactory` 专注于 LLM 的微调效率，反映了定制化模型的需求。
+    *   `open-compass/opencompass` 则提供了对模型进行综合评估的平台，支持多模型和多数据集，这对于模型选型和优化至关重要。
 
 ### 新兴趋势信号
-*   **AI Agent 的“具身化”**: 能够控制浏览器 UI ([alibaba/page-agent](https://github.com/alibaba/page-agent))、桌面 ([trycua/cua](https://github.com/trycua/cua)) 甚至更复杂的真实世界交互（如 [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) 的描述）的 Agent 项目数量在增加。
-*   **Prompt 测试与评估工具**: [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) 的流行预示着对 LLM 应用进行科学测试和迭代的需求日益增长。
-*   **MCP/协议的涌现**: 尽管相对早期，但 MCP Server 和相关工具的出现，表明社区正在尝试解决 AI Agents 在不同平台和系统间的通信和集成问题。
+
+1.  **Agent 的“全能化”与“自动化”**: `msitarzewski/agency-agents` 和 `666ghj/MiroFish` 的快速崛起，表明社区对能够处理复杂任务、具备多种技能的“超级 Agent”或“万能 Agent”充满兴趣。这些项目试图构建一个能够自主规划、执行并达成目标的 Agent 集合。
+2.  **Web 交互 Agent 的兴起**: `alibaba/page-agent` 能够用自然语言控制 Web 界面，预示着 Agent 在自动化 Web 操作、爬虫、UI 测试等领域的应用潜力巨大。
+3.  **Rust 在 AI 工具链中的应用**: 虽然 Python 仍是主流，但 `googleworkspace/cli` (Rust) 和 `rtk-ai/rtk` (Rust) 的出现，表明 Rust 凭借其高性能和安全性，开始在 AI CLI 工具、代理等领域崭露头角。
+4.  **MCP 标准化初步显现**: 多个项目（包括微软、GitHub、Google Gemini 团队）都在探索或实现 MCP，这可能预示着未来 AI Agent 之间或 Agent 与外部环境交互会走向更加标准化的协议。
 
 ### 值得关注的项目
-1.  **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** (Shell) - **新上榜/trending**: 这个项目以其“完整的 AI 代理”的愿景吸引了大量关注。它集成了前端、社区管理、创意和现实检验等多种 agent，预示着构建更复杂、多功能的 AI Agent 系统的方向。其 Shell 语言的实现也值得关注。
-2.  **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** (TypeScript) - **新上榜/trending**: Prompt Engineering 的重要性不言而喻，而 [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) 提供了一个非常实用的工具来测试、评估和比较不同 LLM 在特定 Prompt 下的表现。这对于开发者优化 LLM 应用至关重要。
-3.  **[alibaba/page-agent](https://github.com/alibaba/page-agent)** (TypeScript) - **新上榜/trending**: 这个项目专注于 JavaScript in-page GUI agent，允许用户通过自然语言控制 Web 界面。这标志着 AI Agent 在 Web 自动化和用户交互方面的巨大潜力，尤其适用于低代码平台和辅助用户进行复杂 Web 操作。
-4.  **[ollama/ollama](https://github.com/ollama/ollama)** (Go) - **持续热门**: Ollama 持续保持着极高的热度，它使得在本地高效运行和管理各种开源 LLM 变得前所未有的简单。这为开发者提供了极大的便利，降低了实验和部署 LLM 的门槛，尤其是在模型推理和可访问性方面。
-5.  **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** (Python) - **持续热门**: 作为 RAG 领域的佼佼者，ragflow 不仅提供了强大的检索增强能力，还融合了 Agent 的能力。这表明了 RAG 不再仅仅是简单的知识检索，而是向更智能的、能够执行任务的语境层演进。
+
+1.  **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** (Shell)
+    *   **理由**: 作为 `trending` 榜单中的新星，其增长势头迅猛。它代表了一种“AI 代理公司”的理念，将多种专业 Agent 集成，解决复杂问题。这符合了当前对更强大、更自主 AI Agent 的需求。其 Shell 语言的实现也相对独特，值得关注其底层设计。
+
+2.  **[alibaba/page-agent](https://github.com/alibaba/page-agent)** (TypeScript)
+    *   **理由**: 该项目专注于让 AI Agent 能够“理解”并“操作”Web 页面。这解决了 AI Agent 在 Web 自动化、UI 交互等领域的一大痛点。未来，这类技术可能极大地推动 Web 自动化和 RPA 的发展，并为 Agent 提供更广泛的应用场景。
+
+3.  **[promptfoo/promptfoo](https://github.com/promptfoo/promptfoo)** (TypeScript)
+    *   **理由**: 随着 AI Agent 和 LLM 应用的普及，Prompt 工程和 Agent 的测试、评估变得至关重要。`promptfoo` 提供了一个强大的、多模型的测试框架，支持红队测试和性能对比。对于任何严肃的 LLM 应用开发者来说，这是一个不可或缺的工具。
+
+4.  **[ollama/ollama](https://github.com/ollama/ollama)** (Go)
+    *   **理由**: `ollama` 极大地简化了本地运行各种大模型的过程，成为开发者和爱好者进行 LLM 和 Agent 开发的首选平台。其持续的更新和社区支持，使其成为 AI 开源生态中基础设施般的存在。
+
+5.  **[microsoft/mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners)** (Jupyter Notebook)
+    *   **理由**: MCP（Model Context Protocol）是 AI Agent 领域一个值得关注的标准化方向。微软推出的这个项目，通过易于理解的教程，向开发者介绍 MCP 的概念和应用。一旦 MCP 标准化成熟，将极大地促进不同 AI Agent 之间的互操作性和系统集成。
 
 ---
 
 > 本报告由 [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) 自动生成
-> 生成时间: 2026-03-12T00:47:43.599Z
+> 生成时间: 2026-03-12T03:04:20.853Z

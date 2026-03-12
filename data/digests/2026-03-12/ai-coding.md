@@ -2,39 +2,47 @@
 
 ## 横向对比
 
-# AI 编码工具 技术日报 - 2026-03-12
+好的，作为一名专注于 AI 开源生态的技术分析师，我将为您提供这份 AI 编码工具的横向对比分析日报。
+
+# AI 编码工具 横向对比分析
+
+**日期:** 2026-03-12
+
+---
 
 ## 1. 生态全景
 
-今日 AI 编码工具领域呈现出**快速迭代与用户反馈驱动改进**的双重态势。众多项目在新版本发布中持续优化核心功能，尤其是在**稳定性、性能和安全性**方面。社区的用户反馈则高度集中于**模型集成、认证授权、资源消耗（内存/速率限制）以及跨平台兼容性**等问题。同时，对**Agent 行为的精细控制、代码执行安全**的关注以及**交互式开发体验**的提升，也是开发者普遍的需求焦点。
+今日 AI 编码工具领域呈现出 **快速迭代与稳定性问题并存** 的态势。头部项目如 **OpenAI Codex** 和 **Claude Code** 都在积极发布新版本，前者以频繁的 Alpha 版本更新推动技术进步，后者则在 v2.1.74 版本中包含了重要的上下文建议和内存优化。然而，用户反馈集中在 **模型可用性、账户限制、连接稳定性** 等基础体验上，尤其是在 OpenAI Codex 中，付费用户对于新模型访问权限不明的关切尤为突出。同时，**Gemini CLI** 和 **OpenCode** 在 Agent 功能、UI 交互、扩展管理以及与各类 AI 模型 API 的高效、准确对接方面持续发力，展现了各自在 CLI 工具及生态整合上的深化。**Kimi K2.5** 和 **Memoh** 则分别在与其他开发工具的集成以及多模态、Web 终端支持上，显露出社区对更广泛应用场景和开发者体验优化的需求。
+
+---
 
 ## 2. 活跃度对比
 
-| 项目名称                 | 今日访问量 | 近期 Commit (7d) | 新建 Issues (24h) | 更新 Issues (24h) | 新建 PRs (24h) | 合并 PRs (24h) |
-| :----------------------- | :--------- | :--------------- | :---------------- | :---------------- | :------------- | :------------- |
-| [Claude Code](https://github.com/anthropics/claude-code) | 中高       | 中               | 较多              | 较多              | 较多           | 较多           |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 中         | 中高             | 较多              | 较多              | 较多           | 较多           |
-| [Kimi K2.5](https://github.com/MoonshotAI/Kimi-K2.5) | 低         | 低               | 1                 | 0                 | 0              | 0              |
-| [OpenAI Codex](https://github.com/openai/codex) | 高         | 高               | 较多              | 较多              | 较多           | 较多           |
-| [Memoh](https://github.com/memohai/Memoh) | 低         | 中               | 1                 | 1                 | 2              | 3              |
-| [OpenCode](https://github.com/sst/opencode) | 中高       | 中高             | 较多              | 较多              | 较多           | 较多           |
+| 项目名称 (GitHub 链接)        | 今日主要动态                                                                 | 新版本发布 | 社区活跃度 (Issues/PRs) |
+| :-------------------------- | :--------------------------------------------------------------------------- | :--------- | :---------------------- |
+| [OpenAI Codex](https://github.com/openai/codex) | 频繁发布 Alpha 版本；大规模用户关注 GPT-5.3/5.4 模型可用性及账户限制；持续的连接/性能问题 | 是 (Rust Alpha) | 高                      |
+| [Kimi K2.5](https://github.com/MoonshotAI/Kimi-K2.5) | 主要关注 Opencode 集成兼容性问题                                           | 否         | 中                      |
+| [Claude Code](https://github.com/anthropics/claude-code) | 发布 v2.1.74，含上下文建议及内存优化；大量 Issues 集中于认证/连接及内存泄漏问题      | 是 (v2.1.74) | 非常高                  |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | 关注 Agent 功能增强（如模型总结）、扩展安装幂等性、UI 交互优化（如设置对话框高度）       | 否         | 非常高                  |
+| [OpenCode](https://github.com/sst/opencode) | v1.2.24 版本更新后带来兼容性/会话加载问题；社区关注模型 API 兼容性、网络代理、UI 细节 | 是 (v1.2.24) | 非常高                  |
+| [Memoh](https://github.com/memohai/Memoh) | 发布 v0.4.3，修复数据恢复与索引效率；社区关注多模态支持、UI 问题及频道扩展             | 是 (v0.4.3)  | 高                      |
 
-*(注：访问量、Commit、Issues 和 PRs 等数据为基于 GitHub 活跃度的主观评估，非精确统计。)*
+---
 
 ## 3. 共同趋势
 
-*   **模型适配与兼容性探索**：多个项目（如 [OpenAI Codex](#), [OpenCode](#), [Gemini CLI](#), [Kimi K2.5](#)）的用户反馈和开发动态都显示出对集成不同 AI 模型（包括新版本模型如 GPT-5.3/5.4）及第三方平台的**兼容性**的高度关注。
-*   **认证与访问控制的挑战**：[Claude Code](#) 和 [OpenAI Codex](#) 的 Issues 中，用户普遍报告了认证失败、账号限制和使用问题，表明在用户管理、API 访问和模型可用性方面存在普遍性挑战。
-*   **性能与稳定性是持续关注点**：[Claude Code](#) 的内存泄漏和性能问题，[Gemini CLI](#) 的会话连续性，[OpenAI Codex](#) 的上下文压缩效率，[Memoh](#) 的数据恢复和索引机制，以及 [OpenCode](#) 的 Agent 行为异常，都反映了开发者对工具**可靠运行和高效性能**的持续需求。
-*   **安全沙箱与代码执行**：[Gemini CLI](#) 和 [OpenAI Codex](#) 的 PRs 中，关于沙箱机制的实现和加固，预示着对 AI 编码工具**执行环境安全**的重视程度正在提升。
+*   **Agent 功能的深化与优化**: Gemini CLI、OpenCode 和 Memoh 都显示出在 Agent 的核心能力、工具管理、多 Provider 支持、数据加载与保存机制上的持续投入。例如，Gemini CLI 正在探索使用轻量级模型进行工具描述总结；OpenCode 在 Agent 技能资源路径、状态管理上持续修复；Memoh 则在内存适配器重构支持多 Provider。
+*   **用户体验与稳定性是关键**: 尽管技术在进步，但稳定性问题（如 OpenAI Codex 和 Claude Code 的连接/内存问题，OpenCode 的新版本 Bug）和用户体验（如 Gemini CLI 的 UI 闪烁，OpenCode 的长文件名 UI 重叠）依然是社区最活跃的讨论点，直接影响用户粘性。
+*   **生态集成与扩展性**: Kimi K2.5 对 Opencode 集成的疑问、Memoh 对钉钉等第三方频道支持的 RFE，以及 Gemini CLI 和 OpenCode 在 CLI 和插件扩展方面的持续开发，都表明了 AI 编码工具正在努力融入更广泛的开发者生态，满足多样化的工作流需求。
+*   **模型 API 对接的精细化**: OpenAI Codex 对新模型的可用性调整，Claude Code 的认证问题，OpenCode 中 Kimi K2.5 的功能和成本问题，以及 Gemini CLI 中 API 配额误报，都反映了模型 API 层面的对接、适配和管理是当前的重要挑战。
+
+---
 
 ## 4. 值得关注
 
-1.  **OpenAI Codex 的 GPT-5.3/5.4 模型认证问题爆发**： [OpenAI Codex](#) 昨日出现大量用户反馈，在使用新版 GPT-5.3/5.4 模型时遇到“不支持 ChatGPT 账户”等认证和可用性问题（如 [#14331](https://github.com/openai/codex/issues/14331)）。这直接影响了用户对最新模型的使用体验，是当前最突出的用户痛点，可能需要 OpenAI 官方的紧急干预。
-2.  **Claude Code 与 Gemini CLI 在处理复杂交互和资源管理上的进展**：
-    *   [Claude Code](#) v2.1.74 版本新增了 `/context` 命令以提供“可操作建议”来诊断和解决内存问题（如 #33356, #33320, #32752），显示了其在主动提升用户诊断能力上的努力。
-    *   [Gemini CLI](#) 的 PR #21807 实现了 Windows 原生沙箱，同时 Epic #21792 及其相关 PRs 持续推进会话连续性和上下文压缩，表明其致力于解决长期交互的稳定性和效率问题。
-3.  **Memoh 的交互式 Web 终端 PR [#232](https://github.com/memohai/Memoh/pull/232) 的出现**：该新建 PR 为 Bot 容器提供了交互式 Web 终端支持，这极大地增强了开发者调试和管理 AI Agent 的能力，预示着 AI 编码工具正朝着更易于开发者交互和控制的方向发展。
+1.  **AI 模型的“黑箱”与用户信任危机（以 OpenAI Codex 为例）**: OpenAI Codex 项目中，用户对 GPT-5.3-Codex 和 GPT-5.4 模型在付费账户下的“不可用”情况表达了强烈的困惑和不满。这种缺乏透明度的模型访问策略，以及由此引发的“Why no communication?”的质疑，是影响用户对 AI 服务信任度和活跃度的重要因素。
+2.  **跨平台/多环境的“最后一公里”挑战 (以 Claude Code 和 Gemini CLI 为例)**: Claude Code 的多平台认证问题（如 Windows VS Code 扩展）以及 Gemini CLI 在 Windows 上的 UI 滚动闪烁问题，虽然产品功能强大，但在实际部署和使用中，这些跨平台兼容性上的“最后一公里”细节，直接影响用户的第一印象和长期体验。
+3.  **AI 编码工具的“能力边界”与社区期待 (以 Kimi K2.5/OpenCode/Memoh 为例)**: Kimi K2.5 对 Opencode 集成的疑问，OpenCode 对阿里云百炼 Kimi K2.5 功能的适配，Memoh 对多模态输入和第三方频道（如钉钉）的支持期待，都显现出当前 AI 编码工具在集成度、多模态能力和生态伙伴上的“能力边界”。社区正在通过 Issue 和 Feature Request，积极地为这些工具勾勒出更广阔的应用蓝图。
 
 ---
 
@@ -55,70 +63,208 @@
 </details>
 
 <details>
+<summary>OpenAI Codex — <a href="https://github.com/openai/codex">openai/codex</a></summary>
+
+# OpenAI Codex (openai/codex) 技术日报 - 2026-03-12
+
+## 概览
+
+今日，OpenAI Codex 项目发布了多个 alpha 版本，显示了其持续快速迭代的步伐。社区议题方面，用户对新模型（如 GPT-5.3-Codex 和 GPT-5.4）的可用性、付费账户限制、以及常见的“reconnecting”和“hanging”问题表达了强烈关注。同时，关于速率限制和团队/企业账户使用情况的讨论也较为活跃。
+
+## 重要动态
+
+### 1. 持续的 Alpha 版本发布，项目推进迅速
+
+今日，Codex 项目发布了多个 Rust 版本：
+*   [rust-v0.115.0-alpha.6](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6)
+*   [rust-v0.115.0-alpha.5](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.5)
+*   [rust-v0.115.0-alpha.4](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.4)
+*   [rust-v0.115.0-alpha.3](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.3)
+*   [rust-v0.114.0-alpha.7](https://github.com/openai/codex/releases/tag/rust-v0.114.0-alpha.7)
+
+这些频繁的 alpha 版本发布表明开发团队正积极地迭代和测试新功能，为未来正式版本的稳定发布奠定基础。
+
+### 2. GPT-5.3-Codex 和 GPT-5.4 模型可用性引发社区热议
+
+多个新创建的 Issues (#14331, #14306, #14412) 指出，GPT-5.3-Codex 和 GPT-5.4 模型在使用 ChatGPT 账户 (包括付费账户) 时出现“not supported”或“unavailable”的错误。用户对此表示困惑和不满，尤其是在 (#14238) 中，用户提问这些限制是永久性的吗？为什么付费用户受到影响？为何没有沟通？这反映出用户对模型访问权限和产品策略沟通透明度的关切。
+
+### 3. 重复出现的连接和性能问题仍是关注焦点
+
+Issue #14209 "The reconnecting issue is even worse than last days." 和 #14260 "stream disconnected before completion" 反映了部分用户持续遭遇应用连接不稳定和数据流中断的问题。此外，#14346 "Context Compaction Hanging" 和 #14342 "Compacting is getting stuck" 指出了在处理上下文时可能出现的性能瓶颈和卡顿现象。这些持续存在的问题表明，在用户体验的稳定性和流畅性方面，仍有优化空间。
+
+## 社区关注点分析
+
+*   **模型可用性与账户限制**: 关于 GPT-5.3-Codex 和 GPT-5.4 在不同账户类型（尤其是付费账户）下的可用性问题是当前最突出的焦点。用户希望获得清晰的解释和解决方案。
+*   **稳定性与性能**: "Reconnecting" 和 "hanging" 问题是用户反馈中的常客。这不仅影响用户的使用效率，也可能损害用户对产品的信任度。
+*   **速率限制与使用策略**: Issue #14349 和 #14329 提到了速率限制的突然下降以及团队/企业账户的使用重置问题，这表明用户对成本和资源使用的可预测性有较高要求。
+*   **沙箱与权限管理**: PR #14345、#14372、#1400 和 #14399 围绕沙箱行为、文件权限和访问控制展开。特别是关于沙箱策略变更可能引发的“regression”，以及对更精细化权限控制的需求，显示了安全和控制是开发者关注的重要方面。
+*   **CLI 与 Web 应用问题**: Issues 如 #14306、#14322、#14349 指出了 CLI 和 Web 应用中遇到的具体 bug，如认证错误、使用消耗异常等。
+
+## 参考链接
+
+*   **Releases:**
+    *   [rust-v0.115.0-alpha.6](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6)
+    *   [rust-v0.115.0-alpha.5](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.5)
+    *   [rust-v0.115.0-alpha.4](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.4)
+    *   [rust-v0.115.0-alpha.3](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.3)
+    *   [rust-v0.114.0-alpha.7](https://github.com/openai/codex/releases/tag/rust-v0.114.0-alpha.7)
+*   **Issues:**
+    *   [#14209](https://github.com/openai/codex/issues/14209)
+    *   [#14331](https://github.com/openai/codex/issues/14331)
+    *   [#14238](https://github.com/openai/codex/issues/14238)
+    *   [#14346](https://github.com/openai/codex/issues/14346)
+    *   [#14349](https://github.com/openai/codex/issues/14349)
+    *   [#14306](https://github.com/openai/codex/issues/14306)
+    *   [#14412](https://github.com/openai/codex/issues/14412)
+    *   [#14260](https://github.com/openai/codex/issues/14260)
+    *   [#14342](https://github.com/openai/codex/issues/14342)
+    *   [#14329](https://github.com/openai/codex/issues/14329)
+    *   [#14345](https://github.com/openai/codex/issues/14345)
+    *   [#14372](https://github.com/openai/codex/issues/14372)
+    *   [#1400](https://github.com/openai/codex/pull/1400)
+    *   [#14399](https://github.com/openai/codex/issues/14399)
+*   **Pull Requests:**
+    *   [#14410](https://github.com/openai/codex/pull/14410)
+    *   [#14421](https://github.com/openai/codex/pull/14421)
+    *   [#14287](https://github.com/openai/codex/pull/14287)
+    *   [#14420](https://github.com/openai/codex/pull/14420)
+    *   [#14295](https://github.com/openai/codex/pull/14295)
+    *   [#14419](https://github.com/openai/codex/pull/14419)
+    *   [#14171](https://github.com/openai/codex/pull/14171)
+    *   [#14173](https://github.com/openai/codex/pull/14173)
+    *   [#14416](https://github.com/openai/codex/pull/14416)
+    *   [#14394](https://github.com/openai/codex/pull/14394)
+    *   [#14174](https://github.com/openai/codex/pull/14174)
+    *   [#14387](https://github.com/openai/codex/pull/14387)
+    *   [#14400](https://github.com/openai/codex/pull/14400)
+    *   [#14172](https://github.com/openai/codex/pull/14172)
+    *   [#14170](https://github.com/openai/codex/pull/14170)
+    *   [#14374](https://github.com/openai/codex/pull/14374)
+    *   [#14274](https://github.com/openai/codex/pull/14274)
+    *   [#14392](https://github.com/openai/codex/pull/14392)
+    *   [#14407](https://github.com/openai/codex/pull/14407)
+    *   [#14304](https://github.com/openai/codex/pull/14304)
+
+</details>
+
+<details>
+<summary>Kimi K2.5 — <a href="https://github.com/MoonshotAI/Kimi-K2.5">MoonshotAI/Kimi-K2.5</a></summary>
+
+# Kimi K2.5 (MoonshotAI/Kimi-K2.5) 技术日报
+
+**日期:** 2026-03-12 | **分组:** AI 编码工具
+
+## 每日动态摘要
+
+今日 **Kimi K2.5** 项目在 GitHub 上并无新版本发布。社区在 Issues 方面的主要关注点集中在使用 Kimi K2.5 编码功能与第三方工具的集成。
+
+### 社区关注点与讨论
+
+*   **Opencode 集成问题:**
+    用户 @DrDexter6000 在 #26 Issue 中提出了关于 Kimi K2.5 Coding Plan 是否支持 Opencode 的疑问。尽管配置了 Opencode API，用户仍然收到了“Kimi For Coding is currently only available for Coding Agents such as Kimi CLI, Claude Code, Roo Code, Kilo Code, etc.”的提示，表明 Kimi For Coding 目前仅支持特定的编码助手。用户不确定是设置问题还是 Opencode 本身不支持。该 Issue 于昨日新建，目前状态为 open，尚无评论。
+
+### 本日最值得关注的动态
+
+1.  **[Opencode 集成疑问](https://github.com/MoonshotAI/Kimi-K2.5/issues/26) [🆕 新建]**: 新建 Issue 探讨了 Kimi K2.5 Coding Plan 对 Opencode 的支持情况，反映了用户在使用 Kimi K2.5 集成至不同开发环境时的实际需求和潜在障碍。
+
+---
+
+## 参考链接
+
+*   [Opencode 集成疑问](https://github.com/MoonshotAI/Kimi-K2.5/issues/26)
+
+</details>
+
+<details>
 <summary>Claude Code — <a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></summary>
 
 # Claude Code (anthropics/claude-code) 技术日报
 
-**日期**: 2026-03-12 | **分组**: AI 编码工具
+**日期：** 2026-03-12
 
-## 版本动态
+**分组：** AI 编码工具
 
-本日，`anthropics/claude-code` 发布了两个新版本：
+## 本日亮点
 
-*   **v2.1.74**: 此版本引入了多项核心功能和 Bug 修复。新增的 `/context` 命令现在提供“可操作建议”，能够识别内存膨胀和容量警告，并提供优化方案。此外，新增了 `autoMemoryDirectory` 设置，允许自定义自动内存存储目录。针对 Node.js/npm 代码路径的内存泄漏问题已修复，该问题曾导致 RSS 无限增长。同时，也修复了用户可能绕过受管策略 `ask` 规则的 Bug。
-*   **v2.1.73**: 此版本增强了配置灵活性，新增 `modelOverrides` 设置，允许将模型选择器条目映射到自定义提供商模型 ID。当 SSL 证书错误（如企业代理或 `NODE_EXTRA_CA_CERTS` 设置）导致 OAuth 登录或连接检查失败时，将提供“可操作的指导”。另外，还修复了权限提示触发的冻结及 100% CPU 循环问题，以及大量技能文件变更时可能发生的死锁。
+### 新版本发布：v2.1.74 引入智能上下文建议和内存优化
 
-## 社区焦点
+今日，anthropics/claude-code 团队发布了 [v2.1.74](https://github.com/anthropics/claude-code/releases/tag/v2.1.74) 版本。本次更新亮点包括：
 
-**认证与登录问题持续成为社区关注的重灾区**。本日新增的 Issues 中，有相当一部分集中在 OAuth 登录流程的失败，且涉及多个平台（macOS, Windows, Linux）。报告的问题包括登录超时（#33258, #33247, #33213, #33214, #33228, #33266, #33230）、`auth.anthropic.com` DNS 解析问题（#33238）以及 Cloudflare 挑战导致的中断（#33269）。此外，VS Code 扩展在 Windows 平台上的认证循环问题（#33122）也引起关注。
+*   `/context` 命令新增了**可操作的建议**，能够识别上下文过载、内存膨胀和容量警告，并提供具体的优化提示。
+*   新增 `autoMemoryDirectory` 设置，允许用户自定义自动内存存储的目录。
+*   修复了流式 API 响应缓冲区在生成器提前终止时未释放，导致 Node.js/npm 代码路径下 RSS 无限增长的内存泄漏问题。
 
-**内存管理与性能问题** 也是持续讨论的热点。#33356 报告了高达 50.4GB 的高内存使用量。#33320 和 #32752 则是关于内存泄漏的跟进，分别提到外部 ArrayBuffers 和 Native addons 的内存增长问题，其中 #32752 甚至描述了在短时间内 RSS 达到 2GB 的情况。
+### 认证和连接问题成为焦点，多项 Bug 报告涌现
 
-**代码执行与安全** 方面，#33397 PR 针对代码审查插件中的权限提示过多问题进行优化，防止不必要的 `cd` 调用。#33390 PR 则引入了一个新的安全插件 `hook-integrity-guard`，旨在防止模型篡改自身的安全机制，并提及了相关 CVE。#33312 PR 修复了 bash 注入的潜在风险，通过转义特殊字符保护 `ARGUMENTS`。
+今日收到的 Issue 报告集中反映了用户在使用 Claude Code 时遇到的认证（OAuth）和连接问题。多个 [🆕 新建] 的 Issue，如 [#33258](https://github.com/anthropics/claude-code/issues/33258)（登录超时）、[#33238](https://github.com/anthropics/claude-code/issues/33238)（DNS 解析失败）和 [#33213](https://github.com/anthropics/claude-code/issues/33213)（SSL 证书错误），以及 Windows 平台下的 [#33122](https://github.com/anthropics/claude-code/issues/33122)（VS Code 扩展认证循环），都指向了用户在登录流程中遇到的困难，并且评论数量较高，表明该问题影响范围较广。
 
-## 本日最关注
+### 内存泄漏问题持续引发关注，多平台报告并有新贡献
 
-1.  **版本 v2.1.74 发布，优化上下文管理和内存诊断**：新版本在 `/context` 命令中加入了“可操作建议”，帮助用户识别和解决内存相关问题，并允许自定义内存存储目录，显示出对稳定性和性能的持续关注。
-2.  **OAuth 登录和认证问题集中爆发**：多个平台（macOS, Windows, Linux）的开发者报告了 OAuth 登录失败，包括超时、DNS 解析问题和 Cloudflare 挑战中断等，这直接影响了用户的使用体验，社区对此高度关注，并积极反馈。
-3.  **内存泄漏与安全漏洞得到重视**：持续存在的内存泄漏问题（#33356, #33320, #32752）以及潜在的安全问题（#33390, #33312）通过 Issues 和 Pull Requests 的形式得到积极响应和修复，表明项目在维持性能和安全方面投入了重要精力。
+包括 [v2.1.74](https://github.com/anthropics/claude-code/releases/tag/v2.1.74) 发布说明中提到的内存泄漏修复，以及多个 Issues 反映的问题，内存优化仍然是社区关注的重点。例如，[#32752](https://github.com/anthropics/claude-code/issues/32752)（18 GB/小时增长）、[#33320](https://github.com/anthropics/claude-code/issues/33320)（3.39 GB 外部内存）和 [#32760](https://github.com/anthropics/claude-code/issues/32760)（Node v24 + macOS 上的原生内存泄漏）都详细描述了不同平台下的内存问题。同时，Pull Request [#33397](https://github.com/anthropics/claude-code/pull/33397) 和 [#33312](https://github.com/anthropics/claude-code/pull/33312) 也在尝试通过代码层面修复潜在的 Bash 注入和权限提示问题，间接与内存和性能优化相关。
+
+## 社区动态分析
+
+**热门 Issues（近期更新 & 新增）：**
+
+*   **认证问题是重灾区**：多个高评论数的 Bug Issue ([#33258](https://github.com/anthropics/claude-code/issues/33258), [#33120](https://github.com/anthropics/claude-code/issues/33120), [#33238](https://github.com/anthropics/claude-code/issues/33238), [#33213](https://github.com/anthropics/claude-code/issues/33213), [#33122](https://github.com/anthropics/claude-code/issues/33122)) 集中在 OAuth 登录失败、超时以及 SSL 证书错误，这表明用户在初始设置或会话恢复时遇到了显著障碍。
+
+*   **内存泄漏持续报出**：尽管新版本声称修复了部分内存问题，但仍有多个 Issue ([#32752](https://github.com/anthropics/claude-code/issues/32752), [#33320](https://github.com/anthropics/claude-code/issues/33320), [#33356](https://github.com/anthropics/claude-code/issues/33356), [#32760](https://github.com/anthropics/claude-code/issues/32760), [#32749](https://github.com/anthropics/claude-code/issues/32749), [#32729](https://github.com/anthropics/claude-code/issues/32729), [#33439](https://github.com/anthropics/claude-code/issues/33439)) 报告了不同程度的内存占用过高或泄漏问题，覆盖 macOS、Linux 等平台，且涉及 V8 堆外内存，显示出该问题的复杂性和多发性。
+
+*   **功能和命令失效**：部分 Issues ([#33119](https://github.com/anthropics/claude-code/issues/33119) - Remote Control 未启用, [#33000](https://github.com/anthropics/claude-code/issues/33000) - `/effort` 命令无法识别, [#33129](https://github.com/anthropics/claude-code/issues/33129) - `/btw` 命令失效) 表明现有功能或命令存在 Bug，影响用户正常使用。
+
+**热门 Pull Requests：**
+
+*   **安全性和稳定性增强**：[#33390](https://github.com/anthropics/claude-code/pull/33390) 引入了 `hook-integrity-guard` 安全插件，旨在防止模型篡改自身安全机制，解决了 #32990 等 Issue 中反映的潜在安全漏洞。
+*   **代码重构与优化**：[#33397](https://github.com/anthropics/claude-code/pull/33397) 减少了代码审查插件的权限提示，防止不必要的 `cd` 调用，提升了用户体验。 [#33312](https://github.com/anthropics/claude-code/pull/33312) 通过转义特殊字符来防止 Bash 注入，提升了安全性。
+*   **开发环境和文档改进**：[#33443](https://github.com/anthropics/claude-code/pull/33443) 更新了 Dockerfile 以使用原生安装器。 [#33351](https://github.com/anthropics/claude-code/pull/33351) 提供了关于 Homebrew/Winget 更新旗标的解决方案。
+
+## 今日推荐
+
+1.  **[v2.1.74](https://github.com/anthropics/claude-code/releases/tag/v2.1.74) 版本发布**：本次更新包含了对 `/context` 命令的智能优化建议和内存泄漏的修复，直接回应了社区对性能和稳定性的一致关切。
+2.  **多平台认证故障的集中爆发**：以 [#33258](https://github.com/anthropics/claude-code/issues/33258) 和 [#33238](https://github.com/anthropics/claude-code/issues/33238) 为代表的多个高流量 Issue，揭示了用户在登录和认证环节遇到的普遍性问题，是当前最需要关注的稳定性 Bug。
+3.  **持续的内存优化工作**：多项 Issues ([#32752](https://github.com/anthropics/claude-code/issues/32752), [#33320](https://github.com/anthropics/claude-code/issues/33320)) 和相关的 PRs ([#33397](https://github.com/anthropics/claude-code/pull/33397), [#33312](https://github.com/anthropics/claude-code/pull/33312)) 表明，内存管理和性能优化依然是该项目迭代的关键方向。
+
+---
 
 ## 参考链接
 
-*   **Releases**
+*   **Release**
     *   [v2.1.74](https://github.com/anthropics/claude-code/releases/tag/v2.1.74)
     *   [v2.1.73](https://github.com/anthropics/claude-code/releases/tag/v2.1.73)
 *   **Issues**
     *   [#33258](https://github.com/anthropics/claude-code/issues/33258)
-    *   [#33247](https://github.com/anthropics/claude-code/issues/33247)
     *   [#33120](https://github.com/anthropics/claude-code/issues/33120)
-    *   [#33239](https://github.com/anthropics/claude-code/issues/33239)
-    *   [#32683](https://github.com/anthropics/claude-code/issues/32683)
     *   [#33238](https://github.com/anthropics/claude-code/issues/33238)
     *   [#33213](https://github.com/anthropics/claude-code/issues/33213)
     *   [#33122](https://github.com/anthropics/claude-code/issues/33122)
-    *   [#33214](https://github.com/anthropics/claude-code/issues/33214)
     *   [#32742](https://github.com/anthropics/claude-code/issues/32742)
-    *   [#33228](https://github.com/anthropics/claude-code/issues/33228)
     *   [#32870](https://github.com/anthropics/claude-code/issues/32870)
-    *   [#33260](https://github.com/anthropics/claude-code/issues/33260)
     *   [#33011](https://github.com/anthropics/claude-code/issues/33011)
+    *   [#33119](https://github.com/anthropics/claude-code/issues/33119)
+    *   [#33000](https://github.com/anthropics/claude-code/issues/33000)
+    *   [#32938](https://github.com/anthropics/claude-code/issues/32938)
+    *   [#32752](https://github.com/anthropics/claude-code/issues/32752)
     *   [#32800](https://github.com/anthropics/claude-code/issues/32800)
     *   [#33356](https://github.com/anthropics/claude-code/issues/33356)
     *   [#33129](https://github.com/anthropics/claude-code/issues/33129)
-    *   [#33266](https://github.com/anthropics/claude-code/issues/33266)
-    *   [#33269](https://github.com/anthropics/claude-code/issues/33269)
-    *   [#33230](https://github.com/anthropics/claude-code/issues/33230)
+    *   [#32869](https://github.com/anthropics/claude-code/issues/32869)
+    *   [#33242](https://github.com/anthropics/claude-code/issues/33242)
     *   [#33320](https://github.com/anthropics/claude-code/issues/33320)
-    *   [#32752](https://github.com/anthropics/claude-code/issues/32752)
-    *   [#33000](https://github.com/anthropics/claude-code/issues/33000)
-    *   [#33119](https://github.com/anthropics/claude-code/issues/33119)
     *   [#32760](https://github.com/anthropics/claude-code/issues/32760)
     *   [#33154](https://github.com/anthropics/claude-code/issues/33154)
-    *   [#33242](https://github.com/anthropics/claude-code/issues/33242)
+    *   [#33034](https://github.com/anthropics/claude-code/issues/33034)
+    *   [#32749](https://github.com/anthropics/claude-code/issues/32749)
     *   [#32990](https://github.com/anthropics/claude-code/issues/32990)
     *   [#32699](https://github.com/anthropics/claude-code/issues/32699)
     *   [#33158](https://github.com/anthropics/claude-code/issues/33158)
+    *   [#32729](https://github.com/anthropics/claude-code/issues/32729)
+    *   [#33455](https://github.com/anthropics/claude-code/issues/33455)
+    *   [#33454](https://github.com/anthropics/claude-code/issues/33454)
+    *   [#33209](https://github.com/anthropics/claude-code/issues/33209)
+    *   [#33439](https://github.com/anthropics/claude-code/issues/33439)
 *   **Pull Requests**
+    *   [#30636](https://github.com/anthropics/claude-code/pull/30636)
+    *   [#33443](https://github.com/anthropics/claude-code/pull/33443)
     *   [#33397](https://github.com/anthropics/claude-code/pull/33397)
     *   [#33390](https://github.com/anthropics/claude-code/pull/33390)
     *   [#33351](https://github.com/anthropics/claude-code/pull/33351)
@@ -128,6 +274,8 @@
     *   [#5609](https://github.com/anthropics/claude-code/pull/5609)
     *   [#33070](https://github.com/anthropics/claude-code/pull/33070)
 
+**项目地址：** [anthropics/claude-code](https://github.com/anthropics/claude-code)
+
 </details>
 
 <details>
@@ -135,419 +283,260 @@
 
 # Gemini CLI 技术日报 (2026-03-12)
 
-## 版本动态
+## 总结
 
-今日 Gemini CLI 发布了两个新版本：
+今日 Gemini CLI 项目在 **AI 编码工具** 领域依然保持活跃，社区在 **Agents 核心功能**、**UI 交互体验** 以及 **平台稳定性** 等方面持续贡献和讨论。特别关注的焦点包括 **Subagents 的工具隔离与管理**、**内存处理机制的优化**，以及 **CLI 界面在特定场景下的显示问题**。
 
-*   **v0.34.0-preview.0**: 此预览版本带来了多项改进，包括在会话退出时显示聊天恢复的页脚，支持 SVG 快照中的粗体和其他样式，以及将 A2A 代理超时时间从 10 分钟增加到 30 分钟。
-*   **v0.33.0**: 该稳定版本的主要变动集中在文档更新，移除了预览功能说明，修正了安装文档中的拼写错误，并为 Windows PowerShell 添加了环境和脚本的对应示例。
+**今日最值得关注的动态：**
 
-## 社区焦点分析
+1.  **[🆕 #22108] 引入快速模型进行工具描述总结**：这是一个增强 **Agent** 能力的提议，旨在利用轻量级模型（如 `flash-lite` 或本地 Gemma）来为具有长描述的 MCP 工具或整个 MCP 服务器生成摘要。这将允许 Agent 按需激活服务器/工具，从而提升效率和用户体验。
+2.  **[🆕 #22039] 确保扩展安装的幂等性**：此 PR 解决了扩展安装的重复问题，当扩展已安装时，将返回现有扩展而不是报错。这直接提升了用户在使用 CLI 管理扩展时的一致性和健壮性。
+3.  **[🆕 #22105] 修复设置对话框的高度问题以防止滚动闪烁**：此 PR 针对 **UI 交互** 方面的已知问题，通过调整设置对话框的高度，解决了在特定场景下（尤其是在 Windows 上）列表溢出和重叠的滚动闪烁问题，从而改善了用户界面的视觉流畅度。
 
-### 热门 Issues & PRs (截至 2026-03-12)
+## 热门 Issues/PRs 分析
 
-**近期热门 Issues (近3天内新建或更新，有评论):**
+**社区关注点：**
 
-*   **#21806 "fix exit_plan_mode ignoring policy `allow` decision when scheduler skips confirmation"**: 修复了在 `exit_plan_mode` 策略允许的情况下，调度器跳过确认时策略生效的问题。此问题已获得 7 条评论，并被标记为 `help wanted`。
-*   **#21925 "Gemini CLI shows the hand icon indicating that Action is required even when it is not required"**: 报告了一个 Bug，即在不需要执行操作时，Gemini CLI 仍显示需要操作的手形图标。该 Issue 已获得 5 条评论，并被标记为 `status/possible-duplicate` 和 `help wanted`。
-*   **#22028 "CLI scrolls to the top whenever clicked on"**: 用户报告在 VS Code 中，点击终端或其他窗口时 CLI 会滚动到顶部。这是今日新建的 Issue，已有 1 条评论。
-*   **#21901 "[Subagents] Add mechanism for isolating the tools of subagents from the main agent."**: 提出在子代理中添加工具隔离机制的需求，以增强工具的可管理性。该 Issue 有 1 条评论。
+*   **Agent 功能与稳定性 (area/agent, workstream-rollup)**：
+    *   **工具隔离与管理**：[#21901] (Subagents: Add mechanism for isolating the tools of subagents from the main agent) 提出需要解决主 Agent 和子 Agent 之间的工具隔离问题，是 Agent 可管理性的一个重要方面。
+    *   **内存处理**：[#22098] (Overhaul save_memory tool) 和 [#22057] (Complete implementation of JIT memory loading) 以及 [#22002] (Memory overhaul) 都指向内存管理机制的深度优化，包括功能扩展、JIT 加载以及整体架构的革新，以提升 Agent 的长期记忆和学习能力。
+    *   **压缩与上下文管理**：[#21890] (Fix & Enhance Existing Compression Logic)，[#21888] (Reduce Auto-Compression Threshold) 等 PR 和 Issue 持续关注压缩逻辑的改进和阈值的调整，以优化长会话中的上下文处理。
+    *   **工具输出处理**：[#21889] (Auto-Distillation for Tool Calls) 提议自动提炼工具输出，减少噪音，[#21891] (Stale Output Elision (History Pruning)) 则建议移除不再相关的历史信息，这些都关乎 Agent 如何高效处理和利用信息。
+    *   **远程 Agent 架构**：[#20302] ([Epic] Remote Agents: Sprint 1 (P0) - Foundation & Core UX) 和 [#22097] (Add Design Document for Modular Agent Architecture) 显示项目正在为远程 Agent 奠定基础，并开始设计模块化架构。
 
-**近期热门 PRs (近3天内新建或更新):**
+*   **UI/UX 与核心功能 (area/core)**：
+    *   **屏幕显示与交互**：[#21925] (Gemini CLI shows the hand icon indicating that Action is required even when it is not required) 和 [#22028] (CLI scrolls to the top whenever clicked on) 指出 CLI 在特定交互场景下存在显示异常和不流畅的问题。[#18896] (Screen Glitching and Flickering during Scrolling windows) 提及了 Windows 平台下的滚动闪烁问题，[#22105] (fix(ui): correct settings dialog height to prevent scroll glitches) 尝试解决此问题。
+    *   **API 配额与错误处理**：[#22107] (Getting "You have exhausted your capacity on this model" despite quotas not being exceeded) 和 [#18050] (cli claims that it exhausted daily quota. I checked that it did not.) 反映了社区在使用过程中遇到的 API 配额误报问题。
+    *   **命令与工具处理**：[#22106] (feat: Display pending and confirming tool calls) 改进了工具调用的可见性，[#21942] (fix(cli): improve command conflict handling for skills) 优化了命令冲突处理。
 
-*   **#21807 "feat(core): implement native Windows sandboxing"**: PR 实现了 Windows 原生沙箱功能，使用受限令牌和强制完整性控制，为外部 shell 工具和 Node.js 工具提供隔离。
-*   **#22090 "fix(policy): ensure user policies are loaded when policyPaths is empty"**: 修复了一个回归问题，当 `--policy` 标志被解析为空数组时，用户级别的策略会被忽略。
-*   **#22059 "feat(core): differentiate User-Agent for a2a-server and ACP clients"**: 实现了一种区分 Gemini CLI 流量的 `User-Agent` 策略，以支持企业客户和嵌入式产品上报 API 使用情况。
+*   **平台与性能 (area/platform)**：
+    *   **启动速度**：[#10726] (Critical Slowdown in Gemini CLI Startup Time (up to 60 seconds)) 作为一个长期存在的性能问题，近期（2026-03-12）仍有更新，表明该问题的解决仍是关注重点。
 
-### 社区关注点总结
+**本周新建 Issue/PR 趋势：**
 
-本期社区反馈聚焦于 **稳定性、用户体验与高级功能** 的打磨。
-
-1.  **核心功能 Bug 修复与改进**: 涉及 `exit_plan_mode` 策略处理 (#21806) 和 UI 显示异常 (#21925, #22028) 的 Issue 反映了用户对命令行界面核心功能稳定性的高度关注。
-2.  **代理与子代理增强**: 关于子代理工具隔离 (#21901) 和内存管理 (#22098, #22057) 的讨论，以及 PR #22086 提及的子代理上下文传递问题，表明社区对 Gemini CLI 在复杂代理场景下的能力提升抱有很高期望。
-3.  **用户体验与性能优化**: 诸如终端 resize 性能 (#21924) 和长会话下的连续性与连贯性 (#21792) 等 Issue，以及 PR #21807 实现的 Windows 沙箱功能，都指向了提升用户在不同环境下的整体使用体验和效率。
-
-## 本日最值得关注的动态
-
-1.  **v0.34.0-preview.0 发布，A2A 代理超时大幅提升**: 新的预览版本将 A2A 代理的默认超时时间从 10 分钟延长至 30 分钟，这对于处理耗时任务的代理交互场景是显著的利好，有助于提高成功率和用户满意度。
-2.  **Windows 原生沙箱实现 PR #21807 进展**: 该 PR 实现了 Windows 原生沙箱功能，这是提升 Gemini CLI 在 Windows 环境下安全性和隔离性的重要一步，为用户提供更可靠的执行环境。
-3.  **关于会话连续性和压缩机制的持续推进 (Epic #21792, PRs #21890, #21891, #21892)**: #21792 (Epic) 及其相关的 PRs (#21890, #21891, #21892) 共同指向了对 Gemini CLI 长期会话连续性和上下文压缩机制的深度优化。这表明项目正着力解决模型在长对话中“遗忘”和“效率低下”的问题，是提升模型长期交互能力的关键。
-
----
+*   **Agent 增强**：大量新 Issue 和 PR 聚焦于 Agent 的能力提升，如 [#22108] (Use cheap model summaries to implement progressive disclosure for MCP servers and tools)，[#22098] (Overhaul save_memory tool) 以及 [#21901] (Subagents: Add mechanism for isolating the tools of subagents from the main agent)。
+*   **UI/UX 修复**：[#22105] (fix(ui): correct settings dialog height to prevent scroll glitches) 和 [#22106] (feat: Display pending and confirming tool calls) 都在尝试优化用户体验。
+*   **扩展管理**：[#22039] (feat(cli): make extension installation idempotent) 实现了扩展安装的幂等性，提高了易用性。
+*   **开发者体验**：[#22036] (Fix the enforced authentication method config example in the enterprise docs) 改进了文档，[#1912] (Add issue for automated changelogs) 规范了日志生成流程。
 
 ## 参考链接
 
-**Releases:**
-*   [v0.34.0-preview.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.34.0-preview.0)
-*   [v0.33.0](https://github.com/google-gemini/gemini-cli/releases/tag/v0.33.0)
-
-**Issues:**
-*   [#21806](https://github.com/google-gemini/gemini-cli/issues/21806)
-*   [#21925](https://github.com/google-gemini/gemini-cli/issues/21925)
-*   [#22028](https://github.com/google-gemini/gemini-cli/issues/22028)
-*   [#21901](https://github.com/google-gemini/gemini-cli/issues/21901)
-*   [#22098](https://github.com/google-gemini/gemini-cli/issues/22098)
-*   [#22057](https://github.com/google-gemini/gemini-cli/issues/22057)
-*   [#21953](https://github.com/google-gemini/gemini-cli/issues/21953)
-*   [#21939](https://github.com/google-gemini/gemini-cli/issues/21939)
-*   [#21924](https://github.com/google-gemini/gemini-cli/issues/21924)
-*   [#21920](https://github.com/google-gemini/gemini-cli/issues/21920)
-*   [#21892](https://github.com/google-gemini/gemini-cli/issues/21892)
-*   [#21891](https://github.com/google-gemini/gemini-cli/issues/21891)
-*   [#21889](https://github.com/google-gemini/gemini-cli/issues/21889)
-*   [#21888](https://github.com/google-gemini/gemini-cli/issues/21888)
-*   [#21887](https://github.com/google-gemini/gemini-cli/issues/21887)
-*   [#21863](https://github.com/google-gemini/gemini-cli/issues/21863)
-*   [#21832](https://github.com/google-gemini/gemini-cli/issues/21832)
-*   [#18896](https://github.com/google-gemini/gemini-cli/issues/18896)
-*   [#20142](https://github.com/google-gemini/gemini-cli/issues/20142)
-*   [#20549](https://github.com/google-gemini/gemini-cli/issues/20549)
-*   [#20062](https://github.com/google-gemini/gemini-cli/issues/20062)
-*   [#19873](https://github.com/google-gemini/gemini-cli/issues/19873)
-*   [#20302](https://github.com/google-gemini/gemini-cli/issues/20302)
-*   [#20181](https://github.com/google-gemini/gemini-cli/issues/20181)
-*   [#20134](https://github.com/google-gemini/gemini-cli/issues/20134)
-*   [#19514](https://github.com/google-gemini/gemini-cli/issues/19514)
-*   [#18953](https://github.com/google-gemini/gemini-cli/issues/18953)
-*   [#21792](https://github.com/google-gemini/gemini-cli/issues/21792)
-*   [#21461](https://github.com/google-gemini/gemini-cli/issues/21461)
-
-**Pull Requests:**
-*   [#21807](https://github.com/google-gemini/gemini-cli/pull/21807)
-*   [#22090](https://github.com/google-gemini/gemini-cli/pull/22090)
-*   [#22095](https://github.com/google-gemini/gemini-cli/pull/22095)
-*   [#22059](https://github.com/google-gemini/gemini-cli/pull/22059)
-*   [#22024](https://github.com/google-gemini/gemini-cli/pull/22024)
-*   [#21802](https://github.com/google-gemini/gemini-cli/pull/21802)
-*   [#22089](https://github.com/google-gemini/gemini-cli/pull/22089)
-*   [#22076](https://github.com/google-gemini/gemini-cli/pull/22076)
-*   [#22097](https://github.com/google-gemini/gemini-cli/pull/22097)
-*   [#22100](https://github.com/google-gemini/gemini-cli/pull/22100)
-*   [#22085](https://github.com/google-gemini/gemini-cli/pull/22085)
-*   [#22086](https://github.com/google-gemini/gemini-cli/pull/22086)
-*   [#22091](https://github.com/google-gemini/gemini-cli/pull/22091)
-*   [#22087](https://github.com/google-gemini/gemini-cli/pull/22087)
-*   [#22088](https://github.com/google-gemini/gemini-cli/pull/22088)
-*   [#21933](https://github.com/google-gemini/gemini-cli/pull/21933)
-*   [#22069](https://github.com/google-gemini/gemini-cli/pull/22069)
-*   [#21976](https://github.com/google-gemini/gemini-cli/pull/21976)
-*   [#21998](https://github.com/google-gemini/gemini-cli/pull/21998)
-*   [#21942](https://github.com/google-gemini/gemini-cli/pull/21942)
-
-</details>
-
-<details>
-<summary>Kimi K2.5 — <a href="https://github.com/MoonshotAI/Kimi-K2.5">MoonshotAI/Kimi-K2.5</a></summary>
-
-# Kimi K2.5 (MoonshotAI/Kimi-K2.5) 技术日报
-
-**日期**: 2026-03-12 | **分组**: AI 编码工具
-
-## 核心动态摘要
-
-今日 Kimi K2.5 项目在 GitHub 上迎来一个**新 Issue**，社区用户 [@DrDexter6000](https://github.com/MoonshotAI/Kimi-K2.5/issues/26) 提出了关于 **Kimi K2.5 Coding Plan 是否支持 Opencode** 的疑问。用户在 Opendcode 配置 API 后收到“Kimi For Coding is currently only available for Coding Agents such as Kimi CLI, Claude Code, Roo Code, Kilo Code, etc.”的提示，对此感到困惑，并咨询是否是配置问题。
-
-本次日报**无新版本发布**。
-
-## 社区关注点分析
-
-今日社区的关注点集中在 **Kimi K2.5 Coding Plan 的集成能力**。新提出的 Issue #26 直接质疑了 Kimi K2.5 对 Opencode 等第三方编码工具的支持情况，这表明用户对 Kimi K2.5 能够与现有开发生态无缝集成的期望很高。该 Issue 需要项目维护者明确 Coding Plan 的适用范围和可能的集成配置方法，以解答用户的疑惑。
-
-## 今日最值得关注的动态
-
-1.  **新 Issue 关注 Kimi K2.5 对 Opencode 的支持**：用户 [@DrDexter6000](https://github.com/MoonshotAI/Kimi-K2.5/issues/26) 报告了在使用 Kimi K2.5 Coding Plan 集成 Opencode 时遇到的问题，并询问其支持情况。这代表了社区对 AI 编码工具跨平台及集成能力的实际需求。
-
-## 参考链接
-
-*   [#26 "Kimi K2.5 Coding Plan不支持Opencode么？"](https://github.com/MoonshotAI/Kimi-K2.5/issues/26)
-
-</details>
-
-<details>
-<summary>OpenAI Codex — <a href="https://github.com/openai/codex">openai/codex</a></summary>
-
-# OpenAI Codex (openai/codex) 技术日报 - 2026-03-12
-
-## 概览
-
-今日，OpenAI Codex 项目发布了多项 Alpha 版本更新，显示了项目持续的迭代速度。同时，社区活跃度保持较高水平，大量 Issue 反映了用户在使用新模型（如 GPT-5.3/5.4）和新功能时遇到的问题，特别是与认证、速率限制、连接稳定性和模型可用性相关的议题。PR 方面，多项涉及重构、新功能集成和安全加固的工作正在进行中。
-
-## 版本发布
-
-今日，OpenAI Codex 项目发布了多项 **Alpha 版本更新**，旨在推进项目进展。具体包括：
-
-*   **rust-v0.115.0-alpha.6** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6))
-*   **rust-v0.115.0-alpha.5** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.5](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.5))
-*   **rust-v0.115.0-alpha.4** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.4](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.4))
-*   **rust-v0.115.0-alpha.3** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.3](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.3))
-*   **rust-v0.115.0-alpha.2** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.2](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.2))
-*   **rust-v0.115.0-alpha.1** ([https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.1](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.1))
-*   **rust-v0.114.0-alpha.7** ([https://github.com/openai/codex/releases/tag/rust-v0.114.0-alpha.7](https://github.com/openai/codex/releases/tag/rust-v0.114.0-alpha.7))
-
-本次发布的 Alpha 版本数量表明了研发团队对 0.115.0 和 0.114.0 系列的快速迭代和组件更新。
-
-## 社区焦点
-
-### 热门 Issues
-
-*   **模型可用性与认证问题**：多个新建 Issue，如 #14331 和 #14412，反映了用户在使用 **GPT-5.3-Codex** 和 **GPT-5.4** 模型时遇到“不支持 ChatGPT 账户”的错误，这直接影响了付费用户的体验，并引发了关于模型限制和沟通不足的讨论 (参见 #14238)。
-*   **连接与稳定性问题**：老 Issue #14209 和 #14260 持续显示“重连失败”的报告，表明连接稳定性仍是部分用户关注的痛点。
-*   **速率限制与使用重置**：新建 Issue #14349 和 #14329 指出，团队/企业账户在使用率重置方面存在系统性问题，尽管模型使用率存在差异，但用户反馈在短时间内出现速率限制快速下降，且未能获得预期的使用额度重置。
-*   **上下文压缩与性能问题**：新建 Issue #14346 和 #14342 报告了“上下文压缩挂起”或耗时过长的问题，影响了用户交互的流畅性。
-
-### 热门 Pull Requests
-
-*   **安全与沙箱改进**：PR #14174、#14171 和 #14173 集中展示了对文件系统权限、沙箱策略的重构和修复，旨在提高安全性。PR #14398 和 #14400 则分别针对 Windows 平台的沙箱进行优化，限制潜在风险。
-*   **内部服务与协议优化**：PR #14387、#14394 和 #14392 显示了对 `app-server` 的日志追踪、RPC 方法清理和通知机制的改进，旨在提升后端服务的健壮性和可维护性。
-*   **代码模式与工具集成**：PR #14295 致力于持久化“代码模式”的运行会话，提升用户工作流连续性。PR #14274 则将 `search_tool` 迁移至新的“自带工具”响应 API。
-
-## 本日最值得关注动态
-
-1.  **GPT-5.3/5.4 模型认证与可用性问题爆发**：新增的 Issue #14331 和 #14412，以及持续讨论的 #14238，共同指向了用户在使用最新模型时遇到的重要障碍。尤其是在付费账户上模型不可用的情况，是当前社区最集中的抱怨点，可能需要 OpenAI 官方的紧急回应和解释。
-2.  **Alpha 版本密集发布，迭代加速**：今日发布的多个 Alpha 版本（如 [rust-v0.115.0-alpha.6](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6)）表明了项目团队正在快速推进新功能的开发和测试，这预示着未来可能很快会有更稳定的版本发布。
-3.  **安全沙箱机制的持续加固**：多项 Pull Request，如 #14174 `refactor: centralize filesystem permissions precedence` 和 #14400 `Use a private desktop for Windows sandbox instead of Winsta0\Default`，显示出项目团队对代码安全和沙箱隔离机制的重视，通过内部重构和引入更细粒度的权限控制来规避潜在风险，这是提高工具稳定性和安全性的重要基础工作。
-
----
-
-## 参考链接
-
-**Releases**:
-*   [rust-v0.115.0-alpha.6](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.6)
-*   [rust-v0.115.0-alpha.5](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.5)
-*   [rust-v0.115.0-alpha.4](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.4)
-*   [rust-v0.115.0-alpha.3](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.3)
-*   [rust-v0.115.0-alpha.2](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.2)
-*   [rust-v0.115.0-alpha.1](https://github.com/openai/codex/releases/tag/rust-v0.115.0-alpha.1)
-*   [rust-v0.114.0-alpha.7](https://github.com/openai/codex/releases/tag/rust-v0.114.0-alpha.7)
-
-**Issues**:
-*   [#14209](https://github.com/openai/codex/issues/14209)
-*   [#14331](https://github.com/openai/codex/issues/14331)
-*   [#14238](https://github.com/openai/codex/issues/14238)
-*   [#14346](https://github.com/openai/codex/issues/14346)
-*   [#14349](https://github.com/openai/codex/issues/14349)
-*   [#14329](https://github.com/openai/codex/issues/14329)
-*   [#14336](https://github.com/openai/codex/issues/14336)
-*   [#14260](https://github.com/openai/codex/issues/14260)
-*   [#14306](https://github.com/openai/codex/issues/14306)
-*   [#14303](https://github.com/openai/codex/issues/14303)
-*   [#14190](https://github.com/openai/codex/issues/14190)
-*   [#14324](https://github.com/openai/codex/issues/14324)
-*   [#14372](https://github.com/openai/codex/issues/14372)
-*   [#14342](https://github.com/openai/codex/issues/14342)
-*   [#14322](https://github.com/openai/codex/issues/14322)
-*   [#14406](https://github.com/openai/codex/issues/14406)
-*   [#14379](https://github.com/openai/codex/issues/14379)
-*   [#14401](https://github.com/openai/codex/issues/14401)
-*   [#14386](https://github.com/openai/codex/issues/14386)
-*   [#14365](https://github.com/openai/codex/issues/14365)
-*   [#14314](https://github.com/openai/codex/issues/14314)
-*   [#14357](https://github.com/openai/codex/issues/14357)
-*   [#14345](https://github.com/openai/codex/issues/14345)
-*   [#14353](https://github.com/openai/codex/issues/14353)
-*   [#14158](https://github.com/openai/codex/issues/14158)
-*   [#14389](https://github.com/openai/codex/issues/14389)
-*   [#14412](https://github.com/openai/codex/issues/14412)
-*   [#14408](https://github.com/openai/codex/issues/14408)
-*   [#14399](https://github.com/openai/codex/issues/14399)
-*   [#14297](https://github.com/openai/codex/issues/14297)
-
-**Pull Requests**:
-*   [#14374](https://github.com/openai/codex/pull/14374)
-*   [#14295](https://github.com/openai/codex/pull/14295)
-*   [#14174](https://github.com/openai/codex/pull/14174)
-*   [#14170](https://github.com/openai/codex/pull/14170)
-*   [#14274](https://github.com/openai/codex/pull/14274)
-*   [#14387](https://github.com/openai/codex/pull/14387)
-*   [#14394](https://github.com/openai/codex/pull/14394)
-*   [#14392](https://github.com/openai/codex/pull/14392)
-*   [#14171](https://github.com/openai/codex/pull/14171)
-*   [#14410](https://github.com/openai/codex/pull/14410)
-*   [#14407](https://github.com/openai/codex/pull/14407)
-*   [#14304](https://github.com/openai/codex/pull/14304)
-*   [#14398](https://github.com/openai/codex/pull/14398)
-*   [#14287](https://github.com/openai/codex/pull/14287)
-*   [#14173](https://github.com/openai/codex/pull/14173)
-*   [#14405](https://github.com/openai/codex/pull/14405)
-*   [#14400](https://github.com/openai/codex/pull/14400)
-*   [#14382](https://github.com/openai/codex/pull/14382)
-*   [#14403](https://github.com/openai/codex/pull/14403)
-*   [#14351](https://github.com/openai/codex/pull/14351)
-
-</details>
-
-<details>
-<summary>Memoh — <a href="https://github.com/memohai/Memoh">memohai/Memoh</a></summary>
-
-# Memoh (memohai/Memoh) 技术日报
-
-**日期**: 2026-03-12
-
-## 动态摘要
-
-今日 Memoh 项目迎来 **v0.4.3** 版本发布，主要修复了与数据恢复和内存索引相关的关键 Bug。新版本解决了在容器重建时从孤立快照中恢复数据的问题，并用基于扫描的方式替代了 `manifest.json` 来索引内存数据，这有望提升稳定性和效率。
-
-社区方面，持续有关于 **多 provider 内存适配器重构** 的讨论，PR [#227](https://github.com/memohai/Memoh/pull/227) 引入了 `mem0` 和 `openviking` 等新适配器，并优化了索引机制，与新版本发布的 Bug Fixes 息息相关。另一个值得关注的 **新建 PR [#232](https://github.com/memohai/Memoh/pull/232)**，为 Bot 容器新增了交互式 Web 终端支持，通过 WebSocket 和 PTY 提供完整的 Shell 会话，这为开发者调试和管理 Bot 提供了极大的便利。
-
-此外，Issue [#218](https://github.com/memohai/Memoh/issues/218) 的闭合显示了社区对 **端口冲突** 问题的及时响应，通过更改默认端口（如 8080）来解决潜在的安装问题。
-
-## 版本发布亮点
-
-### Memoh v0.4.3 发布
-
-本次发布的 v0.4.3 版本带来了重要的 Bug 修复，尤其是在数据可靠性方面：
-
-*   **MCP 模块**: 修复了在容器重建过程中，可能会丢失用户数据的问题。现在，系统能够在容器重建时，从孤立的快照中恢复数据。
-*   **Memory 模块**: `manifest.json` 文件已被弃用，取而代之的是一种基于扫描的索引方式。这意味着内存数据将不再依赖于一个中心化的 `manifest.json` 文件进行管理，从而减少了因该文件缺失而导致的错误，提升了数据管理的灵活性和健壮性。
-*   **Text 模块**: 修复了在截断 UTF-8 编码文本时可能导致的乱码问题。
-
-## 社区焦点：Issues & Pull Requests
-
-### 关键 Issues (近期更新/持续讨论)
-
-*   **#218 "Maybe we can bind another special port instead of 8080"** ([近3天](https://github.com/memohai/Memoh/issues/218)) - 这个 Issue 在近期被关闭，它指出了安装脚本中默认使用 8080 端口可能与其他服务冲突的问题，显示了社区对易用性和部署便利性的关注。
-*   **#194 "Memory save fails on fresh bot when /data/index/manifest.json is missing"** ([本周](https://github.com/memohai/Memoh/issues/194)) - 这个 Bug Issue 在本周有更新并已被关闭，它直接关联到 v0.4.3 版本中对 `manifest.json` 的替换，验证了该问题在社区中的实际影响。
-
-### 关键 Pull Requests
-
-*   **#227 "refactor: multi-provider memory adapters with scan-based builtin"** ([近3天](https://github.com/memohai/Memoh/pull/227)) - 此 PR 是对内存管理系统的一次重大重构，正在积极开发中。它引入了更灵活的多 Provider 内存适配器，并与 v0.4.3 版本发布的内容一致，采用扫描式索引替代 `manifest.json`。
-*   **#232 "feat: add interactive web terminal for bot containers"** ([🆕 新建](https://github.com/memohai/Memoh/pull/232)) - 这个新建的 PR 极具吸引力，它为 Bot 容器添加了交互式的 Web 终端功能，允许用户通过 WebSocket 直接在浏览器中访问和管理容器的 Shell 环境。
-*   **#195 "feat(tts): introduce `TTS` system"** ([本周](https://github.com/memohai/Memoh/pull/195)) - 这个 PR 旨在为 Memoh 集成 TTS (Text-to-Speech) 系统，使其拥有语音输出能力。
-
-## 今日最值得关注的动态
-
-1.  **v0.4.3 版本发布**: 重点是内存数据的恢复能力和索引机制的改进，解决了关键的 Bug，提升了系统的稳定性。([v0.4.3](https://github.com/memohai/Memoh/releases/tag/v0.4.3))
-2.  **交互式 Web 终端 PR [#232](https://github.com/memohai/Memoh/pull/232) 新建**: 这项新功能为用户提供了强大的调试和管理工具，极大地增强了开发和运维体验。
-3.  **内存适配器重构 PR [#227](https://github.com/memohai/Memoh/pull/227)**: 该 PR 体现了项目在底层架构上的持续优化，与版本发布相辅相成，预示着未来更灵活的数据管理能力。
-
----
-
-## 参考链接
-
-*   [v0.4.3](https://github.com/memohai/Memoh/releases/tag/v0.4.3)
-*   [#218](https://github.com/memohai/Memoh/issues/218)
-*   [#194](https://github.com/memohai/Memoh/issues/194)
-*   [#225](https://github.com/memohai/Memoh/issues/225)
-*   [#227](https://github.com/memohai/Memoh/pull/227)
-*   [#195](https://github.com/memohai/Memoh/pull/195)
-*   [#232](https://github.com/memohai/Memoh/pull/232)
-*   [#203](https://github.com/memohai/Memoh/pull/203)
-*   [#231](https://github.com/memohai/Memoh/pull/231)
-*   [#230](https://github.com/memohai/Memoh/pull/230)
-*   [#228](https://github.com/memohai/Memoh/pull/228)
-*   [#229](https://github.com/memohai/Memoh/pull/229)
+*   [#21925 - Gemini CLI shows the hand icon indicating that Action is required even when it is not required](https://github.com/google-gemini/gemini-cli/issues/21925)
+*   [#22107 - Getting "You have exhausted your capacity on this model" despite quotas not being exceeded.](https://github.com/google-gemini/gemini-cli/issues/22107)
+*   [#22028 - CLI scrolls to the top whenever clicked on](https://github.com/google-gemini/gemini-cli/issues/22028)
+*   [#21901 - [Subagents] Add mechanism for isolating the tools of subagents from the main agent.](https://github.com/google-gemini/gemini-cli/issues/21901)
+*   [#21890 - Fix & Enhance Existing Compression Logic](https://github.com/google-gemini/gemini-cli/issues/21890)
+*   [#22080 - [v0.33.0] Infinite "Taking a bit longer" loop despite Web UI/Other models working fine](https://github.com/google-gemini/gemini-cli/issues/22080)
+*   [#22108 - Use cheap model summaries to implement progressive disclosure for MCP servers and tools](https://github.com/google-gemini/gemini-cli/issues/22108)
+*   [#22098 - Overhaul save_memory tool](https://github.com/google-gemini/gemini-cli/issues/22098)
+*   [#22057 - Complete implementation of JIT memory loading](https://github.com/google-gemini/gemini-cli/issues/22057)
+*   [#21953 - Update docs!](https://github.com/google-gemini/gemini-cli/issues/21953)
+*   [#21939 - [Agents] Tracking issue for all user reported bugs](https://github.com/google-gemini/gemini-cli/issues/21939)
+*   [#21924 - High performance and flicker free behavior on terminal resize](https://github.com/google-gemini/gemini-cli/issues/21924)
+*   [#21920 - Ensure saved checkpoints are flexible enough to support long term sessions](https://github.com/google-gemini/gemini-cli/issues/21920)
+*   [#21892 - Guided Compression](https://github.com/google-gemini/gemini-cli/issues/21892)
+*   [#21891 - Stale Output Elision (History Pruning)](https://github.com/google-gemini/gemini-cli/issues/21891)
+*   [#21889 - Auto-Distillation for Tool Calls](https://github.com/google-gemini/gemini-cli/issues/21889)
+*   [#21888 - Reduce Auto-Compression Threshold](https://github.com/google-gemini/gemini-cli/issues/21888)
+*   [#21887 - Phase 1: Short-term Continuity and Coherence improvements in Gemini CLI](https://github.com/google-gemini/gemini-cli/issues/21887)
+*   [#21863 - Address user feedback for plan mode at launch](https://github.com/google-gemini/gemini-cli/issues/21863)
+*   [#21832 - Specify 256 color mode safe input prompt colors for all themes](https://github.com/google-gemini/gemini-cli/issues/21832)
+*   [#10726 - Critical Slowdown in Gemini CLI Startup Time (up to 60 seconds)](https://github.com/google-gemini/gemini-cli/issues/10726)
+*   [#18896 - Screen Glitching and Flickering during Scrolling (Windows)](https://github.com/google-gemini/gemini-cli/issues/18896)
+*   [#20142 - AskUser open questions do not support ctrl+r to search chat history](https://github.com/google-gemini/gemini-cli/issues/20142)
+*   [#18050 - cli claims that it exhausted daily quota. I checked that it did not.](https://github.com/google-gemini/gemini-cli/issues/18050)
+*   [#21806 - fix exit_plan_mode ignoring policy `allow` decision when scheduler skips confirmation](https://github.com/google-gemini/gemini-cli/issues/21806)
+*   [#20549 - Fix issue exiting plan mode because of wrong plans path](https://github.com/google-gemini/gemini-cli/issues/20549)
+*   [#5280 - Add support for setting API call configurations - temperature, topK, thinking budget](https://github.com/google-gemini/gemini-cli/issues/5280)
+*   [#20062 - Memory overhaul](https://github.com/google-gemini/gemini-cli/issues/20062)
+*   [#19873 - Leverage model's bash affinity via Zero-Dependency OS Sandboxing & Post-Execution Intent Routing](https://github.com/google-gemini/gemini-cli/issues/19873)
+*   [#20302 - [Epic] Remote Agents: Sprint 1 (P0) - Foundation & Core UX](https://github.com/google-gemini/gemini-cli/issues/20302)
+*   [#22036 - Fix the enforced authentication method config example in the enterprise docs](https://github.com/google-gemini/gemini-cli/pull/22036)
+*   [#22039 - feat(cli): make extension installation idempotent](https://github.com/google-gemini/gemini-cli/pull/22039)
+*   [#22091 - Rahulkamat/profiles](https://github.com/google-gemini/gemini-cli/pull/22091)
+*   [#22105 - fix(ui): correct settings dialog height to prevent scroll glitches](https://github.com/google-gemini/gemini-cli/pull/22105)
+*   [#22106 - feat: Display pending and confirming tool calls](https://github.com/google-gemini/gemini-cli/pull/22106)
+*   [#22059 - feat(core): differentiate User-Agent for a2a-server and ACP clients](https://github.com/google-gemini/gemini-cli/pull/22059)
+*   [#22104 - fix(core): secure argsPattern and revert WEB_FETCH_TOOL_NAME escalation](https://github.com/google-gemini/gemini-cli/pull/22104)
+*   [#21912 - Add issue for automated changelogs](https://github.com/google-gemini/gemini-cli/pull/21912)
+*   [#21976 - feat(core): Support auto-distillation for tool output.](https://github.com/google-gemini/gemini-cli/pull/21976)
+*   [#22069 - fix(core): resolve MCP tool FQN validation, schema export, and wildcards in subagents](https://github.com/google-gemini/gemini-cli/pull/22069)
+*   [#21942 - fix(cli): improve command conflict handling for skills](https://github.com/google-gemini/gemini-cli/pull/21942)
+*   [#21988 - feat(cli): allow safe tools to execute concurrently while agent is busy](https://github.com/google-gemini/gemini-cli/pull/21988)
+*   [#22088 - fix(core): correct tool-specific approval narrowing and mode transitions](https://github.com/google-gemini/gemini-cli/pull/22088)
+*   [#22090 - fix(policy): ensure user policies are loaded when policyPaths is empty](https://github.com/google-gemini/gemini-cli/pull/22090)
+*   [#22095 - Fix build issue](https://github.com/google-gemini/gemini-cli/pull/22095)
+*   [#22024 - feat(core): differentiate User-Agent for a2a-server and ACP clients](https://github.com/google-gemini/gemini-cli/pull/22024)
+*   [#22089 - feat(core/cli): expose model thinking events in --output-format stream-json](https://github.com/google-gemini/gemini-cli/pull/22089)
+*   [#22076 - docs(plan): clarify interactive plan editing with Ctrl+X](https://github.com/google-gemini/gemini-cli/pull/22076)
+*   [#22097 - Add Design Document for Modular Agent Architecture](https://github.com/google-gemini/gemini-cli/pull/22097)
+*   [#22100 - Add Core Agent and Model Interfaces](https://github.com/google-gemini/gemini-cli/pull/22100)
 
 </details>
 
 <details>
 <summary>OpenCode — <a href="https://github.com/sst/opencode">sst/opencode</a></summary>
 
-# OpenCode (sst/opencode) 技术日报
+# OpenCode (sst/opencode) 技术日报 - 2026-03-12
 
-**日期**: 2026-03-12
-**分组**: AI 编码工具
+## 总体概览
 
-## 社区动态摘要
+今日 OpenCode 项目围绕 **Bug 修复** 和 **核心功能增强** 展开，大量新建 Issue 和 PR 反映了社区对产品稳定性、特定模型兼容性以及用户体验的持续关注。尤其值得注意的是，新版本 `1.2.24` 的发布似乎带来了一些意料之外的问题，引发了用户社区的热烈讨论。
 
-本日 OpenCode 项目社区活跃，**新建 Issue 数量较多**，集中反映了用户在使用新版本 (v1.2.24) 时遇到的多种 Bug，以及对功能增强的建议。Pull Request 方面，核心代码库的重构和 ID 系统的品牌化是主要进展。
+## 版本动态
 
-### 新增重要 Issue & Feature Request
+**v1.2.24 迎来更新，但伴随稳定性挑战**
 
-*   **AI 模型适配与兼容性问题**：
-    *   [#17070](https://github.com/anomalyco/opencode/issues/17070) 报告指出，在阿里云百炼的编码计划中，Kimi K2.5 的“深度思考”功能无法正确启用。
-    *   [#16851](https://github.com/anomalyco/opencode/issues/16851) （近3天建立，有较多评论）指出 v1.2.24 版本下，Codex 用户在使用 ChatGPT 账号时遇到“Bad Request: 'gpt-5.3-codex' model is not supported”的错误。
-*   **核心功能 Bug 反馈**：
-    *   [#17107](https://github.com/anomalyco/opencode/issues/17107) ([🆕 新建]) 报告了一个 UX 问题：代理响应在提交查询后不显示，需要重启应用才能看到。
-    *   [#17052](https://github.com/anomalyco/opencode/issues/17052) ([🆕 新建]) 用户遇到回答内容循环重复的问题，无法正常结束。
-    *   [#17101](https://github.com/anomalyco/opencode/issues/17101) ([🆕 新建]) 和 [#17094](https://github.com/anomalyco/opencode/issues/17094) ([🆕 新建]，已关闭) 都提到了 Agent 在解析 Skill 资源文件的相对路径时，相对于当前工作目录而非 Skill 安装目录，导致资源无法读取。
-*   **用户体验与功能增强建议**：
-    *   [#17108](https://github.com/anomalyco/opencode/issues/17108) ([🆕 新建]) 建议在选择 Question Tool 选项时，允许附加文本限定符，以提供更多上下文。
-    *   [#17091](https://github.com/anomalyco/opencode/issues/17091) ([🆕 新建]，已关闭) 提出 `opencode continue` 命令，用于恢复上次会话。
-    *   [#17056](https://github.com/anomalyco/opencode/issues/17056) ([🆕 新建]) 建议增强消息列表的详情显示，并修复成本/Token 统计逻辑。
+近期发布的 OpenCode **v1.2.24** 版本在提升功能的同时，也带来了一些用户反馈的问题。最显著的 Issue #16851 和 #16878 分别报告了 **ChatGPT 模型不兼容** 和 **旧会话加载失败** 的情况。这表明新版本在兼容性和数据持久化方面可能需要进一步的优化。
 
-### Pull Request & 代码贡献
+## 社区关注点分析
 
-*   **ID 系统的品牌化与重构**：`@kitlangton` 贡献了多项 PR，专注于对 `ProviderID`, `ModelID`, `PermissionID`, `PtyID`, `QuestionID`, `ToolID`, `PartID`, `WorkspaceID`, `SessionID`, `MessageID`, `ProjectID` 等关键 ID 类型进行品牌化处理，通过 Drizzle 和 Zod 模式贯穿整个代码库。这表明项目正在进行深入的底层重构，以提高类型安全性和代码健壮性。
-    *   [#17110](https://github.com/anomalyco/opencode/pull/17110) feat(id): brand ProviderID and ModelID
-    *   [#17042](https://github.com/anomalyco/opencode/pull/17042) feat(id): brand PermissionID, PtyID, QuestionID, and ToolID
-    *   [#16966](https://github.com/anomalyco/opencode/pull/16966) feat(id): brand PartID through Drizzle and Zod schemas
-    *   [#16964](https://github.com/anomalyco/opencode/pull/16964) feat(id): brand WorkspaceID through Drizzle and Zod schemas
-    *   [#16953](https://github.com/anomalyco/opencode/pull/16953) feat(id): brand SessionID through Drizzle and Zod schemas
-    *   [#16956](https://github.com/anomalyco/opencode/pull/16956) feat(id): brand MessageID through Drizzle and Zod schemas
-    *   [#16948](https://github.com/anomalyco/opencode/pull/16948) feat(id): brand ProjectID through Drizzle and Zod schemas
-*   **应用和服务器改进**：
-    *   [#17105](https://github.com/anomalyco/opencode/pull/17105) 修复了 JJ Colocated Repos 和 Git Worktrees 在工作区显示中的问题。
-    *   [#17104](https://github.com/anomalyco/opencode/pull/17104) `feat(server): support OPENCODE_WEB_URL for local frontend serving`，为本地前端服务提供环境变量支持。
-*   **CI/CD 与文档改进**：
-    *   [#17093](https://github.com/anomalyco/opencode/issues/17093) (Issue) 报告了 CI E2E 测试在 Linux 和 Windows 上都会失败的问题，这可能影响 PR 的合并。
-    *   [#17102](https://github.com/anomalyco/opencode/pull/17102) 和 [#17086](https://github.com/anomalyco/opencode/issues/17086) (Issue) 强调了 AI Agent 在创建 PR 时需要遵守 PR 模板，以避免 CI 合规性检查失败。
+### 热门 Issues & 持续讨论
 
-### 最值得关注的动态
+*   **模型兼容性与 API 问题：** Issue #16851 明确指出 `gpt-5.3-codex` 模型在使用 ChatGPT 账户时出现 `Bad Request`。同时，Issue #17121 发现了 CLI 在计算 Together.AI 成本时低估了特定模型（如 Kimi K2.5）的实际费用，这直接关系到用户的使用成本感知。Issue #17070 则提及了在阿里云百炼中，Kimi K2.5 的深度思考功能无法正常启用。这些都指向了与各类 AI 模型 API 交互的稳定性和准确性问题。
+*   **网络与代理支持：** Issue #16847 提出的“Proxy问题”尤为关键，用户希望 OpenCode 能添加全局代理功能，仅对模型 API 流量进行代理，以解决国内网络环境下的访问障碍。
+*   **UI/UX 细节优化：** Issue #17112 指出了在文件名过长时，review panel 和 file patcher modal 出现的 UI 视觉重叠问题。Issue #17071 则报告了 `opentui` 在解析路径时出现 `TypeError`。
+*   **核心功能稳定性：** Issue #16878 指出旧会话无法加载，以及 Issue #17107 描述的“Agent response does not show up”的间歇性问题，都表明了会话管理和 Agent 响应展示方面的稳定性需要加强。Issue #17114 报告了 `sqlite3` 信号处理不当可能导致终端损坏。
+*   **开发者体验与插件：** Issue #17100 发现 `experimental.chat.system.transform` hook 在处理插件修改时存在静默丢弃的情况。Issue #17094 和 #17101 反映了 Agent 在处理技能资源相对路径时，解析 CWD 而非安装目录的 bug。
+*   **新功能需求：** Issue #17108 提出了针对 Question Tool 的增强建议，允许在选择预设选项时添加可选的文本限定符。Issue #17091 和 #17088 分别提出了 `opencode continue` 和 `opencode mcp remove` 命令的便捷性增强需求。
 
-1.  **v1.2.24 版本 Bug 涌现，模型适配与兼容性成焦点**：多个 Bug Issue ([#16851](https://github.com/anomalyco/opencode/issues/16851), [#17070](https://github.com/anomalyco/opencode/issues/17070)) 集中反映了用户在使用最新版本时，在不同 AI 模型（如 GPT-5.3 Codex, Kimi K2.5）和服务（ChatGPT, 阿里云百炼）的集成方面遇到的问题，这可能影响到项目的核心 AI 功能体验。
-2.  **核心 ID 体系重构与品牌化 PR 集中合并**：`@kitlangton` 提交了多项关于 `ProviderID`, `ModelID`, `SessionID` 等核心标识符的品牌化 PR ([#17110](https://github.com/anomalyco/opencode/pull/17110), [#16953](https://github.com/anomalyco/opencode/pull/16953) 等)，标志着项目在增强类型安全和代码一致性方面取得重要进展。
-3.  **Agent 行为与资源解析问题待解**：`[#17101](https://github.com/anomalyco/opencode/issues/17101)` 和 `[#17094](https://github.com/anomalyco/opencode/issues/17094)` 指出的 Agent 路径解析错误，以及 `[#17107](https://github.com/anomalyco/opencode/issues/17107)` 报告的 Agent 响应显示异常，都指向了 Agent 功能实现的稳定性和可靠性仍需提升。
+### 活跃 PRs & 技术演进
+
+*   **ID 管理与数据结构增强：** 以 `@kitlangton` 为主的贡献者在 PR #17110, #17042, #16966, #16964, #16953 等一系列 PR 中，持续推进对 `ProviderID`, `ModelID`, `PermissionID`, `PtyID`, `QuestionID`, `ToolID`, `PartID`, `WorkspaceID`, `SessionID` 等标识符的 **Branding (品牌化)** 工作，并将其整合进 Drizzle 和 Zod schema。这标志着项目在类型安全和数据结构设计上的深入演进。
+*   **CI/CD 与环境支持：** PR #17120 针对 Windows CI 环境中的 Bun 缓存问题进行了修复，确保跨平台构建的稳定性。PR #17113 解决了 E2E 测试中的 flaky 问题，通过重新聚焦 prompt 提高了测试的可靠性。
+*   **Bug 修复：** PR #17123 修复了 CLI 命令中关于 `baseline-browser-mapping` 的告警。PR #17116 针对 Issue #17114，加固了 `sqlite3` 信号处理。PR #17119 修复了 Issue #17118 中关于自定义 Agent 颜色解析的问题。PR #17105 改进了 JJ data codes 和 Git worktrees 的工作空间显示。
+*   **功能性 PR：** PR #17104 增加了 `OPENCODE_WEB_URL` 环境变量支持，允许本地化前端服务。PR #16926 扩展了 PDF 附件的拖放支持。
+
+## 本日最值得关注的动态 (Top 3)
+
+1.  **稳定性挑战凸显，新版本 v1.2.24 引入系列 Bug：** 最受关注的问题是 #16851 (ChatGPT 模型兼容性) 和 #16878 (旧会话加载失败)，这直接影响了用户日常使用核心功能。同时，Issue #16847 提出的网络代理需求，也反映了用户在特定网络环境下使用 OpenCode 的痛点。
+2.  **Contributor 持续深耕 ID Branding，提升类型安全：** 以 `@kitlangton` 为主的 PR 系列（如 PR #17110, #17042 等）正在系统性地对项目内部的各种 ID 类型进行品牌化处理，并通过 Drizzle 和 Zod schema 强制执行，这是对项目底层架构和开发者体验的长期利好。
+3.  **AI 模型交互与成本计算问题显现：** Issue #17121 (Together.AI 成本低估) 和 Issue #17070 (阿里云百炼 Kimi K2.5 功能问题) 指出了 AI 模型 API 对接中的一些细节问题，这些都需要持续关注和解决，以保证用户对 AI 能力的准确预期。
 
 ---
 
 ## 参考链接
 
 **Issues:**
-*   [#16851](https://github.com/anomalyco/opencode/issues/16851)
-*   [#16878](https://github.com/anomalyco/opencode/issues/16878)
-*   [#16839](https://github.com/anomalyco/opencode/issues/16839)
-*   [#17070](https://github.com/anomalyco/opencode/issues/17070)
-*   [#17107](https://github.com/anomalyco/opencode/issues/17107)
-*   [#17108](https://github.com/anomalyco/opencode/issues/17108)
-*   [#17093](https://github.com/anomalyco/opencode/issues/17093)
-*   [#17090](https://github.com/anomalyco/opencode/issues/17090)
-*   [#17094](https://github.com/anomalyco/opencode/issues/17094)
-*   [#17091](https://github.com/anomalyco/opencode/issues/17091)
-*   [#17084](https://github.com/anomalyco/opencode/issues/17084)
-*   [#17065](https://github.com/anomalyco/opencode/issues/17065)
-*   [#17062](https://github.com/anomalyco/opencode/issues/17062)
-*   [#17056](https://github.com/anomalyco/opencode/issues/17056)
-*   [#17052](https://github.com/anomalyco/opencode/issues/17052)
-*   [#16949](https://github.com/anomalyco/opencode/issues/16949)
-*   [#17085](https://github.com/anomalyco/opencode/issues/17085)
-*   [#17100](https://github.com/anomalyco/opencode/issues/17100)
-*   [#17101](https://github.com/anomalyco/opencode/issues/17101)
-*   [#17088](https://github.com/anomalyco/opencode/issues/17088)
-*   [#17086](https://github.com/anomalyco/opencode/issues/17086)
-*   [#17078](https://github.com/anomalyco/opencode/issues/17078)
-*   [#17073](https://github.com/anomalyco/opencode/issues/17073)
-*   [#17071](https://github.com/anomalyco/opencode/issues/17071)
-*   [#17069](https://github.com/anomalyco/opencode/issues/17069)
-*   [#17068](https://github.com/anomalyco/opencode/issues/17068)
-*   [#17111](https://github.com/anomalyco/opencode/issues/17111)
-*   [#17103](https://github.com/anomalyco/opencode/issues/17103)
-*   [#17099](https://github.com/anomalyco/opencode/issues/17099)
-*   [#17097](https://github.com/anomalyco/opencode/issues/17097)
+*   [#16851 "ChatGPT not working in new version 1.2.24"](https://github.com/sst/opencode/issues/16851)
+*   [#16878 "Old sessions cannot be loaded"](https://github.com/sst/opencode/issues/16878)
+*   [#16847 "Proxy问题"](https://github.com/sst/opencode/issues/16847)
+*   [#17070 "In Alibaba Cloud Bailian's coding plan, the deep thinking of Kimi K2.5 cannot be enabled properly"](https://github.com/sst/opencode/issues/17070)
+*   [#17121 "CLI stats dramatically underestimate Together.AI costs for models that don't support input caching"](https://github.com/sst/opencode/issues/17121)
+*   [#17100 "experimental.chat.system.transform hook silently discards plugin mutations"](https://github.com/sst/opencode/issues/17100)
+*   [#17112 "[BUG] long file name and diff overlap in review panel and file patcher modal ui bug"](https://github.com/sst/opencode/issues/17112)
+*   [#17107 "Bug: agent response does not show up"](https://github.com/sst/opencode/issues/17107)
+*   [#17108 "[FEATURE]: Allow optional text qualifier when selecting a Question tool option - UX"](https://github.com/sst/opencode/issues/17108)
+*   [#17093 "Flaky CI: e2e (linux) and e2e (windows) fail across unrelated PRs"](https://github.com/sst/opencode/issues/17093)
+*   [#17090 "Tool visibility should respect session permission filters across runtime and experimental endpoints"](https://github.com/sst/opencode/issues/17090)
+*   [#17094 "Agent resolves skill resource relative paths against CWD instead of the skill's installation directory"](https://github.com/sst/opencode/issues/17094)
+*   [#17091 "[FEATURE]: opencode continue (should open the last session)"](https://github.com/sst/opencode/issues/17091)
+*   [#17084 "[FEATURE]: Support _meta when calling downstream MCP tools"](https://github.com/sst/opencode/issues/17084)
+*   [#17065 "Session compaction produces orphaned tool_use blocks in long tool-heavy sessions (400 from Anthropic)"](https://github.com/sst/opencode/issues/17065)
+*   [#17062 "Desktop apps always ask permission to access data from other apps"](https://github.com/sst/opencode/issues/17062)
+*   [#17085 ""Tool execution aborted" when clicking Create Git repository while agent is thinking"](https://github.com/sst/opencode/issues/17085)
+*   [#17101 "Bug: Agent resolves skill resource relative paths against CWD instead of skill's install directory"](https://github.com/sst/opencode/issues/17101)
+*   [#17088 "[FEATURE]: opencode mcp remove"](https://github.com/sst/opencode/issues/17088)
+*   [#17086 "docs: AGENTS.md should direct agents to use PR template"](https://github.com/sst/opencode/issues/17086)
+*   [#17078 "[FEATURE]: Add @devtheops/opencode-plugin-otel to the ecosystem page in docs"](https://github.com/sst/opencode/issues/17078)
+*   [#17073 "[FEATURE]: Protect .env files in grep/glob results, not just direct read"](https://github.com/sst/opencode/issues/17073)
+*   [#17071 "opentui: fatal: The "path" property must be of type string, got object"](https://github.com/sst/opencode/issues/17071)
+*   [#17069 "opencode and Cygwin"](https://github.com/sst/opencode/issues/17069)
+*   [#17068 "opencode-cli sidecar process not terminated when opencode electron desktop is closed"](https://github.com/sst/opencode/issues/17068)
+*   [#17122 "终端ui会一直渲染"](https://github.com/sst/opencode/issues/17122)
+*   [#17118 "fix: recover unquoted custom agent hex colors"](https://github.com/sst/opencode/issues/17118)
+*   [#17117 "On the Windows platform, starting from v1.2.12, /editor is unavailable."](https://github.com/sst/opencode/issues/17117)
+*   [#17114 "Bug: sqlite3 signal handling needs hardening"](https://github.com/sst/opencode/issues/17114)
+*   [#17111 "Bug: Skill tool returns truncated content - missing Contact Information and Reference Documents sections"](https://github.com/sst/opencode/issues/17111)
 
 **Pull Requests:**
-*   [#17110](https://github.com/anomalyco/opencode/pull/17110)
-*   [#17109](https://github.com/anomalyco/opencode/pull/17109)
-*   [#17042](https://github.com/anomalyco/opencode/pull/17042)
-*   [#17105](https://github.com/anomalyco/opencode/pull/17105)
-*   [#17104](https://github.com/anomalyco/opencode/pull/17104)
-*   [#17106](https://github.com/anomalyco/opencode/pull/17106)
-*   [#16966](https://github.com/anomalyco/opencode/pull/16966)
-*   [#16964](https://github.com/anomalyco/opencode/pull/16964)
-*   [#16953](https://github.com/anomalyco/opencode/pull/16953)
-*   [#17102](https://github.com/anomalyco/opencode/pull/17102)
-*   [#16926](https://github.com/anomalyco/opencode/pull/16926)
-*   [#17092](https://github.com/anomalyco/opencode/pull/17092)
-*   [#17026](https://github.com/anomalyco/opencode/pull/17026)
-*   [#16923](https://github.com/anomalyco/opencode/pull/16923)
-*   [#17098](https://github.com/anomalyco/opencode/pull/17098)
-*   [#16956](https://github.com/anomalyco/opencode/pull/16956)
-*   [#16948](https://github.com/anomalyco/opencode/pull/16948)
-*   [#17096](https://github.com/anomalyco/opencode/pull/17096)
-*   [#17089](https://github.com/anomalyco/opencode/pull/17089)
-*   [#17087](https://github.com/anomalyco/opencode/pull/17087)
+*   [#17123 "fix: suppress stale baseline-browser-mapping warning"](https://github.com/sst/opencode/pull/17123)
+*   [#17120 "fix(ci): use dynamic bun cache path for cross-platform support"](https://github.com/sst/opencode/pull/17120)
+*   [#17113 "fix(e2e): re-focus prompt after terminal opens in slash-terminal test"](https://github.com/sst/opencode/pull/17113)
+*   [#17119 "fix: recover unquoted custom agent hex colors"](https://github.com/sst/opencode/pull/17119)
+*   [#17106 "refactor(import): use .parse() at boundaries instead of manual .make()"](https://github.com/sst/opencode/pull/17106)
+*   [#17110 "feat(id): brand ProviderID and ModelID"](https://github.com/sst/opencode/pull/17110)
+*   [#17042 "feat(id): brand PermissionID, PtyID, QuestionID, and ToolID"](https://github.com/sst/opencode/pull/17042)
+*   [#17116 "fix(db): harden sqlite3 signal handling"](https://github.com/sst/opencode/pull/17116)
+*   [#17115 "chore: cleanup"](https://github.com/sst/opencode/pull/17115)
+*   [#17109 "Mg 3"](https://github.com/sst/opencode/pull/17109)
+*   [#17105 "fix(app): improve workspace display for JJ colocated repos and git worktrees"](https://github.com/sst/opencode/pull/17105)
+*   [#17104 "feat(server): support OPENCODE_WEB_URL for local frontend serving"](https://github.com/sst/opencode/pull/17104)
+*   [#16966 "feat(id): brand PartID through Drizzle and Zod schemas"](https://github.com/sst/opencode/pull/16966)
+*   [#16964 "feat(id): brand WorkspaceID through Drizzle and Zod schemas"](https://github.com/sst/opencode/pull/16964)
+*   [#16953 "feat(id): brand SessionID through Drizzle and Zod schemas"](https://github.com/sst/opencode/pull/16953)
+*   [#17102 "docs(agents): add PR template reference to AGENTS.md"](https://github.com/sst/opencode/pull/17102)
+*   [#16926 "feat(opencode): Add PDF attachment Drag and Drop"](https://github.com/sst/opencode/pull/16926)
+*   [#17092 "feat(app): restore to message and fork session"](https://github.com/sst/opencode/pull/17092)
+*   [#17026 "fix(plugin): return undefined instead of throwing in serverUrl getter"](https://github.com/sst/opencode/pull/17026)
+*   [#16923 "perf(app): navigation between sessions + fix terminal test regressions"](https://github.com/sst/opencode/pull/16923)
+
+</details>
+
+<details>
+<summary>Memoh — <a href="https://github.com/memohai/Memoh">memohai/Memoh</a></summary>
+
+# Memoh (memohai/Memoh) 项目日报
+
+**日期**: 2026-03-12 | **分组**: AI 编码工具
+
+## 动态摘要
+
+### 新版本发布：v0.4.3 修复数据恢复与索引效率问题
+
+Memoh 于昨日发布了 v0.4.3 版本，本次更新主要聚焦于提升稳定性和效率。核心亮点包括：
+
+*   **数据恢复增强**：针对 `mcp` 模块，优化了容器重建时从孤立快照恢复数据的能力，解决了用户数据丢失的潜在风险。
+*   **内存索引优化**：`memory` 模块用扫描索引取代了 `manifest.json`，显著提高了内存管理和查找的效率，同时避免了因 `manifest.json` 缺失导致保存失败的问题（已在 `#194` 中提及并解决）。
+*   **UTF-8 兼容性**：`text` 模块的代码确保了在文本截断过程中能正确处理 UTF-8 编码，避免乱码。
+
+### 社区热点：多模态支持与用户体验优化是焦点
+
+今日社区活跃度较高，主要围绕以下几个方面展开：
+
+*   **多模态对话能力探求 ([#233](https://github.com/memohai/Memoh/issues/233))**：用户 `yishenggudou` 提出了关于对话框是否支持图片和语音等**多模态输入**的疑问，这表明社区对 Memoh 扩展其交互能力，集成更丰富的 AI 功能充满期待。
+*   **用户界面视觉问题 ([#234](https://github.com/memohai/Memoh/issues/234))**：同为用户 `yishenggudou` 提交了一个关于**编辑器显示两个行号**的 Bug，并附上了截图。这反映了用户对提升开发体验的关注。
+*   **频道适配器扩展 ([#225](https://github.com/memohai/Memoh/issues/225))**：`feat(channel): support DingTalk bot` 这个 Feature Request 提示了社区对于**集成更多第三方平台的机器人支持**（如钉钉）的需求。
+
+### 关键进展：Web 交互终端与多 Provider 内存适配器
+
+本期有几项值得关注的 PR：
+
+*   **交互式 Web 终端 ([#232](https://github.com/memohai/Memoh/pull/232))**：`feat: add interactive web terminal for bot containers` PR 引入了一个基于 WebSocket 的**交互式 Web 终端**，支持在浏览器中直接访问 Bot 容器的 PTY shell 会话。这对开发者调试和管理 Bot 提供了极大便利。
+*   **多 Provider 内存适配器重构 ([#227](https://github.com/memohai/Memoh/pull/227))**：此 PR 对内存适配器进行了重构，支持了 `mem0` 和 `openviking` 等多 Provider，并采用扫描机制替代 `manifest.json`，进一步提升了内存管理的灵活性和效率。
 
 ---
-**GitHub 地址**: [sst/opencode](https://github.com/sst/opencode)
+
+## 今日最值得关注动态
+
+1.  **v0.4.3 版本发布，大幅提升数据安全与内存索引效率**：本次更新解决了用户关心的核心痛点，特别是孤立快照的数据恢复和 `manifest.json` 依赖问题。
+2.  **社区关注多模态交互与多平台接入**：用户对 Memoh 集成语音、图片等**多模态功能**的探讨，以及对**钉钉等新频道**的支持需求，预示着 Memoh 未来在易用性和生态连接性上的发展方向。
+3.  **Web 终端集成，优化开发者调试体验**：[#232](https://github.com/memohai/Memoh/pull/232) PR 引入的 Web 终端功能，将极大地简化 Bot 开发和管理流程。
+
+---
+
+## 参考链接
+
+*   **Release**
+    *   [v0.4.3](https://github.com/memohai/Memoh/releases/tag/v0.4.3)
+*   **Issues**
+    *   [#234](https://github.com/memohai/Memoh/issues/234)
+    *   [#233](https://github.com/memohai/Memoh/issues/233)
+    *   [#218](https://github.com/memohai/Memoh/issues/218)
+    *   [#194](https://github.com/memohai/Memoh/issues/194)
+    *   [#225](https://github.com/memohai/Memoh/issues/225)
+*   **Pull Requests**
+    *   [#227](https://github.com/memohai/Memoh/pull/227)
+    *   [#195](https://github.com/memohai/Memoh/pull/195)
+    *   [#232](https://github.com/memohai/Memoh/pull/232)
+    *   [#203](https://github.com/memohai/Memoh/pull/203)
+    *   [#231](https://github.com/memohai/Memoh/pull/231)
+    *   [#230](https://github.com/memohai/Memoh/pull/230)
+    *   [#228](https://github.com/memohai/Memoh/pull/228)
+    *   [#229](https://github.com/memohai/Memoh/pull/229)
+
+---
+**项目主页**: [memohai/Memoh](https://github.com/memohai/Memoh)
 
 </details>
 
@@ -555,4 +544,4 @@
 ---
 
 > 本报告由 [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) 自动生成
-> 生成时间: 2026-03-12T00:46:07.369Z
+> 生成时间: 2026-03-12T03:03:14.446Z
