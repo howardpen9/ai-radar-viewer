@@ -115,8 +115,52 @@ function textToHtml(text: string): string {
   return div.innerHTML.replace(/\n/g, "<br>");
 }
 
+/** Pre-process markdown: inline issue/PR links */
+function preprocessMd(md: string): string {
+  md = inlineIssueLinks(md);
+  return md;
+}
+
+/**
+ * Extract [#NUM](URL) mappings from the "参考链接" section (and any existing inline links),
+ * then convert bare `#NUM` / [#NUM] references in the body into clickable links.
+ */
+function inlineIssueLinks(md: string): string {
+  // Build map: issue number → URL from all existing [#NUM](URL) in the document
+  const refMap = new Map<string, string>();
+  const linkRegex = /\[#(\d+)\]\((https?:\/\/github\.com\/[^)]+)\)/g;
+  let m: RegExpExecArray | null;
+  while ((m = linkRegex.exec(md)) !== null) {
+    if (!refMap.has(m[1]!)) refMap.set(m[1]!, m[2]!);
+  }
+  if (refMap.size === 0) return md;
+
+  // Replace backtick-wrapped: `#NUM` → [`#NUM`](URL)
+  md = md.replace(/`#(\d{4,})`/g, (full, num) => {
+    const url = refMap.get(num);
+    return url ? `[${full}](${url})` : full;
+  });
+
+  // Replace bracket-wrapped without URL: [#NUM] → [#NUM](URL)
+  // Negative lookahead ensures we don't match [#NUM](url) which already has a link
+  md = md.replace(/\[#(\d{4,})\](?!\()/g, (full, num) => {
+    const url = refMap.get(num);
+    return url ? `[#${num}](${url})` : full;
+  });
+
+  // Replace bare #NUM (not inside [] or `` or after ()
+  md = md.replace(/(?<![`\[(\w])#(\d{4,})(?![`\])\w])/g, (full, num) => {
+    const url = refMap.get(num);
+    return url ? `[#${num}](${url})` : full;
+  });
+
+  return md;
+}
+
+
 function renderMd(md: string): string {
-  const html = marked.parse(md) as string;
+  const processed = preprocessMd(md);
+  const html = marked.parse(processed) as string;
   return DOMPurify.sanitize(html, {
     ADD_TAGS: ["details", "summary"],
     ADD_ATTR: ["open", "href", "target"],
@@ -196,7 +240,7 @@ function renderHighlights(text: string): void {
     .map((tweet, i) =>
       `<div class="highlight-card">
         <span class="tweet-index">${i + 1}/${tweets.length}</span>
-        ${textToHtml(tweet)}
+        ${renderMd(tweet)}
       </div>`)
     .join("");
 

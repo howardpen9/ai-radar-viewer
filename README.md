@@ -1,6 +1,6 @@
 # 📡 AI Radar Viewer
 
-Static web viewer for [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) daily AI ecosystem digests.
+Static web viewer for [ai-ecosystem-radar](https://github.com/ai-radar-hq/ai-ecosystem-radar) daily AI ecosystem digests.
 
 **Live**: [ai-radar-viewer.up.railway.app](https://ai-radar-viewer.up.railway.app)
 
@@ -69,7 +69,7 @@ The `.github/workflows/sync-data.yml` workflow:
 
 ## Related
 
-- [ai-ecosystem-radar](https://github.com/howardpen9/ai-ecosystem-radar) — Data source (daily digest pipeline)
+- [ai-ecosystem-radar](https://github.com/ai-radar-hq/ai-ecosystem-radar) — Data source (daily digest pipeline)
 
 ## License
 
