@@ -1,6 +1,6 @@
 {
   "anthropic": {
-    "lastChecked": "2026-03-12T03:01:23.150Z",
+    "lastChecked": "2026-03-13T00:47:07.763Z",
     "urls": {
       "https://www.anthropic.com/engineering/a-postmortem-of-three-recent-issues": {
         "lastmod": "2025-12-14T20:27:33.000Z",
@@ -1273,29 +1273,35 @@
       "https://www.anthropic.com/news/the-anthropic-institute": {
         "lastmod": "2026-03-11T15:17:09.000Z",
         "fetched": true
+      },
+      "https://www.anthropic.com/news/claude-partner-network": {
+        "lastmod": "2026-03-12T19:25:16.000Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       }
     }
   },
   "openai": {
-    "lastChecked": "2026-03-12T03:01:23.150Z",
+    "lastChecked": "2026-03-13T00:47:07.763Z",
     "urls": {
       "https://openai.com/index/reasoning-models-chain-of-thought-controllability/": {
-        "lastmod": "2026-03-11T21:32:43.652Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:36:49.275Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-indqa/": {
         "lastmod": "2026-03-10T13:03:09.273Z",
         "fetched": true
       },
       "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/": {
-        "lastmod": "2026-03-12T01:33:58.546Z",
+        "lastmod": "2026-03-13T00:36:17.206Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/understanding-neural-networks-through-sparse-circuits/": {
-        "lastmod": "2026-03-12T01:36:23.259Z",
+        "lastmod": "2026-03-13T00:37:33.577Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/evaluating-chain-of-thought-monitorability/": {
         "lastmod": "2026-03-11T08:59:15.247Z",
@@ -1319,14 +1325,14 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/index/defining-and-evaluating-political-bias-in-llms/": {
-        "lastmod": "2026-03-12T01:36:43.902Z",
+        "lastmod": "2026-03-13T00:36:38.953Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/why-language-models-hallucinate/": {
-        "lastmod": "2026-03-12T01:34:34.252Z",
+        "lastmod": "2026-03-13T00:37:12.671Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/frontierscience/": {
         "lastmod": "2026-03-12T01:35:20.206Z",
@@ -1334,9 +1340,9 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/index/how-confessions-can-keep-language-models-honest/": {
-        "lastmod": "2026-03-12T01:41:31.154Z",
+        "lastmod": "2026-03-13T00:37:12.681Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/news/": {
         "lastmod": "2026-03-12T02:12:40.165Z",
@@ -1418,18 +1424,18 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/index/dall-e-3-system-card/": {
-        "lastmod": "2026-03-12T01:34:30.558Z",
+        "lastmod": "2026-03-13T00:36:28.752Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/openai-baselines-dqn/": {
         "lastmod": "2026-03-10T13:15:45.813Z",
         "fetched": true
       },
       "https://openai.com/news/research/": {
-        "lastmod": "2026-03-12T02:12:30.605Z",
+        "lastmod": "2026-03-13T00:36:34.302Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/procgen-benchmark/": {
         "lastmod": "2026-03-12T01:36:45.955Z",
@@ -1437,9 +1443,9 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/research/index/": {
-        "lastmod": "2026-03-12T01:37:19.353Z",
+        "lastmod": "2026-03-13T00:37:35.662Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/whisper/": {
         "lastmod": "2026-03-12T01:36:54.169Z",
@@ -1462,9 +1468,9 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/index/learning-from-human-preferences/": {
-        "lastmod": "2026-03-12T01:34:09.848Z",
+        "lastmod": "2026-03-13T00:36:35.284Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/triton/": {
         "lastmod": "2026-03-12T01:34:37.280Z",
@@ -1490,9 +1496,9 @@
         "fetched": true
       },
       "https://openai.com/index/gpt-4v-system-card/": {
-        "lastmod": "2026-03-12T01:36:21.655Z",
+        "lastmod": "2026-03-13T00:36:57.795Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/requests-for-research-2/": {
         "lastmod": "2026-03-12T01:34:46.474Z",
@@ -1531,14 +1537,14 @@
         "fetchedAt": "2026-03-12T03:01:23.150Z"
       },
       "https://openai.com/index/gpt-2-1-5b-release/": {
-        "lastmod": "2026-03-12T01:36:30.936Z",
+        "lastmod": "2026-03-13T00:37:37.496Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/research/index/release/": {
-        "lastmod": "2026-03-12T01:34:15.391Z",
+        "lastmod": "2026-03-13T00:36:29.397Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/openai-baselines-acktr-a2c/": {
         "lastmod": "2026-03-12T01:35:23.981Z",
@@ -1737,8 +1743,9 @@
         "fetched": true
       },
       "https://openai.com/index/learning-day/": {
-        "lastmod": "2026-03-11T09:14:21.976Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:00:13.564Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-openai-japan/": {
         "lastmod": "2026-03-11T09:27:01.555Z",
@@ -1749,8 +1756,9 @@
         "fetched": true
       },
       "https://openai.com/index/jakub-pachocki-announced-as-chief-scientist/": {
-        "lastmod": "2026-03-11T09:12:57.749Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:48:38.211Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-the-stateful-runtime-environment-for-agents-in-amazon-bedrock/": {
         "lastmod": "2026-03-11T20:05:49.590Z",
@@ -1778,8 +1786,9 @@
         "fetched": true
       },
       "https://openai.com/index/openai-acquires-global-illumination/": {
-        "lastmod": "2026-03-11T09:11:41.820Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:00:12.969Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/team-update-january/": {
         "lastmod": "2026-03-11T09:12:39.490Z",
@@ -1806,8 +1815,9 @@
         "fetched": true
       },
       "https://openai.com/index/openai-appoints-denise-dresser/": {
-        "lastmod": "2026-03-11T09:12:15.407Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:48:15.775Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/openai-five-finals/": {
         "lastmod": "2026-03-11T09:02:40.879Z",
@@ -1822,12 +1832,14 @@
         "fetched": true
       },
       "https://openai.com/index/openai-fellows-fall-2018/": {
-        "lastmod": "2026-03-11T09:09:46.993Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:55:12.528Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/why-our-structure-must-evolve-to-advance-our-mission/": {
-        "lastmod": "2026-03-11T09:25:31.548Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:47:46.216Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/helen-toner-joins/": {
         "lastmod": "2026-03-11T09:14:05.555Z",
@@ -1882,8 +1894,9 @@
         "fetched": true
       },
       "https://openai.com/index/openai-scholars-2020/": {
-        "lastmod": "2026-03-11T09:10:47.629Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:47:44.426Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/openai-fellows-interns-2019/": {
         "lastmod": "2026-03-11T09:02:04.756Z",
@@ -1942,8 +1955,9 @@
         "fetched": true
       },
       "https://openai.com/global-affairs/openai-chief-compliance-officer-announcement/": {
-        "lastmod": "2026-03-11T09:24:42.358Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:47:59.314Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/conde-nast/": {
         "lastmod": "2026-03-11T08:55:07.411Z",
@@ -2010,16 +2024,18 @@
         "fetched": true
       },
       "https://openai.com/index/introducing-the-teen-safety-blueprint/": {
-        "lastmod": "2026-03-11T09:09:03.126Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:58:52.595Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/small-business-ai-jam/": {
         "lastmod": "2026-03-11T09:12:25.608Z",
         "fetched": true
       },
       "https://openai.com/global-affairs/openai-chief-economist-announcement/": {
-        "lastmod": "2026-03-11T09:11:46.966Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:48:18.997Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/gedi/": {
         "lastmod": "2026-03-11T08:55:28.042Z",
@@ -2038,8 +2054,9 @@
         "fetched": true
       },
       "https://openai.com/index/openai-five-benchmark/": {
-        "lastmod": "2026-03-11T09:13:12.646Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:57:49.809Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/japan-economic-blueprint/": {
         "lastmod": "2026-03-11T09:05:09.727Z",
@@ -2078,16 +2095,18 @@
         "fetched": true
       },
       "https://openai.com/index/api-partnership-with-stack-overflow/": {
-        "lastmod": "2026-03-11T09:02:11.111Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:47:42.889Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/newsroom-ai-catalyst-global-program-with-wan-ifra/": {
         "lastmod": "2026-03-11T09:25:48.911Z",
         "fetched": true
       },
       "https://openai.com/index/openai-and-reddit-partnership/": {
-        "lastmod": "2026-03-11T08:59:23.622Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:57:34.647Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/distill/": {
         "lastmod": "2026-03-11T08:57:42.566Z",
@@ -2138,8 +2157,9 @@
         "fetched": true
       },
       "https://openai.com/index/symposium-2019/": {
-        "lastmod": "2026-03-11T09:12:59.430Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:00:11.341Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/report-from-the-self-organizing-conference/": {
         "lastmod": "2026-03-11T09:25:47.303Z",
@@ -2527,24 +2547,24 @@
         "fetched": true
       },
       "https://openai.com/index/confidence-building-measures-for-artificial-intelligence/": {
-        "lastmod": "2026-03-12T01:36:10.838Z",
+        "lastmod": "2026-03-13T00:37:33.877Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/sora-system-card/": {
-        "lastmod": "2026-03-12T01:41:14.251Z",
+        "lastmod": "2026-03-13T00:36:33.486Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/updating-our-preparedness-framework/": {
-        "lastmod": "2026-03-12T01:33:59.202Z",
+        "lastmod": "2026-03-13T00:36:17.370Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/gpt-5-system-card-sensitive-conversations/": {
-        "lastmod": "2026-03-12T01:36:59.032Z",
+        "lastmod": "2026-03-13T00:37:43.956Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/sora-feed-philosophy/": {
         "lastmod": "2026-03-11T09:02:06.400Z",
@@ -2580,8 +2600,9 @@
         "fetched": true
       },
       "https://openai.com/index/frontier-risk-and-preparedness/": {
-        "lastmod": "2026-03-11T09:14:18.158Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:58:35.996Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/update-on-mental-health-related-work/": {
         "lastmod": "2026-03-11T09:09:45.886Z",
@@ -2600,8 +2621,9 @@
         "fetched": true
       },
       "https://openai.com/index/governance-of-superintelligence/": {
-        "lastmod": "2026-03-11T09:11:32.472Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:59:01.201Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/our-approach-to-alignment-research/": {
         "lastmod": "2026-03-11T09:12:41.893Z",
@@ -2612,20 +2634,23 @@
         "fetched": true
       },
       "https://openai.com/index/moving-ai-governance-forward/": {
-        "lastmod": "2026-03-11T09:10:13.742Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:58:35.940Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/us-caisi-uk-aisi-ai-update/": {
-        "lastmod": "2026-03-11T09:04:36.752Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:58:50.858Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/openai-raising-concerns-policy/": {
         "lastmod": "2026-03-11T09:27:09.657Z",
         "fetched": true
       },
       "https://openai.com/index/update-on-safety-and-security-practices/": {
-        "lastmod": "2026-03-11T09:04:04.957Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:01:04.185Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/democratic-inputs-to-ai-grant-program-update/": {
         "lastmod": "2026-03-11T09:10:26.957Z",
@@ -2672,8 +2697,9 @@
         "fetched": true
       },
       "https://openai.com/index/openai-safety-update/": {
-        "lastmod": "2026-03-11T08:55:17.342Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:48:40.337Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/using-gpt-4-for-content-moderation/": {
         "lastmod": "2026-03-11T05:34:54.977Z",
@@ -2830,8 +2856,9 @@
         "fetched": true
       },
       "https://openai.com/index/march-20-chatgpt-outage/": {
-        "lastmod": "2026-03-11T09:25:50.480Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:00:39.963Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-vision-to-the-fine-tuning-api/": {
         "lastmod": "2026-03-11T09:12:00.741Z",
@@ -2850,8 +2877,9 @@
         "fetched": true
       },
       "https://openai.com/index/introducing-chatgpt-search/": {
-        "lastmod": "2026-03-11T08:57:29.168Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:47:35.290Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/function-calling-and-other-api-updates/": {
         "lastmod": "2026-03-11T09:00:31.637Z",
@@ -2886,8 +2914,9 @@
         "fetched": true
       },
       "https://openai.com/index/introducing-gpts/": {
-        "lastmod": "2026-03-11T08:59:48.523Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:56:51.095Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/memory-and-new-controls-for-chatgpt/": {
         "lastmod": "2026-03-11T08:55:06.157Z",
@@ -2906,8 +2935,9 @@
         "fetched": true
       },
       "https://openai.com/index/introducing-the-gpt-store/": {
-        "lastmod": "2026-03-11T09:12:30.541Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:59:57.740Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/new-embedding-models-and-api-updates/": {
         "lastmod": "2026-03-11T09:13:46.623Z",
@@ -2958,8 +2988,9 @@
         "fetched": true
       },
       "https://openai.com/index/introducing-openai-for-nonprofits/": {
-        "lastmod": "2026-03-11T09:12:06.539Z",
-        "fetched": true
+        "lastmod": "2026-03-13T00:00:23.802Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-improvements-to-the-fine-tuning-api-and-expanding-our-custom-models-program/": {
         "lastmod": "2026-03-11T09:13:59.172Z",
@@ -3026,8 +3057,9 @@
         "fetched": true
       },
       "https://openai.com/index/new-tools-for-chatgpt-enterprise/": {
-        "lastmod": "2026-03-11T09:11:39.286Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:49:00.103Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/introducing-chatgpt-and-whisper-apis/": {
         "lastmod": "2026-03-11T09:11:02.665Z",
@@ -3046,8 +3078,9 @@
         "fetched": true
       },
       "https://openai.com/index/new-models-and-developer-products-announced-at-devday/": {
-        "lastmod": "2026-03-11T08:58:42.155Z",
-        "fetched": true
+        "lastmod": "2026-03-12T23:54:57.546Z",
+        "fetched": true,
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/dall-e-now-available-without-waitlist/": {
         "lastmod": "2026-03-11T09:13:04.965Z",
@@ -3419,9 +3452,9 @@
         "fetched": true
       },
       "https://openai.com/index/instruction-hierarchy-challenge/": {
-        "lastmod": "2026-03-12T01:36:11.127Z",
+        "lastmod": "2026-03-13T00:37:16.004Z",
         "fetched": true,
-        "fetchedAt": "2026-03-12T03:01:23.150Z"
+        "fetchedAt": "2026-03-13T00:47:07.763Z"
       },
       "https://openai.com/index/new-ways-to-learn-math-and-science-in-chatgpt/": {
         "lastmod": "2026-03-11T15:36:45.033Z",
